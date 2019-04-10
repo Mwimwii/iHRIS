@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE I2CEConfiguration SYSTEM "I2CE_Configuration.dtd">
+<I2CEConfiguration name="TrainingProvider" path="/I2CE">
+  <metadata>
+    <version>4.3.0.1</version>
+  </metadata>
+  <configurationGroup name="TrainingProvider" path="/I2CE" locale="nl">
+    <version>4.3.0.1</version>
+    <configurationGroup name="tasks" path="/I2CE/tasks/task_description" locale="nl">
+      <configuration name="provider_can_view" locale="nl"></configuration>
+      <configuration name="provider_can_edit" locale="nl"></configuration>
+      <configuration name="provider_can_view_child_forms" locale="nl"></configuration>
+      <configuration name="provider_can_edit_child_forms" locale="nl"></configuration>
+      <configuration name="provider_can_edit_participants" locale="nl"></configuration>
+    </configurationGroup>
+    <configurationGroup name="formsData" path="formsData/forms">
+      <configurationGroup name="trainingprovider_type">
+        <configurationGroup name="partner">
+          <configuration name="fields" value="many" type="delimited" locale="nl"></configuration>
+        </configurationGroup>
+        <configurationGroup name="training_institution">
+          <configuration name="fields" value="many" type="delimited" locale="nl"></configuration>
+        </configurationGroup>
+        <configurationGroup name="sponsor">
+          <configuration name="fields" value="many" type="delimited" locale="nl"></configuration>
+        </configurationGroup>
+        <configurationGroup name="government">
+          <configuration name="fields" value="many" type="delimited" locale="nl">
+            <value>name:Overheid</value>
+          </configuration>
+        </configurationGroup>
+      </configurationGroup>
+      <configurationGroup name="ownership">
+        <configurationGroup name="pnfp">
+          <configuration name="fields" value="many" type="delimited" locale="nl"></configuration>
+        </configurationGroup>
+        <configurationGroup name="government">
+          <configuration name="fields" value="many" type="delimited" locale="nl">
+            <value>name:Overheid</value>
+          </configuration>
+        </configurationGroup>
+        <configurationGroup name="pfp">
+          <configuration name="fields" value="many" type="delimited" locale="nl"></configuration>
+        </configurationGroup>
+      </configurationGroup>
+    </configurationGroup>
+    <configurationGroup name="forms" path="/modules/forms">
+      <configurationGroup name="forms">
+        <configurationGroup name="ownership">
+          <configuration name="display" values="single" locale="nl"></configuration>
+        </configurationGroup>
+        <configurationGroup name="trainingprovider_type">
+          <configuration name="display" values="single" locale="nl"></configuration>
+        </configurationGroup>
+        <configurationGroup name="trainingprovider">
+          <configuration name="display" values="single" locale="nl"></configuration>
+          <configurationGroup name="meta">
+            <configuration name="description" locale="nl"></configuration>
+          </configurationGroup>
+        </configurationGroup>
+      </configurationGroup>
+      <configurationGroup name="formClasses">
+        <configurationGroup name="iHRIS_TrainingProvider">
+          <configurationGroup name="fields">
+            <configurationGroup name="name">
+              <configuration name="headers" type="delimited" locale="nl">
+                <value>default:Naam</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="trainingprovider_type">
+              <configuration name="headers" type="delimited" locale="nl"></configuration>
+            </configurationGroup>
+            <configurationGroup name="code">
+              <configuration name="headers" type="delimited" locale="nl"></configuration>
+            </configurationGroup>
+            <configurationGroup name="ownership">
+              <configuration name="headers" type="delimited" locale="nl"></configuration>
+            </configurationGroup>
+            <configurationGroup name="address">
+              <configuration name="headers" type="delimited" locale="nl">
+                <value>default:Postadres</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="capacity">
+              <configuration name="headers" type="delimited" locale="nl">
+                <value>default:Invoercapaciteit</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="telephone">
+              <configuration name="headers" type="delimited" locale="nl">
+                <value>default:Telefoonnummer</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="alt_telephone">
+              <configuration name="headers" type="delimited" locale="nl">
+                <value>default:Alternatief telefoonnummer</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="fax">
+              <configuration name="headers" type="delimited" locale="nl">
+                <value>default:Faxnummer</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="email">
+              <configuration name="headers" type="delimited" locale="nl">
+                <value>default:E-mailadres</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="contact_person">
+              <configuration name="headers" type="delimited" values="many" locale="nl"></configuration>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+      </configurationGroup>
+    </configurationGroup>
+    <configurationGroup name="page">
+      <configurationGroup name="trainingprovider">
+        <configurationGroup name="args">
+          <configuration name="title" values="single" locale="nl">
+            <value>Trainingsinstelling toevoegen of bijwerken</value>
+          </configuration>
+        </configurationGroup>
+      </configurationGroup>
+      <configurationGroup name="viewprovider">
+        <configurationGroup name="args">
+          <configuration name="title" values="single" locale="nl"></configuration>
+        </configurationGroup>
+      </configurationGroup>
+      <configurationGroup name="uploadparticipants">
+        <configurationGroup name="args">
+          <configuration name="title" values="single" locale="nl"></configuration>
+        </configurationGroup>
+      </configurationGroup>
+      <configurationGroup name="editparticipants">
+        <configurationGroup name="args">
+          <configuration name="title" values="single" locale="nl">
+            <value>Deelnemers bewerken</value>
+          </configuration>
+          <configuration name="action_header" values="single" locale="nl">
+            <value>Deelnemer toevoegen of verwijderen</value>
+          </configuration>
+        </configurationGroup>
+      </configurationGroup>
+      <configurationGroup name="history_provider">
+        <configurationGroup name="args">
+          <configuration name="title" values="single" locale="nl">
+            <value>Geschiedenis weergeven</value>
+          </configuration>
+        </configurationGroup>
+      </configurationGroup>
+    </configurationGroup>
+  </configurationGroup>
+</I2CEConfiguration>

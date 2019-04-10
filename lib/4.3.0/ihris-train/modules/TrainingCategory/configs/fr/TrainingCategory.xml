@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE I2CEConfiguration SYSTEM "I2CE_Configuration.dtd">
+<I2CEConfiguration name="TrainingCategory" path="/I2CE">
+  <metadata>
+    <version>4.3.0.1</version>
+  </metadata>
+  <configurationGroup name="TrainingCategory" path="/I2CE" locale="fr">
+    <version>4.3.0.1</version>
+    <configurationGroup name="tasks" path="/I2CE/tasks/task_description" locale="fr">
+      <configuration name="can_edit_database_list_training_category" locale="fr">
+        <value>Modifier la liste des catégories de formation</value>
+      </configuration>
+      <configuration name="can_view_database_list_training_category" locale="fr">
+        <value>Afficher la liste des catégories de formation</value>
+      </configuration>
+    </configurationGroup>
+    <configurationGroup name="forms" path="/modules/forms">
+      <configurationGroup name="forms">
+        <configurationGroup name="training_category">
+          <configuration name="display" values="single" locale="fr">
+            <value>Information sur la catégorie de formation</value>
+          </configuration>
+        </configurationGroup>
+      </configurationGroup>
+    </configurationGroup>
+  </configurationGroup>
+</I2CEConfiguration>

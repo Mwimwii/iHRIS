@@ -1,0 +1,34 @@
+<div id="siteContent">
+  <h1 class="header">Exam Results For Course</h1>
+  <h2><span type="form" name="person:surname" noedit="true"></span>,<span type="form" name="person:firstname" noedit="true"></span></h2>
+  <div id="error"></div>
+  <form method="post">
+    <table class="multiFormTable" border="0" cellpadding="0" cellspacing="0"><span type="form" name="person_exam:id"></span>
+      <span type="form" name="person_exam:parent"></span>
+      <tr><th colspan="2">
+	  Examenresultaten
+	  -- 
+	  <span type="form" name="provider_instance:start_date" noedit="1"></span>
+	  <span ifset="true" name="passing_score">
+	    -- 
+	    <span printf="'Passing Score: %d',$passing_score"></span>
+	  </span>
+	</th>
+      </tr><tr><td>
+	  <span type="form" name="person_exam:try" showhead="default"></span>
+	</td>
+	<td>
+		<span type="form" name="person_exam:paper" showhead="default"></span>
+	</td>
+      </tr><tr><td>
+		<span type="form" name="person_exam:exam_date" showhead="default"></span>
+	</td>
+	<td>
+	  <span type="form" name="person_exam:results" showhead="default"></span>	  
+	</td>
+      </tr><tr class="submitCell"><td colspan="2">
+	  <div id="button"></div>
+	</td>
+      </tr></table></form>
+
+</div>

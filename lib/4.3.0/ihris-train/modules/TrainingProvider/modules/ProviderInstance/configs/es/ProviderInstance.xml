@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE I2CEConfiguration SYSTEM "I2CE_Configuration.dtd">
+<I2CEConfiguration name="ProviderInstance" path="/I2CE">
+  <metadata>
+    <version>4.3.0.1</version>
+  </metadata>
+  <configurationGroup name="ProviderInstance" path="/I2CE" locale="es">
+    <version>4.3.0.1</version>
+    <configurationGroup name="tasks" path="/I2CE/tasks/task_description" locale="es">
+      <configuration name="provider_can_view_child_form_provider_instance" locale="es">
+        <value>Puede ver el formulario secundario de instancia de un proveedor</value>
+      </configuration>
+      <configuration name="provider_can_edit_child_form_provider_instance" locale="es">
+        <value>Puede editar formularios secundarios de instancia de un proveedor</value>
+      </configuration>
+      <configuration name="can_edit_database_list_funder" locale="es">
+        <value>Puede editar la lista de la base de datos del financiador</value>
+      </configuration>
+      <configuration name="can_view_database_list_funder" locale="es">
+        <value>Puede ver la lista de la base de datos del financiador</value>
+      </configuration>
+    </configurationGroup>
+    <configurationGroup name="page">
+      <configurationGroup name="provider_instance">
+        <configurationGroup name="args">
+          <configuration name="title" values="single" locale="es">
+            <value>Programar/actualizar información de capacitación</value>
+          </configuration>
+        </configurationGroup>
+      </configurationGroup>
+      <configurationGroup name="fee">
+        <configurationGroup name="args">
+          <configuration name="title" values="single" locale="es">
+            <value>Añadir/actualizar información de cuota</value>
+          </configuration>
+        </configurationGroup>
+      </configurationGroup>
+      <configurationGroup name="editexams">
+        <configurationGroup name="args">
+          <configuration name="title" values="single" locale="es">
+            <value>Establecer datos de examen</value>
+          </configuration>
+        </configurationGroup>
+      </configurationGroup>
+    </configurationGroup>
+    <configurationGroup name="forms" path="/modules/forms">
+      <configurationGroup name="forms">
+        <configurationGroup name="provider_instance">
+          <configuration name="display" values="single" locale="es">
+            <value>Información de capacitación programada</value>
+          </configuration>
+        </configurationGroup>
+        <configurationGroup name="fee">
+          <configuration name="display" values="single" locale="es">
+            <value>Información de cuota de capacitación programada</value>
+          </configuration>
+        </configurationGroup>
+        <configurationGroup name="funder">
+          <configuration name="display" values="single" locale="es">
+            <value>Financiador</value>
+          </configuration>
+        </configurationGroup>
+      </configurationGroup>
+      <configurationGroup name="formClasses">
+        <configurationGroup name="iHRIS_ProviderInstance">
+          <configurationGroup name="list_default" path="meta/list/default">
+            <configuration name="display_string" locale="es"></configuration>
+          </configurationGroup>
+          <configurationGroup name="fields">
+            <configurationGroup name="cancelled">
+              <configuration name="headers" type="delimited" locale="es">
+                <value>default:¿Cancelada?</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="start_date">
+              <configuration name="headers" type="delimited" locale="es">
+                <value>default:Fecha de inicio</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="end_date">
+              <configuration name="headers" type="delimited" locale="es">
+                <value>default:Fecha de finalización</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="academic_year">
+              <configuration name="headers" type="delimited" locale="es">
+                <value>default:Año académico (p.ej., Año 1)</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="calender_year">
+              <configuration name="headers" type="delimited" locale="es">
+                <value>default:Año calendario</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="participants_list">
+              <configuration name="headers" type="delimited" locale="es">
+                <value>default:Subir lista escaneada y firmada de estudiante</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="funder">
+              <configuration name="headers" type="delimited" locale="es">
+                <value>default:Fuente de financiación</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="job">
+              <configuration name="headers" type="delimited" locale="es">
+                <value>default:Grupo(s) de destino</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="location">
+              <configuration name="headers" type="delimited" locale="es">
+                <value>default:Datos de ubicación</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="providertraining">
+              <configuration name="headers" type="delimited" locale="es">
+                <value>default:Capacitación de proveedor</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="i2ce_hidden">
+              <configuration name="headers" type="delimited" locale="es">
+                <value>default:Ocultar</value>
+              </configuration>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+        <configurationGroup name="iHRIS_Fee">
+          <configurationGroup name="fields">
+            <configurationGroup name="fee_type">
+              <configuration name="headers" type="delimited" locale="es">
+                <value>default:Cuota</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="amount">
+              <configuration name="headers" type="delimited" locale="es">
+                <value>default:Monto</value>
+              </configuration>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+      </configurationGroup>
+    </configurationGroup>
+  </configurationGroup>
+</I2CEConfiguration>

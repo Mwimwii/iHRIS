@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE I2CEConfiguration SYSTEM "I2CE_Configuration.dtd">
+<I2CEConfiguration name="InstanceCalendar" path="/I2CE">
+  <metadata>
+    <version>4.3.0.1</version>
+  </metadata>
+  <configurationGroup name="InstanceCalendar" path="/I2CE" locale="pt_BR">
+    <version>4.3.0.1</version>
+    <configurationGroup name="tasks" path="tasks/task_description" locale="pt_BR">
+      <configuration name="can_view_calendar_provider_instance">
+        <value>Visualizar o calendário de instância</value>
+      </configuration>
+    </configurationGroup>
+    <configurationGroup name="page">
+      <configurationGroup name="instance_calendar">
+        <configurationGroup name="args">
+          <configuration name="title" values="single" locale="pt_BR">
+            <value>Treinamento do calendário de instância</value>
+          </configuration>
+        </configurationGroup>
+      </configurationGroup>
+    </configurationGroup>
+  </configurationGroup>
+</I2CEConfiguration>

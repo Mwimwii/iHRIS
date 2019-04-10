@@ -1,0 +1,390 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE I2CEConfiguration SYSTEM "I2CE_Configuration.dtd">
+<I2CEConfiguration name="ihris-qualify-CustomReports-disruption" path="//modules/CustomReports">
+  <metadata>
+    <version>4.3.0.1</version>
+  </metadata>
+  <configurationGroup name="ihris-qualify-CustomReports-disruption" path="//modules/CustomReports" locale="uk">
+    <version>4.3.0.1</version>
+    <configurationGroup name="relationship-disruption" path="relationships/training_disruption">
+      <configuration name="display_name" locale="uk">
+        <value>Порушення підготовки</value>
+      </configuration>
+      <configuration name="description" locale="uk">
+        <value>Зв'язок для порушення підготовки.</value>
+      </configuration>
+      <configurationGroup name="reporting_functions">
+        <configurationGroup name="disruption_year">
+          <configuration name="description" locale="uk">
+            <value>Рік, коли це порушення трапилося.</value>
+          </configuration>
+        </configurationGroup>
+        <configurationGroup name="resumed">
+          <configuration name="description" locale="uk">
+            <value>Рядок, щоб визначити, чи цей інцидент відновлено чи ні.</value>
+          </configuration>
+        </configurationGroup>
+      </configurationGroup>
+      <configurationGroup name="joins">
+        <configurationGroup name="disruption_reason">
+          <configuration name="description" locale="uk">
+            <value>Причина, по якій сталося це порушення.</value>
+          </configuration>
+          <configuration name="display_name" locale="uk">
+            <value>Причина порушення</value>
+          </configuration>
+          <configurationGroup name="joins">
+            <configurationGroup name="disruption_category">
+              <configuration name="description" locale="uk">
+                <value>Категорія причини, по якій сталося це порушення.</value>
+              </configuration>
+              <configuration name="display_name" locale="uk">
+                <value>Категорія порушення</value>
+              </configuration>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+        <configurationGroup name="training">
+          <configuration name="description" locale="uk">
+            <value>Підготовка, яка була порушена</value>
+          </configuration>
+          <configuration name="display_name" locale="uk">
+            <value>Навчання</value>
+          </configuration>
+          <configurationGroup name="joins">
+            <configurationGroup name="cadre">
+              <configuration name="description" locale="uk">
+                <value>Кадровий склад навчання.</value>
+              </configuration>
+              <configuration name="display_name" locale="uk">
+                <value>Кадровий склад</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="person">
+              <configuration name="description" locale="uk">
+                <value>Особа, яка проходить навчання.</value>
+              </configuration>
+              <configuration name="display_name" locale="uk">
+                <value>Особа</value>
+              </configuration>
+              <configurationGroup name="joins">
+                <configurationGroup name="demographic">
+                  <configuration name="description" locale="uk">
+                    <value>Демографічні дані особи, яка бере участь у тренінгу.</value>
+                  </configuration>
+                  <configuration name="display_name" locale="uk">
+                    <value>Демографія</value>
+                  </configuration>
+                </configurationGroup>
+              </configurationGroup>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+      </configurationGroup>
+    </configurationGroup>
+    <configurationGroup name="report-disruption" path="reports/training_disruption">
+      <configurationGroup name="meta">
+        <configuration name="display_name" locale="uk">
+          <value>Порушення підготовки</value>
+        </configuration>
+        <configuration name="description" locale="uk">
+          <value>Звіти, пов'язані з порушеннями підготовки.</value>
+        </configuration>
+        <configuration name="category" locale="uk">
+          <value>Звіти про навчання</value>
+        </configuration>
+      </configurationGroup>
+      <configurationGroup name="reporting_forms">
+        <configurationGroup name="cadre">
+          <configurationGroup name="fields">
+            <configurationGroup name="name">
+              <configuration name="header" locale="uk">
+                <value>Кадровий склад</value>
+              </configuration>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+        <configurationGroup name="demographic">
+          <configurationGroup name="fields">
+            <configurationGroup name="birth_date">
+              <configuration name="header" locale="uk">
+                <value>Дата народження</value>
+              </configuration>
+              <configurationGroup name="limits">
+                <configurationGroup name="greaterthan_equals">
+                  <configuration name="header" locale="uk">
+                    <value>Дата народження після</value>
+                  </configuration>
+                </configurationGroup>
+                <configurationGroup name="lessthan_equals">
+                  <configuration name="header" locale="uk">
+                    <value>Дата народження перед</value>
+                  </configuration>
+                </configurationGroup>
+              </configurationGroup>
+            </configurationGroup>
+            <configurationGroup name="gender">
+              <configuration name="header" locale="uk">
+                <value>Стать</value>
+              </configuration>
+              <configurationGroup name="limits">
+                <configurationGroup name="equals">
+                  <configuration name="header" locale="uk">
+                    <value>Стать</value>
+                  </configuration>
+                </configurationGroup>
+              </configurationGroup>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+        <configurationGroup name="disruption_category">
+          <configurationGroup name="fields">
+            <configurationGroup name="name">
+              <configuration name="header" locale="uk">
+                <value>Категорія порушення</value>
+              </configuration>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+        <configurationGroup name="disruption_reason">
+          <configurationGroup name="fields">
+            <configurationGroup name="name">
+              <configuration name="header" locale="uk">
+                <value>Причина порушення</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="training_disruption_category">
+              <configuration name="header" locale="uk">
+                <value>ID категорії порушення</value>
+              </configuration>
+              <configurationGroup name="limits">
+                <configurationGroup name="equals">
+                  <configuration name="header" locale="uk">
+                    <value>Категорія порушення</value>
+                  </configuration>
+                </configurationGroup>
+              </configurationGroup>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+        <configurationGroup name="primary_form">
+          <configurationGroup name="fields">
+            <configurationGroup name="disruption_date">
+              <configuration name="header" locale="uk">
+                <value>Дата порушення</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="disruption_reason">
+              <configuration name="header" locale="uk">
+                <value>ID причини порушення</value>
+              </configuration>
+              <configurationGroup name="limits">
+                <configurationGroup name="equals">
+                  <configuration name="header" locale="uk">
+                    <value>Причина порушення</value>
+                  </configuration>
+                </configurationGroup>
+              </configurationGroup>
+            </configurationGroup>
+            <configurationGroup name="resumption_date">
+              <configuration name="header" locale="uk">
+                <value>Дата поновлення</value>
+              </configuration>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+        <configurationGroup name="training">
+          <configurationGroup name="fields">
+            <configurationGroup name="cadre">
+              <configuration name="header" locale="uk">
+                <value>Підготовка кадрів</value>
+              </configuration>
+              <configurationGroup name="limits">
+                <configurationGroup name="in">
+                  <configuration name="header" locale="uk">
+                    <value>Кадровий склад</value>
+                  </configuration>
+                </configurationGroup>
+              </configurationGroup>
+            </configurationGroup>
+            <configurationGroup name="intake_date">
+              <configuration name="header" locale="uk">
+                <value>Дата прийому</value>
+              </configuration>
+              <configurationGroup name="limits">
+                <configurationGroup name="greaterthan_equals">
+                  <configuration name="header" locale="uk">
+                    <value>Дата прийому після</value>
+                  </configuration>
+                </configurationGroup>
+                <configurationGroup name="lessthan_equals">
+                  <configuration name="header" locale="uk">
+                    <value>Дата прийому перед</value>
+                  </configuration>
+                </configurationGroup>
+              </configurationGroup>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+      </configurationGroup>
+    </configurationGroup>
+    <configurationGroup name="reportViews">
+      <configurationGroup name="discontinuation_category">
+        <configuration name="description" locale="uk">
+          <value>Кругова діаграма припинення всіх категорій.</value>
+        </configuration>
+        <configuration name="display_name" locale="uk">
+          <value>Припинення за категорією</value>
+        </configuration>
+        <configurationGroup name="display_options">
+          <configurationGroup name="PieChart">
+            <configurationGroup name="styles">
+              <configurationGroup name="Pie">
+                <configuration name="display_name" locale="uk">
+                  <value>Кругова діаграма (проста)</value>
+                </configuration>
+              </configurationGroup>
+              <configurationGroup name="Bar">
+                <configuration name="display_name" locale="uk">
+                  <value>Гістограма (проста)</value>
+                </configuration>
+              </configurationGroup>
+              <configurationGroup name="Column">
+                <configuration name="display_name" locale="uk">
+                  <value>Стовпчикова діаграма (проста)</value>
+                </configuration>
+              </configurationGroup>
+              <configurationGroup name="StackedColumn">
+                <configuration name="display_name" locale="uk">
+                  <value>Гістограма з накопиченням (проста)</value>
+                </configuration>
+              </configurationGroup>
+              <configurationGroup name="Scatter">
+                <configuration name="display_name" locale="uk">
+                  <value>Точкова діаграма</value>
+                </configuration>
+              </configurationGroup>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+      </configurationGroup>
+      <configurationGroup name="discontinuation_reason">
+        <configuration name="description" locale="uk">
+          <value>Діаграма усіх припинень за причиною.</value>
+        </configuration>
+        <configuration name="display_name" locale="uk">
+          <value>Припинення за причиною</value>
+        </configuration>
+        <configurationGroup name="display_options">
+          <configurationGroup name="PieChart">
+            <configurationGroup name="styles">
+              <configurationGroup name="Pie">
+                <configuration name="display_name" locale="uk">
+                  <value>Кругова діаграма (проста)</value>
+                </configuration>
+              </configurationGroup>
+              <configurationGroup name="Bar">
+                <configuration name="display_name" locale="uk">
+                  <value>Гістограма (проста)</value>
+                </configuration>
+              </configurationGroup>
+              <configurationGroup name="Column">
+                <configuration name="display_name" locale="uk">
+                  <value>Стовпчикова діаграма (проста)</value>
+                </configuration>
+              </configurationGroup>
+              <configurationGroup name="StackedColumn">
+                <configuration name="display_name" locale="uk">
+                  <value>Гістограма з накопиченням (проста)</value>
+                </configuration>
+              </configurationGroup>
+              <configurationGroup name="Scatter">
+                <configuration name="display_name" locale="uk">
+                  <value>Точкова діаграма</value>
+                </configuration>
+              </configurationGroup>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+      </configurationGroup>
+      <configurationGroup name="discontinuation_year">
+        <configuration name="description" locale="uk">
+          <value>Діаграма усіх припинень за роком.</value>
+        </configuration>
+        <configuration name="display_name" locale="uk">
+          <value>Припинення за роком</value>
+        </configuration>
+        <configurationGroup name="display_options">
+          <configurationGroup name="PieChart">
+            <configurationGroup name="styles">
+              <configurationGroup name="Pie">
+                <configuration name="display_name" locale="uk">
+                  <value>Кругова діаграма (проста)</value>
+                </configuration>
+              </configurationGroup>
+              <configurationGroup name="Bar">
+                <configuration name="display_name" locale="uk">
+                  <value>Гістограма (проста)</value>
+                </configuration>
+              </configurationGroup>
+              <configurationGroup name="Column">
+                <configuration name="display_name" locale="uk">
+                  <value>Стовпчикова діаграма (проста)</value>
+                </configuration>
+              </configurationGroup>
+              <configurationGroup name="StackedColumn">
+                <configuration name="display_name" locale="uk">
+                  <value>Гістограма з накопиченням (проста)</value>
+                </configuration>
+              </configurationGroup>
+              <configurationGroup name="Scatter">
+                <configuration name="display_name" locale="uk">
+                  <value>Точкова діаграма</value>
+                </configuration>
+              </configurationGroup>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+      </configurationGroup>
+      <configurationGroup name="resumption">
+        <configuration name="description" locale="uk">
+          <value>Кругова діаграма порушень, які були відновлені чи ні.</value>
+        </configuration>
+        <configuration name="display_name" locale="uk">
+          <value>Звіт відновлення</value>
+        </configuration>
+        <configurationGroup name="display_options">
+          <configurationGroup name="PieChart">
+            <configurationGroup name="styles">
+              <configurationGroup name="Pie">
+                <configuration name="display_name" locale="uk">
+                  <value>Кругова діаграма (проста)</value>
+                </configuration>
+              </configurationGroup>
+              <configurationGroup name="Bar">
+                <configuration name="display_name" locale="uk">
+                  <value>Гістограма (проста)</value>
+                </configuration>
+              </configurationGroup>
+              <configurationGroup name="Column">
+                <configuration name="display_name" locale="uk">
+                  <value>Стовпчикова діаграма (проста)</value>
+                </configuration>
+              </configurationGroup>
+              <configurationGroup name="StackedColumn">
+                <configuration name="display_name" locale="uk">
+                  <value>Гістограма з накопиченням (проста)</value>
+                </configuration>
+              </configurationGroup>
+              <configurationGroup name="Scatter">
+                <configuration name="display_name" locale="uk">
+                  <value>Точкова діаграма</value>
+                </configuration>
+              </configurationGroup>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+      </configurationGroup>
+    </configurationGroup>
+  </configurationGroup>
+</I2CEConfiguration>

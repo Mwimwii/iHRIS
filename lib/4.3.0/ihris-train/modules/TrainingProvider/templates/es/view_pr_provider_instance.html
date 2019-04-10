@@ -1,0 +1,86 @@
+<div id="provider_details">
+  <h2>
+    Ver cursos de capacitación programados: <span type="form" name="provider_instance:providertraining"></span>
+  </h2>
+  <div class="recordsData">
+    <h3>
+      <a name="jump_instance">Datos de cursos de capacitación programados</a>
+    </h3>
+    <p class="editRecordsData">
+      <a href="" class="hide" title="Hide" onclick="return hideDiv('instance_details', this );">Ocultar</a>
+      <span task="provider_can_edit_participants" type="form" href="editparticipants?id=" name="provider_instance:id">Añadir participantes</span>
+      <span task="provider_can_edit_participants" type="form" href="uploadparticipants?id=" name="provider_instance:id">Subir participantes</span>
+      
+    </p>
+    
+    <div id="instance_details">
+      
+      <div class="editRecord">
+        <p>Editar esta información</p>
+        <ul><li task="provider_can_edit_child_form_provider_instance">
+            <span type="form" ifset="provider_instance:id" name="provider_instance:id" href="provider_instance?id=" parent="true">
+              Actualizar esta información
+            </span>
+            <span type="form" name="provider_instance:id" href="fee?parent=">
+              Añadir cuota
+            </span>
+          </li>
+        </ul></div> <!-- editRecord -->
+      
+      <div class="dataTable">
+        <table border="0" cellspacing="0" cellpadding="0"><tr><th colspan="2">Capacitación programada</th>
+          </tr><span type="form" name="provider_instance:providertraining" showhead="default" class="even"></span>
+          <span type="form" name="provider_instance:academic_year" ifset="true" showhead="default"></span>
+		  <span type="form" name="provider_instance:calender_year" ifset="true" showhead="default" class="even"></span>
+          <span type="form" name="provider_instance:start_date" showhead="default"></span>
+          <span type="form" name="provider_instance:end_date" showhead="default" class="even"></span>
+          <span type="form" name="provider_instance:job" ifset="true" showhead="default"></span>
+          <span type="form" name="provider_instance:funder" ifset="true" showhead="default"></span>
+          <span type="form" name="provider_instance:location" showhead="default" class="even"></span>
+          <span type="form" name="provider_instance:participants_list" ifset="true" showhead="default" class="even"></span>
+          <span type="form" name="provider_instance:cancelled" ifset="true" showhead="default"></span>
+        </table></div> <!-- dataTable -->
+    </div>
+    <br style="clear: both;"></div> <!-- recordsData -->
+
+  <div class="recordsData">
+    <h3>
+      <a name="jump_fee">Cuotas de cursos de capacitación programados</a>
+    </h3>
+    <p class="editRecordsData">
+      <a href="" class="hide" title="Hide" onclick="return hideDiv('fee', this );">Ocultar</a>
+      
+    </p>
+    
+    <div id="fee"></div>
+    
+    <br style="clear: both;"></div> <!-- recordsData -->
+   
+  <div class="recordsData">
+    <h3>
+      <a name="jump_participants">Datos de participante</a>
+    </h3>
+    <p class="editRecordsData">
+      <a href="" class="hide" title="Hide" onclick="return hideDiv('participant_details', this );">Ocultar</a>
+      <span type="form" name="provider_instance:id" href="editexams/exam_number?id=">Añadir números de examen</span>
+      <span type="form" name="provider_instance:id" href="editexams/exam_results?paper=paper%7Cpaper_i&amp;id=">Resultados de Documento I</span>
+      <span type="form" name="provider_instance:id" href="editexams/exam_results?paper=paper%7Cpaper_ii&amp;id=">Resultados de Documento II</span>
+      <span type="form" name="provider_instance:id" href="editexams/exam_results?paper=paper%7Cpaper_iii&amp;id=">Resultados de Documento III</span>
+      <span type="form" name="provider_instance:id" href="editexams/exam_results?paper=paper%7Cpaper_iv&amp;id=">Resultados de Documento IV</span>
+      
+    </p>
+    
+    <div class="dataList">
+      <div id="participant_details" class="dataTable">
+        <table border="0" cellspacing="0" cellpadding="0" id="participant_details_table"><tr><th class="editRecord">Editar esta información</th>
+            <th>Nombre(s)</th>
+            <th>Apellido(s)</th>
+            <th>Número de examen</th>
+            <th>Marca AV</th>
+            <th>Comentarios</th>
+          </tr></table></div>
+    </div>
+    
+    <br style="clear: both;"></div> <!-- recordsData -->
+  
+</div>

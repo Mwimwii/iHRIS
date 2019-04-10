@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE I2CEConfiguration SYSTEM "I2CE_Configuration.dtd">
+<I2CEConfiguration name="PersonExam" path="/I2CE">
+  <metadata>
+    <version>4.3.0.1</version>
+  </metadata>
+  <configurationGroup name="PersonExam" path="/I2CE" locale="es">
+    <version>4.3.0.1</version>
+    <configurationGroup name="tasks" path="/I2CE/tasks/task_description" locale="es">
+      <configuration name="person_can_view_child_form_person_exam">
+        <value>Puede ver el formulario secundario de examen de una persona</value>
+      </configuration>
+      <configuration name="person_can_edit_child_form_person_exam">
+        <value>Puede editar el formulario secundario de examen de una persona</value>
+      </configuration>
+    </configurationGroup>
+    <configurationGroup name="formsData" path="formsData/forms">
+      <configurationGroup name="exam_try">
+        <configurationGroup name="first">
+          <configuration name="fields" values="many" type="delimited" locale="es">
+            <value>name:1º intento</value>
+          </configuration>
+        </configurationGroup>
+        <configurationGroup name="retry">
+          <configuration name="fields" values="many" type="delimited" locale="es">
+            <value>name:2.º intento</value>
+          </configuration>
+        </configurationGroup>
+        <configurationGroup name="final">
+          <configuration name="fields" values="many" type="delimited" locale="es">
+            <value>name:Último intento</value>
+          </configuration>
+        </configurationGroup>
+      </configurationGroup>
+      <configurationGroup name="paper">
+        <configurationGroup name="paper_i">
+          <configuration name="fields" values="many" type="delimited" locale="es">
+            <value>name:Documento I</value>
+          </configuration>
+        </configurationGroup>
+        <configurationGroup name="paper_ii">
+          <configuration name="fields" values="many" type="delimited" locale="es">
+            <value>name:Documento II</value>
+          </configuration>
+        </configurationGroup>
+        <configurationGroup name="paper_iii">
+          <configuration name="fields" values="many" type="delimited" locale="es">
+            <value>name:Documento III</value>
+          </configuration>
+        </configurationGroup>
+        <configurationGroup name="paper_iv">
+          <configuration name="fields" values="many" type="delimited" locale="es">
+            <value>name:Documento IV</value>
+          </configuration>
+        </configurationGroup>
+      </configurationGroup>
+      <configurationGroup name="exam_grade">
+        <configurationGroup name="grade_1">
+          <configuration name="fields" values="many" type="delimited" locale="es"></configuration>
+        </configurationGroup>
+        <configurationGroup name="grade_2">
+          <configuration name="fields" values="many" type="delimited" locale="es"></configuration>
+        </configurationGroup>
+        <configurationGroup name="grade_3">
+          <configuration name="fields" values="many" type="delimited" locale="es"></configuration>
+        </configurationGroup>
+        <configurationGroup name="grade_4">
+          <configuration name="fields" values="many" type="delimited" locale="es"></configuration>
+        </configurationGroup>
+        <configurationGroup name="grade_5">
+          <configuration name="fields" values="many" type="delimited" locale="es"></configuration>
+        </configurationGroup>
+        <configurationGroup name="grade_6">
+          <configuration name="fields" values="many" type="delimited" locale="es"></configuration>
+        </configurationGroup>
+        <configurationGroup name="grade_7">
+          <configuration name="fields" values="many" type="delimited" locale="es"></configuration>
+        </configurationGroup>
+        <configurationGroup name="grade_8">
+          <configuration name="fields" values="many" type="delimited" locale="es"></configuration>
+        </configurationGroup>
+      </configurationGroup>
+    </configurationGroup>
+    <configurationGroup name="forms" path="/modules/forms">
+      <configurationGroup name="forms">
+        <configurationGroup name="exam_try">
+          <configuration name="display" values="single" locale="es">
+            <value>Intentar examen</value>
+          </configuration>
+        </configurationGroup>
+        <configurationGroup name="exam_grade">
+          <configuration name="display" values="single" locale="es">
+            <value>Grado de examen</value>
+          </configuration>
+        </configurationGroup>
+        <configurationGroup name="paper">
+          <configuration name="display" values="single" locale="es">
+            <value>Documento</value>
+          </configuration>
+        </configurationGroup>
+        <configurationGroup name="person_exam">
+          <configuration name="display" values="single" locale="es">
+            <value>Examen</value>
+          </configuration>
+        </configurationGroup>
+      </configurationGroup>
+      <configurationGroup name="formClasses">
+        <configurationGroup name="iHRIS_PersonExam">
+          <configurationGroup name="fields">
+            <configurationGroup name="exam_date">
+              <configuration name="headers" type="delimited" locale="es">
+                <value>default:Fecha de examen</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="try">
+              <configuration name="headers" type="delimited" locale="es">
+                <value>default:Intentar examen</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="results">
+              <configuration name="headers" type="delimited" locale="es">
+                <value>default:Resultados de examen</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="paper">
+              <configuration name="headers" type="delimited" locale="es">
+                <value>default:Documento</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="exam_grade">
+              <configuration name="headers" type="delimited" locale="es">
+                <value>default:Grado de examen</value>
+              </configuration>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+      </configurationGroup>
+    </configurationGroup>
+  </configurationGroup>
+</I2CEConfiguration>

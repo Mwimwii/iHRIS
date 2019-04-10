@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE I2CEConfiguration SYSTEM "I2CE_Configuration.dtd">
+<I2CEConfiguration name="TrainingProvider" path="/I2CE">
+  <metadata>
+    <version>4.3.0.1</version>
+  </metadata>
+  <configurationGroup name="TrainingProvider" path="/I2CE" locale="de">
+    <version>4.3.0.1</version>
+    <configurationGroup name="tasks" path="/I2CE/tasks/task_description" locale="de">
+      <configuration name="provider_can_view" locale="de">
+        <value>Darf die Anbieterseite ansehen</value>
+      </configuration>
+      <configuration name="provider_can_edit" locale="de">
+        <value>Darf die Anbieterseite bearbeiten</value>
+      </configuration>
+      <configuration name="provider_can_view_child_forms" locale="de">
+        <value>Darf alle untergeordneten Formulare eines Anbieters ansehen</value>
+      </configuration>
+      <configuration name="provider_can_edit_child_forms" locale="de">
+        <value>Darf alle untergeordneten Formulare eines Anbieters bearbeiten</value>
+      </configuration>
+      <configuration name="provider_can_edit_participants" locale="de">
+        <value>Darf die Teilnehmer einer Schulung bearbeiten</value>
+      </configuration>
+    </configurationGroup>
+    <configurationGroup name="formsData" path="formsData/forms">
+      <configurationGroup name="trainingprovider_type">
+        <configurationGroup name="partner">
+          <configuration name="fields" value="many" type="delimited" locale="de"></configuration>
+        </configurationGroup>
+        <configurationGroup name="training_institution">
+          <configuration name="fields" value="many" type="delimited" locale="de">
+            <value>name:Schulungseinrichtung</value>
+          </configuration>
+        </configurationGroup>
+        <configurationGroup name="sponsor">
+          <configuration name="fields" value="many" type="delimited" locale="de">
+            <value>name:Unterstützer</value>
+          </configuration>
+        </configurationGroup>
+        <configurationGroup name="government">
+          <configuration name="fields" value="many" type="delimited" locale="de">
+            <value>name:Regierung</value>
+          </configuration>
+        </configurationGroup>
+      </configurationGroup>
+      <configurationGroup name="ownership">
+        <configurationGroup name="pnfp">
+          <configuration name="fields" value="many" type="delimited" locale="de"></configuration>
+        </configurationGroup>
+        <configurationGroup name="government">
+          <configuration name="fields" value="many" type="delimited" locale="de">
+            <value>name:Regierung</value>
+          </configuration>
+        </configurationGroup>
+        <configurationGroup name="pfp">
+          <configuration name="fields" value="many" type="delimited" locale="de"></configuration>
+        </configurationGroup>
+      </configurationGroup>
+    </configurationGroup>
+    <configurationGroup name="forms" path="/modules/forms">
+      <configurationGroup name="forms">
+        <configurationGroup name="ownership">
+          <configuration name="display" values="single" locale="de">
+            <value>Eigentümerschaft</value>
+          </configuration>
+        </configurationGroup>
+        <configurationGroup name="trainingprovider_type">
+          <configuration name="display" values="single" locale="de">
+            <value>Art des Schulungsanbieters</value>
+          </configuration>
+        </configurationGroup>
+        <configurationGroup name="trainingprovider">
+          <configuration name="display" values="single" locale="de">
+            <value>Schulungsanbieter</value>
+          </configuration>
+          <configurationGroup name="meta">
+            <configuration name="description" locale="de"></configuration>
+          </configurationGroup>
+        </configurationGroup>
+      </configurationGroup>
+      <configurationGroup name="formClasses">
+        <configurationGroup name="iHRIS_TrainingProvider">
+          <configurationGroup name="fields">
+            <configurationGroup name="name">
+              <configuration name="headers" type="delimited" locale="de"></configuration>
+            </configurationGroup>
+            <configurationGroup name="trainingprovider_type">
+              <configuration name="headers" type="delimited" locale="de">
+                <value>default:Art des Schulungsanbieters</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="code">
+              <configuration name="headers" type="delimited" locale="de">
+                <value>default:Schlüssel</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="ownership">
+              <configuration name="headers" type="delimited" locale="de">
+                <value>default:Eigentümerschaft</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="address">
+              <configuration name="headers" type="delimited" locale="de">
+                <value>default:Postanschrift</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="capacity">
+              <configuration name="headers" type="delimited" locale="de">
+                <value>default:Aufnahmekapazität</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="telephone">
+              <configuration name="headers" type="delimited" locale="de">
+                <value>default:Telefonnummer</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="alt_telephone">
+              <configuration name="headers" type="delimited" locale="de">
+                <value>default:Alternative Rufnummer</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="fax">
+              <configuration name="headers" type="delimited" locale="de">
+                <value>default:Faxnummer</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="email">
+              <configuration name="headers" type="delimited" locale="de">
+                <value>default:E-Mail-Adresse</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="contact_person">
+              <configuration name="headers" type="delimited" values="many" locale="de">
+                <value>default:Erster Ansprechpartner</value>
+              </configuration>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+      </configurationGroup>
+    </configurationGroup>
+    <configurationGroup name="page">
+      <configurationGroup name="trainingprovider">
+        <configurationGroup name="args">
+          <configuration name="title" values="single" locale="de">
+            <value>Schulungsanbieter hinzufügen/bearbeiten</value>
+          </configuration>
+        </configurationGroup>
+      </configurationGroup>
+      <configurationGroup name="viewprovider">
+        <configurationGroup name="args">
+          <configuration name="title" values="single" locale="de">
+            <value>Schulungsanbieter anzeigen</value>
+          </configuration>
+        </configurationGroup>
+      </configurationGroup>
+      <configurationGroup name="uploadparticipants">
+        <configurationGroup name="args">
+          <configuration name="title" values="single" locale="de">
+            <value>Teilnehmer hochladen</value>
+          </configuration>
+        </configurationGroup>
+      </configurationGroup>
+      <configurationGroup name="editparticipants">
+        <configurationGroup name="args">
+          <configuration name="title" values="single" locale="de">
+            <value>Teilnehmer bearbeiten</value>
+          </configuration>
+          <configuration name="action_header" values="single" locale="de">
+            <value>Teilnehmer hinzufügen/entfernen</value>
+          </configuration>
+        </configurationGroup>
+      </configurationGroup>
+      <configurationGroup name="history_provider">
+        <configurationGroup name="args">
+          <configuration name="title" values="single" locale="de">
+            <value>Änderungsverlauf ansehen</value>
+          </configuration>
+        </configurationGroup>
+      </configurationGroup>
+    </configurationGroup>
+  </configurationGroup>
+</I2CEConfiguration>

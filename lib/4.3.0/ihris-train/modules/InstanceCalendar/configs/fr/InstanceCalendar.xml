@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE I2CEConfiguration SYSTEM "I2CE_Configuration.dtd">
+<I2CEConfiguration name="InstanceCalendar" path="/I2CE">
+  <metadata>
+    <version>4.3.0.1</version>
+  </metadata>
+  <configurationGroup name="InstanceCalendar" path="/I2CE" locale="fr">
+    <version>4.3.0.1</version>
+    <configurationGroup name="tasks" path="tasks/task_description" locale="fr">
+      <configuration name="can_view_calendar_provider_instance">
+        <value>Afficher le calendrier de l’instance</value>
+      </configuration>
+    </configurationGroup>
+    <configurationGroup name="page">
+      <configurationGroup name="instance_calendar">
+        <configurationGroup name="args">
+          <configuration name="title" values="single" locale="fr">
+            <value>Calendrier de l’instance de formation</value>
+          </configuration>
+        </configurationGroup>
+      </configurationGroup>
+    </configurationGroup>
+  </configurationGroup>
+</I2CEConfiguration>

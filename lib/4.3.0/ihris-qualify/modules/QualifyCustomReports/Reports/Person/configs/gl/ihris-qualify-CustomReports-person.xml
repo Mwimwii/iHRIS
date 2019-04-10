@@ -1,0 +1,484 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE I2CEConfiguration SYSTEM "I2CE_Configuration.dtd">
+<I2CEConfiguration name="ihris-qualify-CustomReports-person" path="//modules/CustomReports">
+  <metadata>
+    <version>4.3.0.1</version>
+  </metadata>
+  <configurationGroup name="ihris-qualify-CustomReports-person" path="//modules/CustomReports" locale="gl">
+    <version>4.3.0.1</version>
+    <configurationGroup name="relationship-person" path="relationships/person">
+      <configuration name="display_name" locale="gl">
+        <value>Persoa</value>
+      </configuration>
+      <configuration name="description" locale="gl">
+        <value>A relación da persoa cos detalles da primeira formación.</value>
+      </configuration>
+      <configurationGroup name="reporting_functions">
+        <configurationGroup name="reg_results">
+          <configuration name="description" locale="gl">
+            <value>Os resultados do exame e o rexistro da primeira formación.</value>
+          </configuration>
+        </configurationGroup>
+        <configurationGroup name="intake_year">
+          <configuration name="description" locale="gl">
+            <value>O ano que aconteceu a primeira formación.</value>
+          </configuration>
+        </configurationGroup>
+        <configurationGroup name="exam_year">
+          <configuration name="description" locale="gl">
+            <value>O ano que se realizou o exame.</value>
+          </configuration>
+        </configurationGroup>
+        <configurationGroup name="in_training">
+          <configuration name="description" locale="gl">
+            <value>Un si/non para determinar se a persoa segue formándose ou non.</value>
+          </configuration>
+        </configurationGroup>
+      </configurationGroup>
+      <configurationGroup name="joins">
+        <configurationGroup name="demographic">
+          <configuration name="description" locale="gl">
+            <value>A información demográfica desta persoa.</value>
+          </configuration>
+          <configuration name="display_name" locale="gl">
+            <value>Datos demográficos</value>
+          </configuration>
+          <configurationGroup name="joins">
+            <configurationGroup name="birth_district">
+              <configuration name="description" locale="gl">
+                <value>O distrito no que naceu esta persoa.</value>
+              </configuration>
+              <configuration name="display_name" locale="gl">
+                <value>Distrito de nacemento</value>
+              </configuration>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+        <configurationGroup name="deployment">
+          <configuration name="description" locale="gl">
+            <value>O lanzamento máis recente desta persoa.</value>
+          </configuration>
+          <configuration name="display_name" locale="gl">
+            <value>Lanzamento</value>
+          </configuration>
+        </configurationGroup>
+        <configurationGroup name="first_training">
+          <configuration name="description" locale="gl">
+            <value>A primeira formación realizada por esta persoa.</value>
+          </configuration>
+          <configuration name="display_name" locale="gl">
+            <value>Primeira formación</value>
+          </configuration>
+          <configurationGroup name="joins">
+            <configurationGroup name="cadre">
+              <configuration name="description" locale="gl">
+                <value>O cadro da primeira formación.</value>
+              </configuration>
+              <configuration name="display_name" locale="gl">
+                <value>Cadro</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="exam">
+              <configuration name="description" locale="gl">
+                <value>Os detalles do exame da primeira formación.</value>
+              </configuration>
+              <configuration name="display_name" locale="gl">
+                <value>Exame</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="registration">
+              <configuration name="description" locale="gl">
+                <value>Os detalles do rexistro da primeira formación.</value>
+              </configuration>
+              <configuration name="display_name" locale="gl">
+                <value>Rexistro</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="training_institution">
+              <configuration name="description" locale="gl">
+                <value>A institución de formación onde se leva a cabo a primeira formación.</value>
+              </configuration>
+              <configuration name="display_name" locale="gl">
+                <value>Institución de formación</value>
+              </configuration>
+              <configurationGroup name="joins">
+                <configurationGroup name="institution_district">
+                  <configuration name="description" locale="gl">
+                    <value>O distrito no que se atopa a institución de formación.</value>
+                  </configuration>
+                  <configuration name="display_name" locale="gl">
+                    <value>Distrito da institución</value>
+                  </configuration>
+                </configurationGroup>
+              </configurationGroup>
+            </configurationGroup>
+            <configurationGroup name="training_disrupt">
+              <configuration name="description" locale="gl">
+                <value>A interrupción da formación actual, se houbese.</value>
+              </configuration>
+              <configuration name="display_name" locale="gl">
+                <value>Interrupción da formación</value>
+              </configuration>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+      </configurationGroup>
+    </configurationGroup>
+    <configurationGroup name="report-person" path="reports/person">
+      <configurationGroup name="meta">
+        <configuration name="display_name" locale="gl">
+          <value>Informe da persoa</value>
+        </configuration>
+        <configuration name="description" locale="gl">
+          <value>Informes relacionados coa xente do sistema coa súa primeira formación.</value>
+        </configuration>
+        <configuration name="category" locale="gl">
+          <value>Informes da persoa</value>
+        </configuration>
+      </configurationGroup>
+      <configurationGroup name="reporting_forms">
+        <configurationGroup name="primary_form">
+          <configurationGroup name="fields">
+            <configurationGroup name="surname">
+              <configuration name="header" locale="gl">
+                <value>Apelidos</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="firstname">
+              <configuration name="header" locale="gl">
+                <value>Nome</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="othername">
+              <configuration name="header" locale="gl">
+                <value>Outros nomes</value>
+              </configuration>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+        <configurationGroup name="first_training">
+          <configurationGroup name="fields">
+            <configurationGroup name="index_num">
+              <configuration name="header" locale="gl">
+                <value>Número de índice</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="cadre">
+              <configurationGroup name="limits">
+                <configurationGroup name="equals">
+                  <configuration name="header" locale="gl">
+                    <value>Cadro</value>
+                  </configuration>
+                </configurationGroup>
+              </configurationGroup>
+              <configuration name="header" locale="gl">
+                <value>ID do cadro de formación</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="intake_date">
+              <configurationGroup name="limits">
+                <configurationGroup name="greaterthan_equals">
+                  <configuration name="header" locale="gl">
+                    <value>Data de admisión despois de</value>
+                  </configuration>
+                </configurationGroup>
+                <configurationGroup name="lessthan_equals">
+                  <configuration name="header" locale="gl">
+                    <value>Data de admisión antes de</value>
+                  </configuration>
+                </configurationGroup>
+              </configurationGroup>
+              <configuration name="header" locale="gl">
+                <value>Data de admisión</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="graduation">
+              <configuration name="header" locale="gl">
+                <value>Data de graduación</value>
+              </configuration>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+        <configurationGroup name="training_disrupt">
+          <configurationGroup name="fields">
+            <configurationGroup name="disruption_date">
+              <configuration name="header" locale="gl">
+                <value>Data da interrupción</value>
+              </configuration>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+        <configurationGroup name="institution_district">
+          <configurationGroup name="fields">
+            <configurationGroup name="name">
+              <configuration name="header" locale="gl">
+                <value>Distrito da institución</value>
+              </configuration>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+        <configurationGroup name="registration">
+          <configurationGroup name="fields">
+            <configurationGroup name="registration_number">
+              <configuration name="header" locale="gl">
+                <value>Número de rexistro</value>
+              </configuration>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+        <configurationGroup name="exam">
+          <configurationGroup name="fields">
+            <configurationGroup name="exam_date">
+              <configuration name="header" locale="gl">
+                <value>Data do exame</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="results">
+              <configuration name="header" locale="gl">
+                <value>Resultados do exame</value>
+              </configuration>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+        <configurationGroup name="cadre">
+          <configurationGroup name="fields">
+            <configurationGroup name="name">
+              <configuration name="header" locale="gl">
+                <value>Cadro</value>
+              </configuration>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+        <configurationGroup name="demographic">
+          <configurationGroup name="fields">
+            <configurationGroup name="gender">
+              <configurationGroup name="limits">
+                <configurationGroup name="equals">
+                  <configuration name="header" locale="gl">
+                    <value>Sexo</value>
+                  </configuration>
+                </configurationGroup>
+              </configurationGroup>
+              <configuration name="header" locale="gl">
+                <value>Sexo</value>
+              </configuration>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+        <configurationGroup name="birth_district">
+          <configurationGroup name="fields">
+            <configurationGroup name="name">
+              <configuration name="header" locale="gl">
+                <value>Distrito de nacemento</value>
+              </configuration>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+      </configurationGroup>
+      <configurationGroup name="reporting_functions">
+        <configurationGroup name="reg_results">
+          <configuration name="header" locale="gl">
+            <value>Resultados do rexistro</value>
+          </configuration>
+        </configurationGroup>
+      </configurationGroup>
+    </configurationGroup>
+    <configurationGroup name="reportViews">
+      <configurationGroup name="top_birth_district">
+        <configuration name="description" locale="gl">
+          <value>Unha gráfica circular do número de persoas que ingresa na formación polo seu distrito de nacemento.</value>
+        </configuration>
+        <configuration name="display_name" locale="gl">
+          <value>Distrito coa maior taxa de nacementos</value>
+        </configuration>
+        <configurationGroup name="display_options">
+          <configurationGroup name="PieChart">
+            <configurationGroup name="styles">
+              <configurationGroup name="Pie">
+                <configuration name="display_name" locale="gl">
+                  <value>Gráfica circular (simple)</value>
+                </configuration>
+              </configurationGroup>
+              <configurationGroup name="Bar">
+                <configuration name="display_name" locale="gl">
+                  <value>Diagrama de barras (simple)</value>
+                </configuration>
+              </configurationGroup>
+              <configurationGroup name="Column">
+                <configuration name="display_name" locale="gl">
+                  <value>Diagrama de columnas (simple)</value>
+                </configuration>
+              </configurationGroup>
+              <configurationGroup name="StackedColumn">
+                <configuration name="display_name" locale="gl">
+                  <value>Gráfica de columnas amoreadas (simple)</value>
+                </configuration>
+              </configurationGroup>
+              <configurationGroup name="Scatter">
+                <configuration name="display_name" locale="gl">
+                  <value>Gráfica de dispersión</value>
+                </configuration>
+              </configurationGroup>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+      </configurationGroup>
+      <configurationGroup name="student_intake_year">
+        <configuration name="description" locale="gl">
+          <value>O número de estudantes que ingresan na formación por ano.</value>
+        </configuration>
+        <configuration name="display_name" locale="gl">
+          <value>Ano de admisión do estudante</value>
+        </configuration>
+        <configurationGroup name="display_options">
+          <configurationGroup name="PieChart">
+            <configurationGroup name="styles">
+              <configurationGroup name="Pie">
+                <configuration name="display_name" locale="gl">
+                  <value>Gráfica circular (simple)</value>
+                </configuration>
+              </configurationGroup>
+              <configurationGroup name="Bar">
+                <configuration name="display_name" locale="gl">
+                  <value>Diagrama de barras (simple)</value>
+                </configuration>
+              </configurationGroup>
+              <configurationGroup name="Column">
+                <configuration name="display_name" locale="gl">
+                  <value>Diagrama de columnas (simple)</value>
+                </configuration>
+              </configurationGroup>
+              <configurationGroup name="StackedColumn">
+                <configuration name="display_name" locale="gl">
+                  <value>Gráfica de columnas amoreadas (simple)</value>
+                </configuration>
+              </configurationGroup>
+              <configurationGroup name="Scatter">
+                <configuration name="display_name" locale="gl">
+                  <value>Gráfica de dispersión</value>
+                </configuration>
+              </configurationGroup>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+      </configurationGroup>
+      <configurationGroup name="pass_fail_person">
+        <configuration name="description" locale="gl">
+          <value>Os resultados de aprobado/suspenso da primeira formación de cada persoa.</value>
+        </configuration>
+        <configuration name="display_name" locale="gl">
+          <value>Aprobado/Suspenso da primeira formación</value>
+        </configuration>
+        <configurationGroup name="display_options">
+          <configurationGroup name="PieChart">
+            <configurationGroup name="styles">
+              <configurationGroup name="Pie">
+                <configuration name="display_name" locale="gl">
+                  <value>Gráfica circular (simple)</value>
+                </configuration>
+              </configurationGroup>
+              <configurationGroup name="Bar">
+                <configuration name="display_name" locale="gl">
+                  <value>Diagrama de barras (simple)</value>
+                </configuration>
+              </configurationGroup>
+              <configurationGroup name="Column">
+                <configuration name="display_name" locale="gl">
+                  <value>Diagrama de columnas (simple)</value>
+                </configuration>
+              </configurationGroup>
+              <configurationGroup name="StackedColumn">
+                <configuration name="display_name" locale="gl">
+                  <value>Gráfica de columnas amoreadas (simple)</value>
+                </configuration>
+              </configurationGroup>
+              <configurationGroup name="Scatter">
+                <configuration name="display_name" locale="gl">
+                  <value>Gráfica de dispersión</value>
+                </configuration>
+              </configurationGroup>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+      </configurationGroup>
+      <configurationGroup name="final_exam_reg">
+        <configuration name="description" locale="gl">
+          <value>Os resultados de rexistro da primeira formación de cada persoa.</value>
+        </configuration>
+        <configuration name="display_name" locale="gl">
+          <value>Resultados de rexistro da primeira formación</value>
+        </configuration>
+        <configurationGroup name="display_options">
+          <configurationGroup name="PieChart">
+            <configurationGroup name="styles">
+              <configurationGroup name="Pie">
+                <configuration name="display_name" locale="gl">
+                  <value>Gráfica circular (simple)</value>
+                </configuration>
+              </configurationGroup>
+              <configurationGroup name="Bar">
+                <configuration name="display_name" locale="gl">
+                  <value>Diagrama de barras (simple)</value>
+                </configuration>
+              </configurationGroup>
+              <configurationGroup name="Column">
+                <configuration name="display_name" locale="gl">
+                  <value>Diagrama de columnas (simple)</value>
+                </configuration>
+              </configurationGroup>
+              <configurationGroup name="StackedColumn">
+                <configuration name="display_name" locale="gl">
+                  <value>Gráfica de columnas amoreadas (simple)</value>
+                </configuration>
+              </configurationGroup>
+              <configurationGroup name="Scatter">
+                <configuration name="display_name" locale="gl">
+                  <value>Gráfica de dispersión</value>
+                </configuration>
+              </configurationGroup>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+      </configurationGroup>
+      <configurationGroup name="student_training_year">
+        <configuration name="description" locale="gl">
+          <value>Estudantes por ano de admisión desglosados segundo se están ou non en formación.</value>
+        </configuration>
+        <configuration name="display_name" locale="gl">
+          <value>Estudantes en formación por ano</value>
+        </configuration>
+        <configurationGroup name="display_options">
+          <configurationGroup name="PieChart">
+            <configurationGroup name="styles">
+              <configurationGroup name="Pie">
+                <configuration name="display_name" locale="gl">
+                  <value>Gráfica circular (simple)</value>
+                </configuration>
+              </configurationGroup>
+              <configurationGroup name="Bar">
+                <configuration name="display_name" locale="gl">
+                  <value>Diagrama de barras (simple)</value>
+                </configuration>
+              </configurationGroup>
+              <configurationGroup name="Column">
+                <configuration name="display_name" locale="gl">
+                  <value>Diagrama de columnas (simple)</value>
+                </configuration>
+              </configurationGroup>
+              <configurationGroup name="StackedColumn">
+                <configuration name="display_name" locale="gl">
+                  <value>Gráfica de columnas amoreadas (simple)</value>
+                </configuration>
+              </configurationGroup>
+              <configurationGroup name="Scatter">
+                <configuration name="display_name" locale="gl">
+                  <value>Gráfica de dispersión</value>
+                </configuration>
+              </configurationGroup>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+      </configurationGroup>
+    </configurationGroup>
+  </configurationGroup>
+</I2CEConfiguration>

@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE I2CEConfiguration SYSTEM "I2CE_Configuration.dtd">
+<I2CEConfiguration name="ihris-qualify-CustomReports-institution" path="/modules/CustomReports">
+  <metadata>
+    <version>4.3.0.1</version>
+  </metadata>
+  <configurationGroup name="ihris-qualify-CustomReports-institution" path="/modules/CustomReports" locale="gl">
+    <version>4.3.0.1</version>
+    <configurationGroup name="relationship-institution" path="relationships/institution">
+      <configuration name="display_name" locale="gl">
+        <value>Institución de formación</value>
+      </configuration>
+      <configuration name="description" locale="gl">
+        <value>Relación para todas as institucións de formación no sistema.</value>
+      </configuration>
+      <configurationGroup name="joins">
+        <configurationGroup name="facility_contact">
+          <configuration name="description" locale="gl">
+            <value>Os detalles de contacto desta institución.</value>
+          </configuration>
+          <configuration name="display_name" locale="gl">
+            <value>Contacto</value>
+          </configuration>
+        </configurationGroup>
+        <configurationGroup name="facility_agent">
+          <configuration name="description" locale="gl">
+            <value>O axente do establecemento desta institución.</value>
+          </configuration>
+          <configuration name="display_name" locale="gl">
+            <value>Axente do establecemento</value>
+          </configuration>
+        </configurationGroup>
+        <configurationGroup name="district">
+          <configuration name="description" locale="gl">
+            <value>O distrito no que se atopa esta institución.</value>
+          </configuration>
+          <configuration name="display_name" locale="gl">
+            <value>Distrito</value>
+          </configuration>
+        </configurationGroup>
+      </configurationGroup>
+    </configurationGroup>
+    <configurationGroup name="report-institution" path="reports/institution">
+      <configurationGroup name="meta">
+        <configuration name="display_name" locale="gl">
+          <value>Informes das institucións de formación</value>
+        </configuration>
+        <configuration name="description" locale="gl">
+          <value>Unha lista de todas as institucións de formación.</value>
+        </configuration>
+        <configuration name="category" locale="gl">
+          <value>Institucións de formación</value>
+        </configuration>
+      </configurationGroup>
+      <configurationGroup name="reporting_forms">
+        <configurationGroup name="primary_form">
+          <configurationGroup name="fields">
+            <configurationGroup name="facility_agent">
+              <configurationGroup name="limits">
+                <configurationGroup name="equals">
+                  <configuration name="header" locale="gl">
+                    <value>Axente do establecemento</value>
+                  </configuration>
+                </configurationGroup>
+              </configurationGroup>
+              <configuration name="header" locale="gl">
+                <value>ID do axente do establecemento da institución de formación</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="name">
+              <configuration name="header" locale="gl">
+                <value>Nome da institución de formación</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="location">
+              <configurationGroup name="limits">
+                <configurationGroup name="equals">
+                  <configuration name="header" locale="gl">
+                    <value>Localización da institución de formación</value>
+                  </configuration>
+                </configurationGroup>
+              </configurationGroup>
+              <configuration name="header" locale="gl">
+                <value>ID da localización da institución de formación</value>
+              </configuration>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+        <configurationGroup name="district">
+          <configurationGroup name="fields">
+            <configurationGroup name="name">
+              <configuration name="header" locale="gl">
+                <value>Distrito</value>
+              </configuration>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+        <configurationGroup name="facility_agent">
+          <configurationGroup name="fields">
+            <configurationGroup name="name">
+              <configuration name="header" locale="gl">
+                <value>Axente do establecemento</value>
+              </configuration>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+        <configurationGroup name="facility_contact">
+          <configurationGroup name="fields">
+            <configurationGroup name="address">
+              <configuration name="header" locale="gl">
+                <value>Enderezo postal</value>
+              </configuration>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+      </configurationGroup>
+    </configurationGroup>
+    <configurationGroup name="reportView-institution" path="reportViews/institution">
+      <configuration name="description" locale="gl">
+        <value>Unha lista de todas as institucións de formación.</value>
+      </configuration>
+      <configuration name="display_name" locale="gl">
+        <value>Institucións de formación</value>
+      </configuration>
+    </configurationGroup>
+  </configurationGroup>
+</I2CEConfiguration>

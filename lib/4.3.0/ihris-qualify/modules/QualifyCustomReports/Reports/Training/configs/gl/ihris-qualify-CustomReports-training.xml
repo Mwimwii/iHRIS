@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE I2CEConfiguration SYSTEM "I2CE_Configuration.dtd">
+<I2CEConfiguration name="ihris-qualify-CustomReports-training" path="/modules/CustomReports">
+  <metadata>
+    <version>4.3.0.1</version>
+  </metadata>
+  <configurationGroup name="ihris-qualify-CustomReports-training" path="/modules/CustomReports" locale="gl">
+    <version>4.3.0.1</version>
+    <configurationGroup name="training-relationship" path="relationships/training">
+      <configuration name="display_name" locale="gl">
+        <value>Formación</value>
+      </configuration>
+      <configuration name="description" locale="gl">
+        <value>Relacións entre formacións para todas as formacións presentes no sistema.</value>
+      </configuration>
+      <configurationGroup name="joins">
+        <configurationGroup name="person">
+          <configuration name="description" locale="gl">
+            <value>A persoa que realizou esta formación.</value>
+          </configuration>
+          <configuration name="display_name" locale="gl">
+            <value>Persoa</value>
+          </configuration>
+          <configurationGroup name="joins">
+            <configurationGroup name="personal_contact">
+              <configuration name="description" locale="gl">
+                <value>A información de contacto persoal da persoa que realiza esta formación.</value>
+              </configuration>
+              <configuration name="display_name" locale="gl">
+                <value>Contacto persoal</value>
+              </configuration>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+        <configurationGroup name="cadre">
+          <configuration name="description" locale="gl">
+            <value>O cadro adestrado por esta formación.</value>
+          </configuration>
+          <configuration name="display_name" locale="gl">
+            <value>Cadro</value>
+          </configuration>
+          <configurationGroup name="joins">
+            <configurationGroup name="qualification">
+              <configuration name="description" locale="gl">
+                <value>A cualificación asociada a este cadro.</value>
+              </configuration>
+              <configuration name="display_name" locale="gl">
+                <value>Cualificación</value>
+              </configuration>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+        <configurationGroup name="registration">
+          <configuration name="description" locale="gl">
+            <value>O rexistro para esta formación.</value>
+          </configuration>
+          <configuration name="display_name" locale="gl">
+            <value>Rexistro</value>
+          </configuration>
+        </configurationGroup>
+        <configurationGroup name="license">
+          <configuration name="description" locale="gl">
+            <value>A licenza actual para esta formación.</value>
+          </configuration>
+          <configuration name="display_name" locale="gl">
+            <value>Licenza</value>
+          </configuration>
+        </configurationGroup>
+        <configurationGroup name="exam">
+          <configuration name="description" locale="gl">
+            <value>Os detalles do exame para esta formación.</value>
+          </configuration>
+          <configuration name="display_name" locale="gl">
+            <value>Exame</value>
+          </configuration>
+        </configurationGroup>
+        <configurationGroup name="training_institution">
+          <configuration name="description" locale="gl">
+            <value>A institución de formación onde se leva a cabo esta formación.</value>
+          </configuration>
+          <configuration name="display_name" locale="gl">
+            <value>Institución de formación</value>
+          </configuration>
+          <configurationGroup name="joins">
+            <configurationGroup name="institution_district">
+              <configuration name="description" locale="gl">
+                <value>O distrito no que se atopa esta institución.</value>
+              </configuration>
+              <configuration name="display_name" locale="gl">
+                <value>Distrito da institución</value>
+              </configuration>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+      </configurationGroup>
+    </configurationGroup>
+    <configurationGroup name="training-report" path="reports/training">
+      <configurationGroup name="meta">
+        <configuration name="display_name" locale="gl">
+          <value>Informe da formación</value>
+        </configuration>
+        <configuration name="description" locale="gl">
+          <value>Informes baseados en formacións individuais no sistema.</value>
+        </configuration>
+        <configuration name="category" locale="gl">
+          <value>Informes de formación</value>
+        </configuration>
+      </configurationGroup>
+      <configurationGroup name="reporting_forms">
+        <configurationGroup name="primary_form">
+          <configurationGroup name="fields">
+            <configurationGroup name="index_num">
+              <configurationGroup name="limits">
+                <configurationGroup name="equals">
+                  <configuration name="header" locale="gl">
+                    <value>Número de índice</value>
+                  </configuration>
+                </configurationGroup>
+              </configurationGroup>
+              <configuration name="header" locale="gl">
+                <value>Número de índice</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="cadre">
+              <configurationGroup name="limits">
+                <configurationGroup name="equals">
+                  <configuration name="header" locale="gl">
+                    <value>Cadro</value>
+                  </configuration>
+                </configurationGroup>
+              </configurationGroup>
+              <configuration name="header" locale="gl">
+                <value>ID do cadro de formación</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="intake_date">
+              <configurationGroup name="limits">
+                <configurationGroup name="greaterthan_equals">
+                  <configuration name="header" locale="gl">
+                    <value>Data de admisión despois de</value>
+                  </configuration>
+                </configurationGroup>
+                <configurationGroup name="lessthan_equals">
+                  <configuration name="header" locale="gl">
+                    <value>Data de admisión antes de</value>
+                  </configuration>
+                </configurationGroup>
+              </configurationGroup>
+              <configuration name="header" locale="gl">
+                <value>Data de admisión</value>
+              </configuration>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+        <configurationGroup name="license">
+          <configurationGroup name="fields">
+            <configurationGroup name="license_number">
+              <configurationGroup name="limits">
+                <configurationGroup name="equals">
+                  <configuration name="header" locale="gl">
+                    <value>Número de licenza</value>
+                  </configuration>
+                </configurationGroup>
+              </configurationGroup>
+              <configuration name="header" locale="gl">
+                <value>Número de licenza</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="end_date">
+              <configuration name="header" locale="gl">
+                <value>Data de fin da licenza</value>
+              </configuration>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+        <configurationGroup name="registration">
+          <configurationGroup name="fields">
+            <configurationGroup name="registration_number">
+              <configurationGroup name="limits">
+                <configurationGroup name="equals">
+                  <configuration name="header" locale="gl">
+                    <value>Número de rexistro</value>
+                  </configuration>
+                </configurationGroup>
+              </configurationGroup>
+              <configuration name="header" locale="gl">
+                <value>Número de rexistro</value>
+              </configuration>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+        <configurationGroup name="cadre">
+          <configurationGroup name="fields">
+            <configurationGroup name="name">
+              <configuration name="header" locale="gl">
+                <value>Cadro</value>
+              </configuration>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+        <configurationGroup name="person">
+          <configurationGroup name="fields">
+            <configurationGroup name="surname">
+              <configuration name="header" locale="gl">
+                <value>Apelidos</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="firstname">
+              <configuration name="header" locale="gl">
+                <value>Nome</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="othername">
+              <configuration name="header" locale="gl">
+                <value>Outros nomes</value>
+              </configuration>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+      </configurationGroup>
+    </configurationGroup>
+  </configurationGroup>
+</I2CEConfiguration>

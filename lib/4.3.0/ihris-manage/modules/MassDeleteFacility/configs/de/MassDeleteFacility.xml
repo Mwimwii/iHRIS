@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE I2CEConfiguration SYSTEM "I2CE_Configuration.dtd">
+<I2CEConfiguration name="ihris-manage-MassDeleteFacility" path="/modules/CustomReports">
+  <metadata>
+    <version>4.3.0.1</version>
+  </metadata>
+  <configurationGroup name="ihris-manage-MassDeleteFacility" path="/modules/CustomReports" locale="de">
+    <version>4.3.0.1</version>
+    <configurationGroup name="page" path="/I2CE/page">
+      <configurationGroup name="delete_by_facility">
+        <configurationGroup name="args">
+          <configuration name="title" values="single" locale="de">
+            <value>Massenlöschen nach Gesundheitseinrichtung</value>
+          </configuration>
+          <configuration name="action_header" values="single" locale="de">
+            <value>Gesundheitseinrichtung zur Löschung markieren</value>
+          </configuration>
+        </configurationGroup>
+      </configurationGroup>
+      <configurationGroup name="delete_by_facility_action">
+        <configurationGroup name="args">
+          <configuration name="title" values="single" locale="de">
+            <value>Massenlöschen nach Gesundheitseinrichtung</value>
+          </configuration>
+        </configurationGroup>
+      </configurationGroup>
+    </configurationGroup>
+    <configurationGroup name="facility_positions" path="//modules/CustomReports/relationships/facility_positions">
+      <configuration name="display_name" locale="de">
+        <value>Stellen in der Gesundheitseinrichtung</value>
+      </configuration>
+      <configuration name="description" locale="de">
+        <value>Liste aller Gesundheitseinrichtungen und gegenwärtiger Stellen.</value>
+      </configuration>
+      <configurationGroup name="reporting_functions">
+        <configurationGroup name="filled_positions">
+          <configuration name="description" locale="de">
+            <value>1 falls die Stelle besetzt ist, 0 falls sie frei ist.</value>
+          </configuration>
+        </configurationGroup>
+      </configurationGroup>
+      <configurationGroup name="joins">
+        <configurationGroup name="position">
+          <configuration name="description" locale="de">
+            <value>Stellen in dieser Gesundheitseinrichtung.</value>
+          </configuration>
+          <configuration name="display_name" locale="de">
+            <value>Stelle</value>
+          </configuration>
+          <configurationGroup name="joins">
+            <configurationGroup name="person_position">
+              <configuration name="description" locale="de"></configuration>
+              <configuration name="display_name" locale="de"></configuration>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+      </configurationGroup>
+    </configurationGroup>
+    <configurationGroup name="facility_positions" path="//modules/CustomReports/reports/facility_positions">
+      <configurationGroup name="meta">
+        <configuration name="display_name" locale="de">
+          <value>Stellen in der Gesundheitseinrichtung</value>
+        </configuration>
+        <configuration name="description" locale="de"></configuration>
+      </configurationGroup>
+      <configurationGroup name="reporting_forms">
+        <configurationGroup name="primary_form">
+          <configurationGroup name="fields">
+            <configurationGroup name="location">
+              <configurationGroup name="limits">
+                <configurationGroup name="equals">
+                  <configuration name="header" locale="de">
+                    <value>Ort des/der Büro/Gesundheitseinrichtung</value>
+                  </configuration>
+                </configurationGroup>
+              </configurationGroup>
+              <configuration name="header" locale="de">
+                <value>Ort des/der Büro/Gesundheitseinrichtung</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="name">
+              <configuration name="header" locale="de">
+                <value>Büro/Gesundheitseinrichtung</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="facility_type">
+              <configurationGroup name="limits">
+                <configurationGroup name="equals">
+                  <configuration name="header" locale="de">
+                    <value>Art der Einrichtung</value>
+                  </configuration>
+                </configurationGroup>
+              </configurationGroup>
+              <configuration name="header" locale="de">
+                <value>Art der Einrichtung</value>
+              </configuration>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+        <configurationGroup name="position">
+          <configurationGroup name="fields">
+            <configurationGroup name="id">
+              <configuration name="header" locale="de">
+                <value>Gesamtzahl der Stellen</value>
+              </configuration>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+      </configurationGroup>
+    </configurationGroup>
+    <configurationGroup name="facility_positions" path="//modules/CustomReports/reportViews/facility_positions">
+      <configuration name="description" locale="de">
+        <value>Liste aller Einrichtungen mit Stellenanzahl.</value>
+      </configuration>
+      <configuration name="display_name" locale="de">
+        <value>Stellen in der Gesundheitseinrichtung</value>
+      </configuration>
+    </configurationGroup>
+  </configurationGroup>
+</I2CEConfiguration>

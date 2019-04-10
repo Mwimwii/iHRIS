@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE I2CEConfiguration SYSTEM "I2CE_Configuration.dtd">
+<I2CEConfiguration name="FeeType" path="/I2CE">
+  <metadata>
+    <version>4.3.0.1</version>
+  </metadata>
+  <configurationGroup name="FeeType" path="/I2CE" locale="es">
+    <version>4.3.0.1</version>
+    <configurationGroup name="tasks" path="/I2CE/tasks/task_description" locale="es">
+      <configuration name="can_edit_database_list_fee_type" locale="es">
+        <value>Editar la lista de tipo de cuota</value>
+      </configuration>
+      <configuration name="can_view_database_list_fee_type" locale="es">
+        <value>Ver la lista de tipo de cuota</value>
+      </configuration>
+    </configurationGroup>
+    <configurationGroup name="formsData" path="formsData/forms">
+      <configurationGroup name="unit">
+        <configurationGroup name="total">
+          <configuration name="fields" value="many" type="delimited" locale="es"></configuration>
+        </configurationGroup>
+        <configurationGroup name="per_day">
+          <configuration name="fields" value="many" type="delimited" locale="es">
+            <value>name:Por día</value>
+          </configuration>
+        </configurationGroup>
+        <configurationGroup name="student_per_day">
+          <configuration name="fields" value="many" type="delimited" locale="es">
+            <value>name:Por día de estudiante</value>
+          </configuration>
+        </configurationGroup>
+        <configurationGroup name="facilitator_per_day">
+          <configuration name="fields" value="many" type="delimited" locale="es">
+            <value>name:Por día por facilitador</value>
+          </configuration>
+        </configurationGroup>
+        <configurationGroup name="student">
+          <configuration name="fields" value="many" type="delimited" locale="es">
+            <value>name:Por estudiante</value>
+          </configuration>
+        </configurationGroup>
+        <configurationGroup name="facilitator">
+          <configuration name="fields" value="many" type="delimited" locale="es">
+            <value>name:Por facilitador</value>
+          </configuration>
+        </configurationGroup>
+      </configurationGroup>
+    </configurationGroup>
+    <configurationGroup name="forms" path="/modules/forms">
+      <configurationGroup name="forms">
+        <configurationGroup name="fee_type">
+          <configuration name="display" values="single" locale="es">
+            <value>Información de cuotas</value>
+          </configuration>
+        </configurationGroup>
+        <configurationGroup name="unit">
+          <configuration name="display" values="single" locale="es">
+            <value>Unidad</value>
+          </configuration>
+        </configurationGroup>
+      </configurationGroup>
+      <configurationGroup name="formClasses">
+        <configurationGroup name="iHRIS_FeeType">
+          <configurationGroup name="fields">
+            <configurationGroup name="name">
+              <configuration name="headers" type="delimited" locale="es">
+                <value>default:Nombre</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="unit">
+              <configuration name="headers" type="delimited" locale="es">
+                <value>default:Unidad</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="training_length_type">
+              <configuration name="headers" type="delimited" locale="es">
+                <value>default:Tipo de duración de capacitación</value>
+              </configuration>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+      </configurationGroup>
+    </configurationGroup>
+  </configurationGroup>
+</I2CEConfiguration>

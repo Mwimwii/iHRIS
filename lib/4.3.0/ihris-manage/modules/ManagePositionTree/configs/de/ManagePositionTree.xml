@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE I2CEConfiguration SYSTEM "I2CE_Configuration.dtd">
+<I2CEConfiguration name="ihris-manage-PositionTree" path="/modules/CustomReports">
+  <metadata>
+    <version>4.3.0.1</version>
+  </metadata>
+  <configurationGroup name="ihris-manage-PositionTree" path="/modules/CustomReports" locale="de">
+    <version>4.3.0.1</version>
+    <configurationGroup name="position_tree" path="//modules/CustomReports/relationships/position_tree">
+      <configuration name="display_name" locale="de">
+        <value>Baumansicht der Stellen</value>
+      </configuration>
+      <configuration name="description" locale="de"></configuration>
+      <configurationGroup name="joins">
+        <configurationGroup name="facility">
+          <configuration name="description" locale="de"></configuration>
+          <configuration name="display_name" locale="de">
+            <value>Einrichtung</value>
+          </configuration>
+          <configurationGroup name="joins">
+            <configurationGroup name="county">
+              <configuration name="description" locale="de">
+                <value>Der Kreis, in dem sich diese Einrichtung befindet.</value>
+              </configuration>
+              <configuration name="display_name" locale="de">
+                <value>Kreis</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="district">
+              <configuration name="description" locale="de">
+                <value>Der Bezirk, in dem sich diese Gesundheitseinrichtung befindet.</value>
+              </configuration>
+              <configuration name="display_name" locale="de">
+                <value>Bezirk</value>
+              </configuration>
+              <configurationGroup name="joins">
+                <configurationGroup name="region">
+                  <configuration name="description" locale="de">
+                    <value>Die Region, in der sich diese Gesundheitseinrichtung befindet.</value>
+                  </configuration>
+                  <configuration name="display_name" locale="de"></configuration>
+                  <configurationGroup name="joins">
+                    <configurationGroup name="country">
+                      <configuration name="description" locale="de">
+                        <value>Der Staat, in dem sich diese Einrichtung befindet.</value>
+                      </configuration>
+                      <configuration name="display_name" locale="de">
+                        <value>Staat</value>
+                      </configuration>
+                    </configurationGroup>
+                  </configurationGroup>
+                </configurationGroup>
+              </configurationGroup>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+      </configurationGroup>
+    </configurationGroup>
+    <configurationGroup name="position_tree" path="//modules/CustomReports/reports/position_tree">
+      <configurationGroup name="meta">
+        <configuration name="display_name" locale="de">
+          <value>Baumansicht der Stellen</value>
+        </configuration>
+        <configuration name="description" locale="de"></configuration>
+      </configurationGroup>
+      <configurationGroup name="reporting_forms">
+        <configurationGroup name="primary_form">
+          <configurationGroup name="fields">
+            <configurationGroup name="i2ce_hidden">
+              <configuration name="header" locale="de">
+                <value>Stelle verbergen</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="code">
+              <configuration name="header" locale="de"></configuration>
+            </configurationGroup>
+            <configurationGroup name="facility">
+              <configuration name="header" locale="de">
+                <value>Einrichtung zu der Stelle</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="status">
+              <configuration name="header" locale="de">
+                <value>Status der Stelle</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="title">
+              <configuration name="header" locale="de"></configuration>
+            </configurationGroup>
+            <configurationGroup name="id">
+              <configuration name="header" locale="de">
+                <value>Stellenkennung</value>
+              </configuration>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+        <configurationGroup name="facility">
+          <configurationGroup name="fields">
+            <configurationGroup name="i2ce_hidden">
+              <configuration name="header" locale="de">
+                <value>Büro/Einrichtung verbergen</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="location">
+              <configuration name="header" locale="de">
+                <value>Ort des/der Büro/Gesundheitseinrichtung</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="name">
+              <configuration name="header" locale="de">
+                <value>Büro-/Einrichtungsname</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="id">
+              <configuration name="header" locale="de">
+                <value>Büro-/Einrichtungs-Kennung</value>
+              </configuration>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+        <configurationGroup name="county">
+          <configurationGroup name="fields">
+            <configurationGroup name="i2ce_hidden">
+              <configuration name="header" locale="de">
+                <value>Kreis verbergen</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="district">
+              <configuration name="header" locale="de"></configuration>
+            </configurationGroup>
+            <configurationGroup name="name">
+              <configuration name="header" locale="de">
+                <value>Name des Kreises</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="id">
+              <configuration name="header" locale="de">
+                <value>Kreiskennung</value>
+              </configuration>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+        <configurationGroup name="district">
+          <configurationGroup name="fields">
+            <configurationGroup name="i2ce_hidden">
+              <configuration name="header" locale="de">
+                <value>Bezirk verbergen</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="name">
+              <configuration name="header" locale="de">
+                <value>Bezirksname</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="region">
+              <configuration name="header" locale="de"></configuration>
+            </configurationGroup>
+            <configurationGroup name="id">
+              <configuration name="header" locale="de">
+                <value>Bezirkskennung</value>
+              </configuration>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+        <configurationGroup name="region">
+          <configurationGroup name="fields">
+            <configurationGroup name="i2ce_hidden">
+              <configuration name="header" locale="de">
+                <value>Region verbergen</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="country">
+              <configuration name="header" locale="de"></configuration>
+            </configurationGroup>
+            <configurationGroup name="name">
+              <configuration name="header" locale="de">
+                <value>Regionsname</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="id">
+              <configuration name="header" locale="de">
+                <value>Regionskennung</value>
+              </configuration>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+        <configurationGroup name="country">
+          <configurationGroup name="fields">
+            <configurationGroup name="i2ce_hidden">
+              <configuration name="header" locale="de">
+                <value>Staat verbergen</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="name">
+              <configuration name="header" locale="de">
+                <value>Name des Staates</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="primary">
+              <configuration name="header" locale="de"></configuration>
+            </configurationGroup>
+            <configurationGroup name="id">
+              <configuration name="header" locale="de">
+                <value>Staatskennung</value>
+              </configuration>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+      </configurationGroup>
+    </configurationGroup>
+  </configurationGroup>
+</I2CEConfiguration>

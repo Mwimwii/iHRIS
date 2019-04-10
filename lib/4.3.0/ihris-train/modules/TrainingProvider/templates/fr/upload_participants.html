@@ -1,0 +1,26 @@
+<div id="siteContent">
+  <h1>Cours de formation planifiés: 
+    <span type="form" name="provider_instance:id" href="viewprovider?id="><span type="form" name="provider_instance:providertraining"></span></span></h1>
+    <div id="error"></div>
+    <form method="POST" enctype="multipart/form-data">
+      <span type="form" name="provider_instance:id"></span>
+      <table class="multiFormTable" border="0" cellpadding="0" cellspacing="0"><tr><th>Télécharger la liste des participants</th></tr><tr><td>
+            <p>
+              <span class="field_head required_field">
+                <label for="providers">Sélectionner le fichier CSV à importer</label>
+                <span class="required_field_notice">*</span>
+              </span>
+              <br><span class="form_field">
+                <input type="file" id="providers" name="providers"><br></span>
+            </p>
+            <p><span class="field_head">A-t-il des entêtes ?</span>
+            <br><span class="form_field">
+              <input type="checkbox" id="has_header:providers" name="has_header:providers" value="1" checked><label for="has_header:providers">Le fichier a des entêtes.</label>
+            </span>
+            </p>
+          </td>
+        </tr><tr class="submitCell"><td colspan="2">
+            <div id="button"></div>
+          </td>
+        </tr></table></form>
+</div>

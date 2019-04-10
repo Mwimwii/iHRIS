@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE I2CEConfiguration SYSTEM "I2CE_Configuration.dtd">
+<I2CEConfiguration name="ihris-train-CustomReports-training-participant" path="/modules/CustomReports">
+  <metadata>
+    <version>4.3.0.1</version>
+  </metadata>
+  <configurationGroup name="ihris-train-CustomReports-training-participant" path="/modules/CustomReports" locale="es">
+    <version>4.3.0.1</version>
+    <configurationGroup name="training_participant" path="//modules/CustomReports/relationships/training_participant">
+      <configuration name="description" locale="es">
+        <value>Relación para los participantes de todas las capacitaciones.</value>
+      </configuration>
+      <configuration name="display_name" locale="es">
+        <value>Participantes de capacitación</value>
+      </configuration>
+      <configurationGroup name="joins">
+        <configurationGroup name="funder">
+          <configuration name="description" locale="es">
+            <value>El financiador de esta capacitación.</value>
+          </configuration>
+          <configuration name="display_name" locale="es">
+            <value>Financiador</value>
+          </configuration>
+        </configurationGroup>
+        <configurationGroup name="person_instance">
+          <configuration name="description" locale="es">
+            <value>El enlace de la capacitación para el participante.</value>
+          </configuration>
+          <configuration name="display_name" locale="es">
+            <value>Instancia de persona</value>
+          </configuration>
+          <configurationGroup name="joins">
+            <configurationGroup name="person">
+              <configuration name="description" locale="es">
+                <value>Los detalles de la persona del participante.</value>
+              </configuration>
+              <configuration name="display_name" locale="es">
+                <value>Persona</value>
+              </configuration>
+              <configurationGroup name="joins">
+                <configurationGroup name="position">
+                  <configuration name="description" locale="es">
+                    <value>La posición actual de esta persona.</value>
+                  </configuration>
+                  <configuration name="display_name" locale="es">
+                    <value>Posición</value>
+                  </configuration>
+                  <configurationGroup name="joins">
+                    <configurationGroup name="health_facility">
+                      <configuration name="description" locale="es">
+                        <value>El centro de salud donde trabaja esta persona.</value>
+                      </configuration>
+                      <configuration name="display_name" locale="es">
+                        <value>Centro de salud</value>
+                      </configuration>
+                      <configurationGroup name="joins">
+                        <configurationGroup name="district">
+                          <configuration name="description" locale="es">
+                            <value>El distrito donde se encuentra el centro de salud.</value>
+                          </configuration>
+                          <configuration name="display_name" locale="es">
+                            <value>Distrito</value>
+                          </configuration>
+                        </configurationGroup>
+                      </configurationGroup>
+                    </configurationGroup>
+                  </configurationGroup>
+                </configurationGroup>
+              </configurationGroup>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+        <configurationGroup name="providertraining">
+          <configuration name="description" locale="es">
+            <value>El enlace del proveedor a los detalles de la capacitación.</value>
+          </configuration>
+          <configuration name="display_name" locale="es">
+            <value>Enlace de capacitación del proveedor</value>
+          </configuration>
+          <configurationGroup name="joins">
+            <configurationGroup name="training">
+              <configuration name="description" locale="es">
+                <value>Los detalles de la capacitación.</value>
+              </configuration>
+              <configuration name="display_name" locale="es">
+                <value>Capacitación</value>
+              </configuration>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+        <configurationGroup name="trainingprovider">
+          <configuration name="description" locale="es">
+            <value>El proveedor de capacitación para esta capacitación.</value>
+          </configuration>
+          <configuration name="display_name" locale="es">
+            <value>Proveedor de capacitación</value>
+          </configuration>
+        </configurationGroup>
+      </configurationGroup>
+      <configurationGroup name="reporting_functions">
+        <configurationGroup name="completed">
+          <configuration name="description" locale="es">
+            <value>Establece a sí si esta capacitación se ha completado por fecha.</value>
+          </configuration>
+        </configurationGroup>
+        <configurationGroup name="participant">
+          <configuration name="description" locale="es">
+            <value>Establecer a 1 si hay un participante asignado a esta capacitación.</value>
+          </configuration>
+        </configurationGroup>
+      </configurationGroup>
+    </configurationGroup>
+    <configurationGroup name="training_participant" path="//modules/CustomReports/reports/training_participant">
+      <configurationGroup name="meta">
+        <configuration name="description" locale="es">
+          <value>Una lista de todos los participantes en las capacitaciones.</value>
+        </configuration>
+        <configuration name="display_name" locale="es">
+          <value>Participantes de capacitación</value>
+        </configuration>
+      </configurationGroup>
+      <configurationGroup name="reporting_forms">
+        <configurationGroup name="district">
+          <configurationGroup name="fields">
+            <configurationGroup name="name">
+              <configuration name="header" locale="es">
+                <value>Distrito</value>
+              </configuration>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+        <configurationGroup name="funder">
+          <configurationGroup name="fields">
+            <configurationGroup name="name">
+              <configuration name="header" locale="es">
+                <value>Financiador</value>
+              </configuration>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+        <configurationGroup name="health_facility">
+          <configurationGroup name="fields">
+            <configurationGroup name="location">
+              <configuration name="header" locale="es">
+                <value>Ubicación del centro de salud</value>
+              </configuration>
+              <configurationGroup name="limits">
+                <configurationGroup name="equals">
+                  <configuration name="header" locale="es">
+                    <value>Ubicación del centro de salud</value>
+                  </configuration>
+                </configurationGroup>
+              </configurationGroup>
+            </configurationGroup>
+            <configurationGroup name="name">
+              <configuration name="header" locale="es">
+                <value>Centro de salud</value>
+              </configuration>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+        <configurationGroup name="person">
+          <configurationGroup name="fields">
+            <configurationGroup name="firstname">
+              <configuration name="header" locale="es">
+                <value>Nombre(s)</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="surname">
+              <configuration name="header" locale="es">
+                <value>Apellido</value>
+              </configuration>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+        <configurationGroup name="position">
+          <configurationGroup name="fields">
+            <configurationGroup name="health_facility">
+              <configuration name="header" locale="es">
+                <value>Id. del centro de salud</value>
+              </configuration>
+              <configurationGroup name="limits">
+                <configurationGroup name="in">
+                  <configuration name="header" locale="es">
+                    <value>Centro de salud</value>
+                  </configuration>
+                </configurationGroup>
+              </configurationGroup>
+            </configurationGroup>
+            <configurationGroup name="job">
+              <configuration name="header" locale="es">
+                <value>Título de Trabajo/Puesto</value>
+              </configuration>
+              <configurationGroup name="limits">
+                <configurationGroup name="in">
+                  <configuration name="header" locale="es">
+                    <value>Título de Trabajo/Puesto</value>
+                  </configuration>
+                </configurationGroup>
+              </configurationGroup>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+        <configurationGroup name="primary_form">
+          <configurationGroup name="fields">
+            <configurationGroup name="end_date">
+              <configuration name="header" locale="es">
+                <value>Fecha de finalización</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="funder">
+              <configuration name="header" locale="es">
+                <value>Id. de financiador</value>
+              </configuration>
+              <configurationGroup name="limits">
+                <configurationGroup name="equals">
+                  <configuration name="header" locale="es">
+                    <value>Financiador</value>
+                  </configuration>
+                </configurationGroup>
+              </configurationGroup>
+            </configurationGroup>
+            <configurationGroup name="start_date">
+              <configuration name="header" locale="es">
+                <value>Fecha de inicio</value>
+              </configuration>
+              <configurationGroup name="limits">
+                <configurationGroup name="greaterthan_equals">
+                  <configuration name="header" locale="es">
+                    <value>Fecha de inicio después</value>
+                  </configuration>
+                </configurationGroup>
+                <configurationGroup name="lessthan_equals">
+                  <configuration name="header" locale="es">
+                    <value>Fecha de inicio antes</value>
+                  </configuration>
+                </configurationGroup>
+              </configurationGroup>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+        <configurationGroup name="providertraining">
+          <configurationGroup name="fields">
+            <configurationGroup name="training">
+              <configuration name="header" locale="es">
+                <value>Id. de capacitación</value>
+              </configuration>
+              <configurationGroup name="limits">
+                <configurationGroup name="in">
+                  <configuration name="header" locale="es">
+                    <value>Capacitación</value>
+                  </configuration>
+                </configurationGroup>
+              </configurationGroup>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+        <configurationGroup name="training">
+          <configurationGroup name="fields">
+            <configurationGroup name="name">
+              <configuration name="header" locale="es">
+                <value>Capacitación</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="training_classification">
+              <configuration name="header" locale="es">
+                <value>Clasificación de capacitación</value>
+              </configuration>
+              <configurationGroup name="limits">
+                <configurationGroup name="equals">
+                  <configuration name="header" locale="es">
+                    <value>Clasificación de capacitación</value>
+                  </configuration>
+                </configurationGroup>
+              </configurationGroup>
+            </configurationGroup>
+            <configurationGroup name="training_length">
+              <configuration name="header" locale="es">
+                <value>Duración de la capacitación</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="training_length_type">
+              <configuration name="header" locale="es">
+                <value>Unidad de duración</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="training_type">
+              <configuration name="header" locale="es">
+                <value>Tipo de capacitación</value>
+              </configuration>
+              <configurationGroup name="limits">
+                <configurationGroup name="equals">
+                  <configuration name="header" locale="es">
+                    <value>Tipo de capacitación</value>
+                  </configuration>
+                </configurationGroup>
+              </configurationGroup>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+        <configurationGroup name="trainingprovider">
+          <configurationGroup name="fields">
+            <configurationGroup name="name">
+              <configuration name="header" locale="es">
+                <value>Proveedor de capacitación</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="trainingprovider_type">
+              <configuration name="header" locale="es">
+                <value>Tipo de proveedor de capacitación</value>
+              </configuration>
+              <configurationGroup name="limits">
+                <configurationGroup name="equals">
+                  <configuration name="header" locale="es">
+                    <value>Tipo de proveedor de capacitación</value>
+                  </configuration>
+                </configurationGroup>
+              </configurationGroup>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+      </configurationGroup>
+      <configurationGroup name="reporting_functions">
+        <configurationGroup name="completed">
+          <configuration name="header" locale="es">
+            <value>¿Completado?</value>
+          </configuration>
+          <configurationGroup name="limits">
+            <configurationGroup name="yesno">
+              <configuration name="header" locale="es">
+                <value>¿Completado?</value>
+              </configuration>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+      </configurationGroup>
+    </configurationGroup>
+    <configurationGroup name="training_participant" path="//modules/CustomReports/reportViews/training_participant">
+      <configuration name="description" locale="es">
+        <value>Una lista de todos los participantes en las capacitaciones.</value>
+      </configuration>
+      <configuration name="display_name" locale="es">
+        <value>Participantes</value>
+      </configuration>
+    </configurationGroup>
+    <configurationGroup name="participant_count" path="//modules/CustomReports/reportViews/participant_count">
+      <configuration name="description" locale="es">
+        <value>Una lista de todas las capacitaciones con el número de participantes.</value>
+      </configuration>
+      <configuration name="display_name" locale="es">
+        <value>Número de participantes</value>
+      </configuration>
+    </configurationGroup>
+  </configurationGroup>
+</I2CEConfiguration>

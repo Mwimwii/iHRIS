@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE I2CEConfiguration SYSTEM "I2CE_Configuration.dtd">
+<I2CEConfiguration name="TrainPosition" path="/I2CE">
+  <metadata>
+    <version>4.3.0.1</version>
+  </metadata>
+  <configurationGroup name="TrainPosition" path="/I2CE" locale="es">
+    <version>4.3.0.1</version>
+    <configurationGroup name="tasks" path="/I2CE/tasks/task_description" locale="es">
+      <configuration name="person_can_view_child_form_position" locale="es">
+        <value>Puede ver el formulario secundario de posición de una persona</value>
+      </configuration>
+      <configuration name="person_can_edit_child_form_position" locale="es">
+        <value>Puede editar el formulario secundario de posición de una persona</value>
+      </configuration>
+    </configurationGroup>
+    <configurationGroup name="page">
+      <configurationGroup name="position">
+        <configurationGroup name="args">
+          <configuration name="title" values="single" locale="es">
+            <value>Añadir/actualizar información de posición</value>
+          </configuration>
+        </configurationGroup>
+      </configurationGroup>
+    </configurationGroup>
+    <configurationGroup name="forms" path="/modules/forms">
+      <configurationGroup name="forms">
+        <configurationGroup name="position">
+          <configuration name="display" values="single" locale="es">
+            <value>Información de posición</value>
+          </configuration>
+        </configurationGroup>
+      </configurationGroup>
+      <configurationGroup name="formClasses">
+        <configurationGroup name="iHRIS_Position">
+          <configurationGroup name="fields">
+            <configurationGroup name="health_facility">
+              <configuration name="headers" type="delimited" locale="es">
+                <value>default:Centro de salud</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="job">
+              <configuration name="headers" type="delimited" locale="es">
+                <value>default:Título de Trabajo/Puesto</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="job_code">
+              <configuration name="headers" type="delimited" locale="es">
+                <value>default:Código de Trabajo/Puesto</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="start_date">
+              <configuration name="headers" type="delimited" locale="es">
+                <value>default:Fecha de cita actual</value>
+              </configuration>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+      </configurationGroup>
+    </configurationGroup>
+  </configurationGroup>
+</I2CEConfiguration>

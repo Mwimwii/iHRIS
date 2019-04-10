@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE I2CEConfiguration SYSTEM "I2CE_Configuration.dtd">
+<I2CEConfiguration name="PersonExam" path="/I2CE">
+  <metadata>
+    <version>4.3.0.1</version>
+  </metadata>
+  <configurationGroup name="PersonExam" path="/I2CE" locale="de">
+    <version>4.3.0.1</version>
+    <configurationGroup name="tasks" path="/I2CE/tasks/task_description" locale="de">
+      <configuration name="person_can_view_child_form_person_exam"></configuration>
+      <configuration name="person_can_edit_child_form_person_exam"></configuration>
+    </configurationGroup>
+    <configurationGroup name="formsData" path="formsData/forms">
+      <configurationGroup name="exam_try">
+        <configurationGroup name="first">
+          <configuration name="fields" values="many" type="delimited" locale="de">
+            <value>name:1. Versuch</value>
+          </configuration>
+        </configurationGroup>
+        <configurationGroup name="retry">
+          <configuration name="fields" values="many" type="delimited" locale="de">
+            <value>name:2. Versuch</value>
+          </configuration>
+        </configurationGroup>
+        <configurationGroup name="final">
+          <configuration name="fields" values="many" type="delimited" locale="de">
+            <value>name:Letzter Versuch</value>
+          </configuration>
+        </configurationGroup>
+      </configurationGroup>
+      <configurationGroup name="paper">
+        <configurationGroup name="paper_i">
+          <configuration name="fields" values="many" type="delimited" locale="de">
+            <value>name:Abhandlung I</value>
+          </configuration>
+        </configurationGroup>
+        <configurationGroup name="paper_ii">
+          <configuration name="fields" values="many" type="delimited" locale="de">
+            <value>name:Abhandlung II</value>
+          </configuration>
+        </configurationGroup>
+        <configurationGroup name="paper_iii">
+          <configuration name="fields" values="many" type="delimited" locale="de">
+            <value>name:Abhandlung III</value>
+          </configuration>
+        </configurationGroup>
+        <configurationGroup name="paper_iv">
+          <configuration name="fields" values="many" type="delimited" locale="de">
+            <value>name:Abhandlung IV</value>
+          </configuration>
+        </configurationGroup>
+      </configurationGroup>
+      <configurationGroup name="exam_grade">
+        <configurationGroup name="grade_1">
+          <configuration name="fields" values="many" type="delimited" locale="de"></configuration>
+        </configurationGroup>
+        <configurationGroup name="grade_2">
+          <configuration name="fields" values="many" type="delimited" locale="de"></configuration>
+        </configurationGroup>
+        <configurationGroup name="grade_3">
+          <configuration name="fields" values="many" type="delimited" locale="de"></configuration>
+        </configurationGroup>
+        <configurationGroup name="grade_4">
+          <configuration name="fields" values="many" type="delimited" locale="de"></configuration>
+        </configurationGroup>
+        <configurationGroup name="grade_5">
+          <configuration name="fields" values="many" type="delimited" locale="de"></configuration>
+        </configurationGroup>
+        <configurationGroup name="grade_6">
+          <configuration name="fields" values="many" type="delimited" locale="de"></configuration>
+        </configurationGroup>
+        <configurationGroup name="grade_7">
+          <configuration name="fields" values="many" type="delimited" locale="de"></configuration>
+        </configurationGroup>
+        <configurationGroup name="grade_8">
+          <configuration name="fields" values="many" type="delimited" locale="de"></configuration>
+        </configurationGroup>
+      </configurationGroup>
+    </configurationGroup>
+    <configurationGroup name="forms" path="/modules/forms">
+      <configurationGroup name="forms">
+        <configurationGroup name="exam_try">
+          <configuration name="display" values="single" locale="de">
+            <value>Prüfungsversuch</value>
+          </configuration>
+        </configurationGroup>
+        <configurationGroup name="exam_grade">
+          <configuration name="display" values="single" locale="de">
+            <value>Prüfungsnote</value>
+          </configuration>
+        </configurationGroup>
+        <configurationGroup name="paper">
+          <configuration name="display" values="single" locale="de">
+            <value>Abhandlung</value>
+          </configuration>
+        </configurationGroup>
+        <configurationGroup name="person_exam">
+          <configuration name="display" values="single" locale="de">
+            <value>Prüfung</value>
+          </configuration>
+        </configurationGroup>
+      </configurationGroup>
+      <configurationGroup name="formClasses">
+        <configurationGroup name="iHRIS_PersonExam">
+          <configurationGroup name="fields">
+            <configurationGroup name="exam_date">
+              <configuration name="headers" type="delimited" locale="de">
+                <value>default:Prüfungsdatum</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="try">
+              <configuration name="headers" type="delimited" locale="de">
+                <value>default:Prüfungsversuch</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="results">
+              <configuration name="headers" type="delimited" locale="de">
+                <value>default:Prüfungsergebnisse</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="paper">
+              <configuration name="headers" type="delimited" locale="de">
+                <value>default:Abhandlung</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="exam_grade">
+              <configuration name="headers" type="delimited" locale="de">
+                <value>default:Prüfungsnote</value>
+              </configuration>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+      </configurationGroup>
+    </configurationGroup>
+  </configurationGroup>
+</I2CEConfiguration>

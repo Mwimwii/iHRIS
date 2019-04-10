@@ -1,0 +1,484 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE I2CEConfiguration SYSTEM "I2CE_Configuration.dtd">
+<I2CEConfiguration name="ihris-qualify-CustomReports-person" path="//modules/CustomReports">
+  <metadata>
+    <version>4.3.0.1</version>
+  </metadata>
+  <configurationGroup name="ihris-qualify-CustomReports-person" path="//modules/CustomReports" locale="uk">
+    <version>4.3.0.1</version>
+    <configurationGroup name="relationship-person" path="relationships/person">
+      <configuration name="display_name" locale="uk">
+        <value>Особа</value>
+      </configuration>
+      <configuration name="description" locale="uk">
+        <value>Зв'язок особи з подробицями першого навчання.</value>
+      </configuration>
+      <configurationGroup name="reporting_functions">
+        <configurationGroup name="reg_results">
+          <configuration name="description" locale="uk">
+            <value>Результати іспиту і реєстрація для першого навчання.</value>
+          </configuration>
+        </configurationGroup>
+        <configurationGroup name="intake_year">
+          <configuration name="description" locale="uk">
+            <value>Рік, коли відбулася перша підготовка.</value>
+          </configuration>
+        </configurationGroup>
+        <configurationGroup name="exam_year">
+          <configuration name="description" locale="uk">
+            <value>Рік складання екзамену.</value>
+          </configuration>
+        </configurationGroup>
+        <configurationGroup name="in_training">
+          <configuration name="description" locale="uk">
+            <value>Так/ні для визначення, чи особа ще навчається, чи ні.</value>
+          </configuration>
+        </configurationGroup>
+      </configurationGroup>
+      <configurationGroup name="joins">
+        <configurationGroup name="demographic">
+          <configuration name="description" locale="uk">
+            <value>Демографічна інформація для цієї особи.</value>
+          </configuration>
+          <configuration name="display_name" locale="uk">
+            <value>Демографія</value>
+          </configuration>
+          <configurationGroup name="joins">
+            <configurationGroup name="birth_district">
+              <configuration name="description" locale="uk">
+                <value>Район, де ця особа народилася.</value>
+              </configuration>
+              <configuration name="display_name" locale="uk">
+                <value>Район народження</value>
+              </configuration>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+        <configurationGroup name="deployment">
+          <configuration name="description" locale="uk">
+            <value>Останнє розгортання для цієї людини.</value>
+          </configuration>
+          <configuration name="display_name" locale="uk">
+            <value>Розгортання</value>
+          </configuration>
+        </configurationGroup>
+        <configurationGroup name="first_training">
+          <configuration name="description" locale="uk">
+            <value>Перше навчання, на якому ця особа була.</value>
+          </configuration>
+          <configuration name="display_name" locale="uk">
+            <value>Перше навчання</value>
+          </configuration>
+          <configurationGroup name="joins">
+            <configurationGroup name="cadre">
+              <configuration name="description" locale="uk">
+                <value>Кадровий склад першого навчання.</value>
+              </configuration>
+              <configuration name="display_name" locale="uk">
+                <value>Кадровий склад</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="exam">
+              <configuration name="description" locale="uk">
+                <value>Деталі іспиту першого навчання.</value>
+              </configuration>
+              <configuration name="display_name" locale="uk">
+                <value>Іспит</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="registration">
+              <configuration name="description" locale="uk">
+                <value>Реєстраційні дані першого навчання.</value>
+              </configuration>
+              <configuration name="display_name" locale="uk">
+                <value>Реєстрація</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="training_institution">
+              <configuration name="description" locale="uk">
+                <value>Навчальний заклад, де проходили перші курси.</value>
+              </configuration>
+              <configuration name="display_name" locale="uk">
+                <value>Навчальний заклад</value>
+              </configuration>
+              <configurationGroup name="joins">
+                <configurationGroup name="institution_district">
+                  <configuration name="description" locale="uk">
+                    <value>Район, де знаходиться навчальний заклад.</value>
+                  </configuration>
+                  <configuration name="display_name" locale="uk">
+                    <value>Район закладу</value>
+                  </configuration>
+                </configurationGroup>
+              </configurationGroup>
+            </configurationGroup>
+            <configurationGroup name="training_disrupt">
+              <configuration name="description" locale="uk">
+                <value>Нинішній зрив підготовки для цього курсу, якщо він існує.</value>
+              </configuration>
+              <configuration name="display_name" locale="uk">
+                <value>Порушення підготовки</value>
+              </configuration>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+      </configurationGroup>
+    </configurationGroup>
+    <configurationGroup name="report-person" path="reports/person">
+      <configurationGroup name="meta">
+        <configuration name="display_name" locale="uk">
+          <value>Звіт особи</value>
+        </configuration>
+        <configuration name="description" locale="uk">
+          <value>Звіти, пов'язані з людьми в системі з їхнім першим навчанням.</value>
+        </configuration>
+        <configuration name="category" locale="uk">
+          <value>Звіти осіб</value>
+        </configuration>
+      </configurationGroup>
+      <configurationGroup name="reporting_forms">
+        <configurationGroup name="primary_form">
+          <configurationGroup name="fields">
+            <configurationGroup name="surname">
+              <configuration name="header" locale="uk">
+                <value>Прізвище</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="firstname">
+              <configuration name="header" locale="uk">
+                <value>Ім'я</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="othername">
+              <configuration name="header" locale="uk">
+                <value>Інші імена</value>
+              </configuration>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+        <configurationGroup name="first_training">
+          <configurationGroup name="fields">
+            <configurationGroup name="index_num">
+              <configuration name="header" locale="uk">
+                <value>Порядковий номер</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="cadre">
+              <configurationGroup name="limits">
+                <configurationGroup name="equals">
+                  <configuration name="header" locale="uk">
+                    <value>Кадровий склад</value>
+                  </configuration>
+                </configurationGroup>
+              </configurationGroup>
+              <configuration name="header" locale="uk">
+                <value>ID Підготовки кадрів</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="intake_date">
+              <configurationGroup name="limits">
+                <configurationGroup name="greaterthan_equals">
+                  <configuration name="header" locale="uk">
+                    <value>Дата прийому після</value>
+                  </configuration>
+                </configurationGroup>
+                <configurationGroup name="lessthan_equals">
+                  <configuration name="header" locale="uk">
+                    <value>Дата прийому перед</value>
+                  </configuration>
+                </configurationGroup>
+              </configurationGroup>
+              <configuration name="header" locale="uk">
+                <value>Дата прийому</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="graduation">
+              <configuration name="header" locale="uk">
+                <value>Дата випуску</value>
+              </configuration>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+        <configurationGroup name="training_disrupt">
+          <configurationGroup name="fields">
+            <configurationGroup name="disruption_date">
+              <configuration name="header" locale="uk">
+                <value>Дата порушення</value>
+              </configuration>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+        <configurationGroup name="institution_district">
+          <configurationGroup name="fields">
+            <configurationGroup name="name">
+              <configuration name="header" locale="uk">
+                <value>Район закладу</value>
+              </configuration>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+        <configurationGroup name="registration">
+          <configurationGroup name="fields">
+            <configurationGroup name="registration_number">
+              <configuration name="header" locale="uk">
+                <value>Реєстраційний номер</value>
+              </configuration>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+        <configurationGroup name="exam">
+          <configurationGroup name="fields">
+            <configurationGroup name="exam_date">
+              <configuration name="header" locale="uk">
+                <value>Дата іспиту</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="results">
+              <configuration name="header" locale="uk">
+                <value>Результати іспиту</value>
+              </configuration>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+        <configurationGroup name="cadre">
+          <configurationGroup name="fields">
+            <configurationGroup name="name">
+              <configuration name="header" locale="uk">
+                <value>Кадровий склад</value>
+              </configuration>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+        <configurationGroup name="demographic">
+          <configurationGroup name="fields">
+            <configurationGroup name="gender">
+              <configurationGroup name="limits">
+                <configurationGroup name="equals">
+                  <configuration name="header" locale="uk">
+                    <value>Стать</value>
+                  </configuration>
+                </configurationGroup>
+              </configurationGroup>
+              <configuration name="header" locale="uk">
+                <value>Стать</value>
+              </configuration>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+        <configurationGroup name="birth_district">
+          <configurationGroup name="fields">
+            <configurationGroup name="name">
+              <configuration name="header" locale="uk">
+                <value>Район народження</value>
+              </configuration>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+      </configurationGroup>
+      <configurationGroup name="reporting_functions">
+        <configurationGroup name="reg_results">
+          <configuration name="header" locale="uk">
+            <value>Результати реєстрації</value>
+          </configuration>
+        </configurationGroup>
+      </configurationGroup>
+    </configurationGroup>
+    <configurationGroup name="reportViews">
+      <configurationGroup name="top_birth_district">
+        <configuration name="description" locale="uk">
+          <value>Кругова діаграма числа людей, які вступають на курси, за районом місця їх народження.</value>
+        </configuration>
+        <configuration name="display_name" locale="uk">
+          <value>Найпопулярніший район народження</value>
+        </configuration>
+        <configurationGroup name="display_options">
+          <configurationGroup name="PieChart">
+            <configurationGroup name="styles">
+              <configurationGroup name="Pie">
+                <configuration name="display_name" locale="uk">
+                  <value>Кругова діаграма (проста)</value>
+                </configuration>
+              </configurationGroup>
+              <configurationGroup name="Bar">
+                <configuration name="display_name" locale="uk">
+                  <value>Гістограма (проста)</value>
+                </configuration>
+              </configurationGroup>
+              <configurationGroup name="Column">
+                <configuration name="display_name" locale="uk">
+                  <value>Стовпчикова діаграма (проста)</value>
+                </configuration>
+              </configurationGroup>
+              <configurationGroup name="StackedColumn">
+                <configuration name="display_name" locale="uk">
+                  <value>Гістограма з накопиченням (проста)</value>
+                </configuration>
+              </configurationGroup>
+              <configurationGroup name="Scatter">
+                <configuration name="display_name" locale="uk">
+                  <value>Точкова діаграма</value>
+                </configuration>
+              </configurationGroup>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+      </configurationGroup>
+      <configurationGroup name="student_intake_year">
+        <configuration name="description" locale="uk">
+          <value>Число студентів, які вступають на навчання за рік.</value>
+        </configuration>
+        <configuration name="display_name" locale="uk">
+          <value>Рік прийому студента</value>
+        </configuration>
+        <configurationGroup name="display_options">
+          <configurationGroup name="PieChart">
+            <configurationGroup name="styles">
+              <configurationGroup name="Pie">
+                <configuration name="display_name" locale="uk">
+                  <value>Кругова діаграма (проста)</value>
+                </configuration>
+              </configurationGroup>
+              <configurationGroup name="Bar">
+                <configuration name="display_name" locale="uk">
+                  <value>Гістограма (проста)</value>
+                </configuration>
+              </configurationGroup>
+              <configurationGroup name="Column">
+                <configuration name="display_name" locale="uk">
+                  <value>Стовпчикова діаграма (проста)</value>
+                </configuration>
+              </configurationGroup>
+              <configurationGroup name="StackedColumn">
+                <configuration name="display_name" locale="uk">
+                  <value>Гістограма з накопиченням (проста)</value>
+                </configuration>
+              </configurationGroup>
+              <configurationGroup name="Scatter">
+                <configuration name="display_name" locale="uk">
+                  <value>Точкова діаграма</value>
+                </configuration>
+              </configurationGroup>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+      </configurationGroup>
+      <configurationGroup name="pass_fail_person">
+        <configuration name="description" locale="uk">
+          <value>Результати за успіхами/провалами за перший курс для кожної особи.</value>
+        </configuration>
+        <configuration name="display_name" locale="uk">
+          <value>Успіх/провал за перший курс</value>
+        </configuration>
+        <configurationGroup name="display_options">
+          <configurationGroup name="PieChart">
+            <configurationGroup name="styles">
+              <configurationGroup name="Pie">
+                <configuration name="display_name" locale="uk">
+                  <value>Кругова діаграма (проста)</value>
+                </configuration>
+              </configurationGroup>
+              <configurationGroup name="Bar">
+                <configuration name="display_name" locale="uk">
+                  <value>Гістограма (проста)</value>
+                </configuration>
+              </configurationGroup>
+              <configurationGroup name="Column">
+                <configuration name="display_name" locale="uk">
+                  <value>Стовпчикова діаграма (проста)</value>
+                </configuration>
+              </configurationGroup>
+              <configurationGroup name="StackedColumn">
+                <configuration name="display_name" locale="uk">
+                  <value>Гістограма з накопиченням (проста)</value>
+                </configuration>
+              </configurationGroup>
+              <configurationGroup name="Scatter">
+                <configuration name="display_name" locale="uk">
+                  <value>Точкова діаграма</value>
+                </configuration>
+              </configurationGroup>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+      </configurationGroup>
+      <configurationGroup name="final_exam_reg">
+        <configuration name="description" locale="uk">
+          <value>Результати реєстрації за перший курс для кожної особи.</value>
+        </configuration>
+        <configuration name="display_name" locale="uk">
+          <value>Результати реєстрації за перший курс</value>
+        </configuration>
+        <configurationGroup name="display_options">
+          <configurationGroup name="PieChart">
+            <configurationGroup name="styles">
+              <configurationGroup name="Pie">
+                <configuration name="display_name" locale="uk">
+                  <value>Кругова діаграма (проста)</value>
+                </configuration>
+              </configurationGroup>
+              <configurationGroup name="Bar">
+                <configuration name="display_name" locale="uk">
+                  <value>Гістограма (проста)</value>
+                </configuration>
+              </configurationGroup>
+              <configurationGroup name="Column">
+                <configuration name="display_name" locale="uk">
+                  <value>Стовпчикова діаграма (проста)</value>
+                </configuration>
+              </configurationGroup>
+              <configurationGroup name="StackedColumn">
+                <configuration name="display_name" locale="uk">
+                  <value>Гістограма з накопиченням (проста)</value>
+                </configuration>
+              </configurationGroup>
+              <configurationGroup name="Scatter">
+                <configuration name="display_name" locale="uk">
+                  <value>Точкова діаграма</value>
+                </configuration>
+              </configurationGroup>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+      </configurationGroup>
+      <configurationGroup name="student_training_year">
+        <configuration name="description" locale="uk">
+          <value>Студенти за роком прийому, розбиті на тих, що навчаються або ні.</value>
+        </configuration>
+        <configuration name="display_name" locale="uk">
+          <value>Студенти, які навчаються, за роками</value>
+        </configuration>
+        <configurationGroup name="display_options">
+          <configurationGroup name="PieChart">
+            <configurationGroup name="styles">
+              <configurationGroup name="Pie">
+                <configuration name="display_name" locale="uk">
+                  <value>Кругова діаграма (проста)</value>
+                </configuration>
+              </configurationGroup>
+              <configurationGroup name="Bar">
+                <configuration name="display_name" locale="uk">
+                  <value>Гістограма (проста)</value>
+                </configuration>
+              </configurationGroup>
+              <configurationGroup name="Column">
+                <configuration name="display_name" locale="uk">
+                  <value>Стовпчикова діаграма (проста)</value>
+                </configuration>
+              </configurationGroup>
+              <configurationGroup name="StackedColumn">
+                <configuration name="display_name" locale="uk">
+                  <value>Гістограма з накопиченням (проста)</value>
+                </configuration>
+              </configurationGroup>
+              <configurationGroup name="Scatter">
+                <configuration name="display_name" locale="uk">
+                  <value>Точкова діаграма</value>
+                </configuration>
+              </configurationGroup>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+      </configurationGroup>
+    </configurationGroup>
+  </configurationGroup>
+</I2CEConfiguration>
