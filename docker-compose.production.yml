@@ -13,11 +13,11 @@ services:
       MYSQL_USER: ihris
       MYSQL_PASSWORD: m0h1ct11
 
-  memcached:
-    image: memcached:latest
-    container_name: ihris_memcached
-    ports:
-      - "11211:11211"
+#  memcached:
+#    image: memcached:latest
+#    container_name: ihris_memcached
+#    ports:
+#      - "11211:11211"
 
   phpmyadmin:
     image: phpmyadmin/phpmyadmin
@@ -55,9 +55,9 @@ services:
     ports:
       - "8080:80"
     volumes:
-      - .:/var/lib/iHRIS/lib/4.3.3
-    environment:
-      IHRIS_MEMCACHED_SERVER: ihris_memcached
+      - .:/var/lib/iHRIS
+#    environment:
+#      IHRIS_MEMCACHED_SERVER: ihris_memcached
 
 networks:
   default:
