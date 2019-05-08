@@ -54,7 +54,7 @@ $i2ce_site_i2ce_path = "/var/lib/iHRIS/lib/4.3.3/i2ce";
 /**
  * the dsn to connect to your databse
  */
-$i2ce_site_dsn = 'mysql://ihris:M@h1ct11@localhost/ihris_manage';
+$i2ce_site_dsn = 'mysql://ihris:m0h1ct11@localhost/ihris_manage';
 
 
 /**
