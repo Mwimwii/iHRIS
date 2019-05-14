@@ -1,10 +1,21 @@
 version: "3.7"
 services:
-  memcached:
-    image: memcached:latest
-    container_name: ihris_memcached
-    ports:
-      - "11211:11211"
+  db:
+    image: mysql:8.0.15
+    container_name: ihris_mysql
+    restart: always
+    command: --default-authentication-plugin=mysql_native_password
+    environment:
+      MYSQL_ROOT_PASSWORD: m0h1ct11
+      MYSQL_DATABASE: ihris_manage
+      MYSQL_USER: ihris
+      MYSQL_PASSWORD: m0h1ct11
+
+#  memcached:
+#    image: memcached:latest
+#    container_name: ihris_memcached
+#    ports:
+#      - "11211:11211"
 
   phpmyadmin:
     image: phpmyadmin/phpmyadmin
@@ -16,6 +27,8 @@ services:
       MYSQL_USER: phpmyadmin
       MYSQL_PASSWORD: m0h1ct11
       MYSQL_ROOT_PASSWORD: m0h1ct11
+    depends_on:
+      - db
 
   adminer:
     image: adminer
@@ -25,6 +38,8 @@ services:
       - 8081:8080
     environment:
       MYSQL_ROOT_PASSWORD: m0h1ct11
+    depends_on:
+      - db
 
   ihris:
     image: ihris:4.3.3
@@ -36,11 +51,12 @@ services:
     ports:
       - "8080:80"
     volumes:
-      - .:/var/lib/iHRIS/lib/4.3.3
+      - .:/var/lib/iHRIS
     environment:
       IHRIS_MEMCACHED_SERVER: ihris_memcached
+      MYSQL_HOST: ihris
     depends_on:
-      - memcached
+      - db
 
 networks:
   default:

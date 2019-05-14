@@ -8,7 +8,7 @@ ENV APACHE_RUN_GROUP www-data
 ENV APACHE_LOCK_DIR /var/lock/apache2
 ENV APACHE_LOG_DIR /var/log/apache2
 ENV APACHE_PID_FILE /var/run/apache2/apache2.pid
-ENV APACHE_SERVER_NAME localhost
+ENV APACHE_SERVER_NAME ihris.local
 
 ARG DEBIAN_FRONTEND=noninteractive
 
@@ -21,7 +21,7 @@ libgdbm-dev libc6-dev libbz2-dev apt-utils
 RUN apt-get install -y apache2
 
 #Installing PHP Packages
-RUN apt-get install -y php-pear php-gd php-tidy php-intl php-bcmath php-text-password php-mbstring php-uuid
+RUN apt-get install -y libapache2-mod-php php-pear php-gd php-tidy php-intl php-bcmath php-text-password php-mysqli php-mysqlnd php-mbstring php-uuid
 
 #APCu
 RUN apt-get install -y php-apcu
@@ -39,14 +39,16 @@ COPY ./.docker/config/opcache.ini /etc/php/7.2/mods-available/opcache.ini
 #Enable Rewrite Module
 RUN a2enmod rewrite
 
+#MySQL
+RUN apt-get install -y mysql-client
+
 #Enable .htaccess Configuration
 COPY ./.docker/config/apache2.conf /etc/apache2/apache2.conf
 
-RUN mkdir -p /var/lib/iHRIS
-RUN ln -s /var/lib/iHRIS/lib/4.3.3/ihris-manage/sites/blank/pages /var/www/html/manage
-
-RUN apt-get clean && rm -rf /var/lib/apt/lists/*
+RUN ln -s /var/lib/iHRIS/sites/manage/pages /var/www/html/manage
 
 EXPOSE 80
-VOLUME ["$APACHE_LOG_DIR"]
-CMD ["/usr/sbin/apache2ctl", "-DFOREGROUND"]
+VOLUME ["$APACHE_LOG_DIR", "/var/lib/iHRIS"]
+
+#CMD ["service memcached start"]
+ENTRYPOINT ["/usr/sbin/apache2ctl", "-DFOREGROUND"]

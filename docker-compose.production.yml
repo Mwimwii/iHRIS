@@ -56,8 +56,8 @@ services:
       - "8080:80"
     volumes:
       - .:/var/lib/iHRIS
-#    environment:
-#      IHRIS_MEMCACHED_SERVER: ihris_memcached
+    environment:
+      IHRIS_MEMCACHED_SERVER: ihris_memcached
 
 networks:
   default:
