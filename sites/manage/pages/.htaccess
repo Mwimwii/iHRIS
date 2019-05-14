@@ -6,7 +6,7 @@
     RewriteBase  /manage
     DirectoryIndex index.php
     ErrorDocument 403 index.php/home
-    ErrorDocument 404 index.php/home   
+    ErrorDocument 404 index.php/home
     RewriteRule (^/?$) home [L] 
     RewriteCond %{REQUEST_FILENAME} !-f
     RewriteCond %{REQUEST_FILENAME} !-d

@@ -39,8 +39,8 @@ window.addEvent('domready',  function() {
     <div id="siteHeadWrap"><!-- ie6 redundant tag fix -->
       <div id="siteHeader">
 	<a name="top"><img src="file/iHRISManage_logo.png" alt="" width="62" height="62" id="siteLogo" /></a>
-	<p id="siteName">iHRIS Manage</p>
-	<p id="siteTag">Human Resource Management</p>
+	<p id="siteName">Government of the Republic Zambia - Ministry of Health</p>
+	<p id="siteTag">Human Resource Information System</p>
 	<div id="inlineNavWrap"><!-- ie6 redundant tag fix -->
 	  <div id="inlineNavBar">
 	      <ul>
@@ -49,9 +49,7 @@ window.addEvent('domready',  function() {
         <span type="module" name="ihris-manage-help" ifenabled="true">
           <li class="inlineNavOption" id="inlineNavHelp"><a href="file/help/index.html" target="_help">Help</a></li>
         </span>
-	      <li role="NOT_LOGGED_IN" class="inlineNavOption" id="inlineNavMail"><a href="http://www.ihris.org/contact-us/">Feedback</a></li>
-        <li role="any" class="inlineNavOption" id="inlineNavMail"><a href="feedback">Feedback</a></li>
-        <li class="inlineNavOption" id="inlineNaviHRIS"><a href="http://www.ihris.org/" target="_new">iHRIS Website</a></li>
+	      
 	    </ul>
 	    <ul id="sysUser" role='any'>
 	      <li><a href="logout" class="logout"><span printf="'Log out as %s',ihris-common->getUserRole()" /></a></li>
@@ -80,9 +78,10 @@ window.addEvent('domready',  function() {
 
       <div id='StretchPage'></div>
       <div id="siteFooter">
+	Ministry of Health - Zambia <br/>
 	iHRIS Manage Version: <span type='module' call="ihris-common->showModuleVersion('ihris-manage')"/>
 	<span type='module' call='localeSelector->showSelectableLocales()'></span>
-      </div><!-- /siteFooter -->
+ </div><!-- /siteFooter -->
     </div><!-- /siteOuterWrap -->
 
   </body>

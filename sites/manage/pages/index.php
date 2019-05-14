@@ -40,6 +40,7 @@ if (file_exists($local_config)) {
     require_once($local_config);
 }
 
+
 if(!isset($i2ce_site_i2ce_path) || !is_dir($i2ce_site_i2ce_path)) {
     echo "Please set the \$i2ce_site_i2ce_path in $local_config";
     exit(55);
