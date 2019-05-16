@@ -784,6 +784,7 @@ class I2CE   {
         $installed = '';
 
         $config->setIfIsSet($installed,"/config/site/installation");
+
         if ($installed == '') { 
             return 'needs_install';
         }

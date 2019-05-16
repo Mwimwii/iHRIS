@@ -23,7 +23,7 @@ services:
     ports:
       - 8082:80
     environment:
-      PMA_HOST: host.docker.internal
+      PMA_HOST: ihris_mysql
       MYSQL_USER: phpmyadmin
       MYSQL_PASSWORD: m0h1ct11
       MYSQL_ROOT_PASSWORD: m0h1ct11
