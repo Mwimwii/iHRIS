@@ -32,12 +32,16 @@
     <enable name="ManageConfirmation" />
     <enable name="ManageAccessFacility" />
     <enable name="ManageAccessDepartment" />
+    <enable name="ManageDashboard" />
     <enable name="formDocumentor" />
     <enable name="PersonArchivedScan" />
     <enable name="PersonPassportPhoto" />
     <enable name="PersonResume" />
     <enable name="PersonContact" />
+    <enable name="PersonAttendance" />
+    <enable name="leave" />
     <enable name="ihris-manage-PersonDemographic" />
+    <enable name="ihris-manage-LeaveOfAbsence" />
     <enable name="PersonEducation" />
     <enable name="PersonEmployment" />
     <enable name="PersonID" />
@@ -56,6 +60,7 @@
     <enable name="ihris-manage-ApplicationAttachment" />
     <enable name="ihris-manage-confirmation" />
     <enable name="ihris-manage-ConfirmationAttachment" />
+    <enable name="ihris-manage-MultiPosition" />
     <enable name="isco-88" />
     <enable name="isco-88-major-00" />
     <enable name="isco-88-major-01" />
