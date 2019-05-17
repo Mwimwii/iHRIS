@@ -78,6 +78,7 @@
     <enable name="SDMX-HD-CodeLists" />
     <enable name="ihris-manage-FacilityTree" />
     <enable name="ihris-manage-PositionTree" />
+    <enable name="UserStatistics" />
     <path name="classes">
       <value>./lib</value>
     </path>
