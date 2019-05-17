@@ -400,6 +400,8 @@ class iHRIS_Module_UserStatistics extends I2CE_Module {
                     unset( $result );
                 } catch ( PDOException $e ) {
                     I2CE::pdoError( $e, "Failed to get parent details:" );
+                } finally {
+                    I2CE::raiseError( $e );
                 }
             }
             foreach( $tally as $date => $records ) {
