@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE I2CEConfiguration SYSTEM "I2CE_Configuration.dtd">
+<I2CEConfiguration name="Timer">
+  <metadata>
+    <category locale="zh_CN">管理</category>
+    <description locale="zh_CN">添加一个timer类</description>
+    <version>4.2.1.0.1</version>
+  </metadata>
+</I2CEConfiguration>

@@ -1,0 +1,53 @@
+<div>
+  <h2>ເບິ່ງບົດລາຍງານ</h2>
+  <h3><a name="show_link">ເບິ່ງ <span name="displayName"></span></a></h3>
+    <p>This report view is based on the report <a name="report_link"><span name="reportName"></span></a></p>
+  <span name="has_default_display" ifset="true">
+    <h3><a name="clear_default_display_link">ລົບລ້າງຕົວສະແດງຫຼັກ</a></h3>
+  </span>
+  <p>ເລືອກເຂດຂໍ້ມູນ ແລະ ຂໍ້ມູນທີ່ຮວມເຂົ້າກັນ ທີ່ທ່ານຕ້ອງການຢາເບິ່ງຢູ່ໃນບົດລາຍງານນີ້. ທ່ານອາດຈະລາກ ແລະ ວາງໃສ່ເຂດຂໍ້ມູນ ເພື່ອປ່ຽນແປງຮູບແບບການສະແດງ</p>
+  <table class="multiFormTable reportviews" cellpadding="0" cellspacing="0" border="0" id="container"><tr><th colspan="2">
+	  ເບິ່ງຂໍ້ມູນບົດລາຍງານ
+	</th>
+    </tr><tr><td>
+	<h3>ສະແດງຊື່:</h3>
+	ຊື່ລາຍການທີ່ສັ້ນຂອງບົດລາຍງານນີ້
+      </td>
+      <td>
+	<input name="displayName" type="text" value="" class="validate=[nonempty]"></td>
+    </tr><tr><td>
+	<h3>ລາຍການ:</h3>
+	ຊື່ລາຍການທີ່ຍາວຂອງບົດລາຍງານນີ້
+      </td>
+      <td>
+	<textarea name="description" rows="4" cols="53" value=""></textarea></td>
+    </tr><tr task="custom_reports_admin"><td>
+	<h3>ການອະນຸຍາດໃຫ້ເບິ່ງບົດລາຍງານ:</h3>
+	ເລືອກໜ້າວຽກເພື່ອຈຳກັດການເບິ່ງບົດລາຍງານກັບໜ້າວຽກທີ່ເລືອກ 
+      </td>
+      <td>
+	<select name="limit_view_to_task"><option value="">ບໍ່ໃຫ້ຈຳກັດການເຂົ້າເບິ່ງບົດລາຍງານນີ້</option></select></td>      
+    </tr><tr permission="role(admin) or task(custom_reports_admin)"><td colspan="2">
+	<input name="disable_hide" type="hidden" value="1"><input name="disable" id="disable" type="checkbox" value="1"><h3>Disable:</h3>
+	Disable this report from non-administrative users.
+      </td>
+    </tr><tr><td colspan="2">
+	<input name="total_hide" type="hidden" value="1"><input name="total" id="total" type="checkbox" value="1"><h3>ລວມທັງຈຳນວນທັງໝົດ:</h3>
+	ລວມທັງ ຈຳນວນແຖວທັງໝົດ
+      </td>
+    </tr><tr><td>
+	<h3>ເບິ່ງຂໍ້ມູນທີ່ກ່ຽວຂ້ອງ</h3>
+      </td>
+      <td>
+	<select name="related_views[]" multiple size="10"></select></td>
+    </tr><tr><th colspan="2">
+	ເຂດທີ່ຖືກລາຍງານ
+      </th>
+      </tr></table><div id="fields_fill"></div>
+
+  <br><br><span task="custom_reports_admin" name="has_display_editors" ifset="true" id="display_editors">
+    <h2> <a id="displays_link">ອະນຸຍາດໃຫ້ແດແປງບົດລາຍງານ</a></h2>
+    <div id="displays_ajax" class="indented"></div>
+  </span>
+
+</div>

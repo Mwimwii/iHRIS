@@ -1,0 +1,52 @@
+<div>
+  
+
+  <h2>Page Arguments</h2>
+  <div id="args_container">
+    <table class="multiFormTable" cellpadding="0" cellspacing="0" border="0"><tr><td>
+	  <h3>Title:</h3>The displey name fer the primairie form
+	</td>
+	<td>
+	  <input name="title"></td>
+      </tr><tr><td>
+	  <h3>Tasks:</h3>Aen optional task fer leemitin access til this page.
+	</td>
+	<td>
+	  <select name="task"><option value="">Nae Task Is Selectit</option></select></td>
+      </tr></table><h2>Relationship Opties</h2>
+    <table class="multiFormTable" cellpadding="0" cellspacing="0" border="0"><tr><td>
+	  <h3>The Relationship:</h3>The relationship that this page is based oan
+	</td>
+	<td>
+	  <select name="relationship"><option value="">Nae Relationship Selectit</option></select><br><span name="has_relationship" ifset="true"><a name="relationship_link">Eedit The Relationship</a></span>
+	</td>
+      </tr><tr><td>
+	  <h3>Export Aw The Fields:</h3>Export aw fields in the relationship
+	</td>
+	<td>
+	  <select name="get_all_fields"><option value="1">Ay</option><option value="0">Nae</option></select></td>
+      </tr><tr><td>
+	  <h3>Uise Cache:</h3>Uise caches in hippo buirds whan exportin data in the relationship
+	</td>
+	<td>
+	  <select name="use_cache"><option value="1">Ay</option><option value="0">Nae</option></select></td>
+      </tr></table><h2>The XSL Transform Opties</h2>
+    <table class="multiFormTable" cellpadding="0" cellspacing="0" border="0"><tr><td>
+	  <h3>XSL Transform:</h3>Select ae XSL transform or uplaid ae transform tae further process the export.
+	</td>
+	<td>
+	  <input name="do_upload" value="1" type="checkbox">Uplaid The File <input name="upload" type="file"><span name="has_download" ifset="true"><a name="download_link">Doonlaid</a></span>
+	  <hr><input name="do_select" value="1" type="checkbox">Select Exeestin Transform <select name="select"></select><br><span name="has_transform" ifset="true"><a name="transform_link">Doonlaid The Transform</a></span>
+	  <hr><input name="do_erase" value="1" type="checkbox">Nae Tranform
+	</td>
+      </tr></table><span id="fields">
+      <h2><a id="fields_link" href="">Selectit Fields</a></h2>
+      Select indiveedual fields in the relationship tae export
+      <div class="indented" id="fields_ajax">
+      </div>
+    </span>
+    
+  </div>
+
+
+</div>

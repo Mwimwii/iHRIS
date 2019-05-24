@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE I2CEConfiguration SYSTEM "I2CE_Configuration.dtd">
+<I2CEConfiguration name="CustomReports_PieChart" path="/modules/CustomReports/displays/PieChart">
+  <metadata>
+    <version>4.2.1.0.1</version>
+  </metadata>
+  <configurationGroup name="CustomReports_PieChart" path="/modules/CustomReports/displays/PieChart" locale="br">
+    <version>4.2.0.1</version>
+    <configuration name="error_message" locale="br" values="single" type="string">
+      <value>Roadenn ebet evit an danevell-mañ. Gwiriit ha roadennoù zo anezho pe kemmit ho maezienn enklask.</value>
+    </configuration>
+    <configurationGroup name="display_options">
+      <configurationGroup name="styles">
+        <configurationGroup name="Pie">
+          <configuration name="display_name" locale="br" values="single" type="string">
+            <value>Kouign (eeun)</value>
+          </configuration>
+        </configurationGroup>
+        <configurationGroup name="Bar">
+          <configuration name="display_name" locale="br" values="single" type="string">
+            <value>Diagramm gant barrennoù a-led (eeun)</value>
+          </configuration>
+        </configurationGroup>
+        <configurationGroup name="Column">
+          <configuration name="display_name" locale="br" values="single" type="string">
+            <value>Diagramm gant bannoù (eeun)</value>
+          </configuration>
+        </configurationGroup>
+        <configurationGroup name="StackedColumn">
+          <configuration name="display_name" locale="br" values="single" type="string">
+            <value>Diagramm gant bannoù berniet (eeun)</value>
+          </configuration>
+        </configurationGroup>
+        <configurationGroup name="Scatter">
+          <configuration name="display_name" locale="br" values="single" type="string">
+            <value>Diagramm strewadur</value>
+          </configuration>
+        </configurationGroup>
+      </configurationGroup>
+    </configurationGroup>
+  </configurationGroup>
+</I2CEConfiguration>

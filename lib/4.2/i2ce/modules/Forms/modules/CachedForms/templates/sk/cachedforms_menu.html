@@ -1,0 +1,31 @@
+<div>
+  
+
+
+  <h2>Formuláre skrytej pamäte</h2>
+  <span name="has_profiles" ifset="true">
+    Skrytá pamäť všetkých formulárov vo zvolenom profile.
+    <form action="CachedForms/cache" style="margin-left:2em" method="POST">
+      Vyber profil:  <select name="profile"></select><br><input type="submit" value="Cache"></form>
+  </span>
+  <br><div>
+    <a href="CachedForms/cacheAll">Vyrovnávacia pamäť</a> Všetky formuláre
+    <br><a href="CachedForms/cacheAllForce">Force Caching</a> Zo všetkých formulárov, ak nie sú staré
+    <br><a href="CachedForms/dropAll">Pokles</a> Skryté pamäte všetkých formulárov
+  </div>
+  <br><span name="has_profiles" ifset="true">
+    <h2>Odoslať formuláre vyrovnávacej pamäte</h2>
+    Odoslať všetky formuláre skrytej pamäte vo vybranom profile. Ak vyberáte zmenu dátumu, potom len záznamy, ktoré boli upravené v alebo po zadanom dátume budú odoslané.
+    <form action="CachedForms/export" style="margin-left:2em" method="POST">
+      Vyber profil:  <select name="profile"></select><br>
+      Zmena dátumu: <input class="datepicker_ymd" name="mod_date" type="text"><br><input type="checkbox" value="1" name="compress" checked>Povoliť kompresiu bzip2
+      <br><input type="submit" value="Export"></form>
+    
+    <br></span>
+
+  <h2>Vytvor/Uprav profil</h2>
+  Vytvor profil alebo uprav existujúci profil z formulárov.
+  <form action="CachedForms/exportProfile" style="margin-left:2em">
+      Vyber profil:  <select name="profile"><option value="">Vytvor nový profil</option></select><br><input type="submit" value="Edit"></form>
+  <br><h2>Spravuj skrytú pamäť jednotlivých formulárov.</h2>
+  <ul id="cached_forms_list"></ul></div>

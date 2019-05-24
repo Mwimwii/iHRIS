@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE I2CEConfiguration SYSTEM "I2CE_Configuration.dtd">
+<I2CEConfiguration name="DatePicker" path="/modules/DatePicker">
+  <metadata>
+    <version>1.17.5.1</version>
+  </metadata>
+  <configurationGroup name="DatePicker" path="/modules/DatePicker" locale="ps">
+    <version>1.17.5.1</version>
+    <configurationGroup name="options_datetime">
+      <configuration name="format" locale="ps"></configuration>
+    </configurationGroup>
+    <configurationGroup name="options">
+      <configuration name="format" locale="ps"></configuration>
+      <configuration name="days" type="delimited" locale="ps">
+        <value>0:يونۍ</value>
+        <value>1:دونۍ</value>
+        <value>2:درې نۍ</value>
+        <value>3:څلرنۍ</value>
+        <value>4:پينځنۍ</value>
+        <value>5:جمعه</value>
+      </configuration>
+      <configuration name="months" type="delimited" locale="ps">
+        <value>0:جنوري</value>
+        <value>1:فبروري</value>
+        <value>2:مارچ</value>
+        <value>3:اپرېل</value>
+        <value>4:می</value>
+        <value>5:جون</value>
+        <value>6:جولای</value>
+        <value>7:اگسټ</value>
+        <value>8:سېپتمبر</value>
+        <value>9:اکتوبر</value>
+        <value>10:نومبر</value>
+        <value>11:ډيسمبر</value>
+      </configuration>
+    </configurationGroup>
+  </configurationGroup>
+</I2CEConfiguration>

@@ -1,0 +1,31 @@
+<div>
+  
+
+
+  <h2>Buforuj formularze</h2>
+  <span name="has_profiles" ifset="true">
+    Buforuj wszystkie formularze wybranego profilu.
+    <form action="CachedForms/cache" style="margin-left:2em" method="POST">
+      Wybierz profil:  <select name="profile"></select><br><input type="submit" value="Cache"></form>
+  </span>
+  <br><div>
+    <a href="CachedForms/cacheAll">Bufor</a> wszystkie formularze
+    <br><a href="CachedForms/cacheAllForce">Wymuś buforowanie</a> wszelkie formularze, jeśli nie są nieaktualne
+    <br><a href="CachedForms/dropAll">Usuń</a> bufory wszystkich form
+  </div>
+  <br><span name="has_profiles" ifset="true">
+    <h2>Eksportuj buforowane formularze</h2>
+    Eksportuj wszystkie buforowane formularze z wybranego profilu. Jeśli wybierzesz datę modyfikacji, zostaną wyeksportowane tylko rekordy, które zostały zmodyfikowane tego dnia lub po określonej datcie. W przeciwnym razie zostaną wyeksportowane wszystkie rekordy, które zostały zmodyfikowane dla wybranego profilu.
+    <form action="CachedForms/export" style="margin-left:2em" method="POST">
+      Wybierz profil:  <select name="profile"></select><br>
+      Data modyfikacji: <input class="datepicker_ymd" name="mod_date" type="text"><br><input type="checkbox" value="1" name="compress" checked>Włączanie kompresji bzip2
+      <br><input type="submit" value="Export"></form>
+    
+    <br></span>
+
+  <h2>Utwórz/edytuj profil</h2>
+  Utwórz profil lub edytuj istniejący profil formularzy.
+  <form action="CachedForms/exportProfile" style="margin-left:2em">
+      Wybierz profil:  <select name="profile"><option value="">Utwórz nowy profil</option></select><br><input type="submit" value="Edit"></form>
+  <br><h2>Zarządzaj buforowaniem poszczególnych formularzy</h2>
+  <ul id="cached_forms_list"></ul></div>

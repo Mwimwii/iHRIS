@@ -1,0 +1,25 @@
+<div>
+  这里您可以选择您想让您网站的用户选择的区域设置。网站的默认备选区域设置是 <span name="locale_default_name"></span> (<span name="locale_default"></span>).
+  <span id="locales_container">
+    <ul id="locale_list"></ul><span name="has_def_locale" ifset="true">
+
+      <h2 id="add_def_locale_link" class="add_def_locale_options_toggle"><a>选择可用区域设置</a></h2>
+      <div id="add_def_locale_options_menu" class="optionsMenu optionsMenuWide toggable">
+	<div class="optionsMenuTitle">选择可用区域设置 </div>
+
+	<h3>可用区域设置:</h3>
+	选择您系统的区域设置
+	<select name="def_locale" id="def_locale"><option>选择地域</option></select><br><span class="add_def_locale_options_hide window_hide button optionsMenuButton">关闭</span>
+	<input type="submit" class="button only_options_menu" value="Select" id="add_def_locale"></div>
+    </span>
+    
+    <h2 id="add_locale_link" class="add_locale_options_toggle"><a>添加新的地域</a></h2>
+    <div id="add_locale_options_menu" class="optionsMenu optionsMenuWide toggable">
+      <div class="optionsMenuTitle">添加新的地域 </div>
+
+      <h3>自定义地域:</h3>
+      You may enter a custom locale to be made available to your system.
+      <input id="new_locale" name="new_locale" type="text" value="" class="validate=[magicdatakey,notinlist,simple_locale]"><br><span class="add_locale_options_hide window_hide button optionsMenuButton">关闭</span>
+      <input type="submit" class="button only_options_menu" value="Add" id="add_locale"></div>
+  </span>
+</div>

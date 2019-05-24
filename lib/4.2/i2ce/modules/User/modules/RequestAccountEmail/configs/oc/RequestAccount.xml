@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE I2CEConfiguration SYSTEM "I2CE_Configuration.dtd">
+<I2CEConfiguration name="RequestAccount-VerifyEmail">
+  <metadata>
+    <version>4.2.1.0.1</version>
+  </metadata>
+  <configurationGroup name="RequestAccount-VerifyEmail" locale="oc">
+    <version>4.2.0.1</version>
+    <configurationGroup name="user_request_class_data" path="/modules/forms/formClasses/I2CE_User_Request">
+      <configurationGroup name="fields">
+        <configurationGroup name="request_number">
+          <configuration name="headers" type="delimited" locale="oc" values="single">
+            <value>default:Numèro de demanda</value>
+          </configuration>
+        </configurationGroup>
+        <configurationGroup name="verified">
+          <configuration name="headers" type="delimited" locale="oc" values="single">
+            <value>default:Corrièr electronic verificat</value>
+          </configuration>
+        </configurationGroup>
+        <configurationGroup name="email">
+          <configuration name="headers" type="delimited" locale="oc" values="single">
+            <value>default:Adreça de corrièr electronic</value>
+          </configuration>
+        </configurationGroup>
+      </configurationGroup>
+    </configurationGroup>
+    <configurationGroup name="user_messages" locale="oc">
+      <configuration name="verify_email" values="single" type="string"></configuration>
+      <configuration name="verify_email_fail" values="single" type="string"></configuration>
+      <configuration name="verified" values="single" type="string"></configuration>
+      <configuration name="not_verified" values="single" type="string"></configuration>
+      <configuration name="invalid_username" values="single" type="string"></configuration>
+      <configuration name="invalid_email" path="/modules/forms/formfield_messages/user_request/email/invalid_email" values="single" type="string"></configuration>
+      <configuration name="email_subject" values="single" type="string"></configuration>
+      <configuration name="email_message" values="single" type="string"></configuration>
+      <configuration name="email_message_verify_only" values="single" type="string"></configuration>
+    </configurationGroup>
+    <configurationGroup name="page">
+      <configurationGroup name="home">
+        <configurationGroup name="args">
+          <configuration name="title" values="single" locale="oc" type="string">
+            <value>Demanda de compte d'utilizaire</value>
+          </configuration>
+        </configurationGroup>
+      </configurationGroup>
+    </configurationGroup>
+  </configurationGroup>
+</I2CEConfiguration>

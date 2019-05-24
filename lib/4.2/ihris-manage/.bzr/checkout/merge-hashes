@@ -1,0 +1,600 @@
+BZR merge-modified list format 1
+file_id: import_ktcu_match_em-20170726104906-f8gqfj849scdt5m5-80
+hash: 077b282928121645e5dadc9437ff8124e3e71170
+
+file_id: import_from_ihris_ma-20170726104906-f8gqfj849scdt5m5-103
+hash: d1f3504b28121f549e4a608262bea83e3418fd8a
+
+file_id: ke_ihs_mlp.csv-20170726104906-f8gqfj849scdt5m5-194
+hash: f2a4a5470d7037b153f2f2827124b95d7834d30d
+
+file_id: import_base.php-20170726104906-f8gqfj849scdt5m5-90
+hash: 505e8e7524934a8d72fd0b33ee7b16d9589fc087
+
+file_id: merge_scheduled_trai-20170726104906-f8gqfj849scdt5m5-117
+hash: 0148faa5be8b34c66d8e799e54cc11136532ba8b
+
+file_id: extractedcurrentposi-20170726104906-f8gqfj849scdt5m5-151
+hash: fe95b20a4f42a38206891ce60fdc0e417e85a51e
+
+file_id: pmh.csv-20170726104906-f8gqfj849scdt5m5-201
+hash: 74f766680cb2a93cbad56c34fa1db826bdc4fdac
+
+file_id: ke_pc2.csv-20170726104906-f8gqfj849scdt5m5-197
+hash: 46f995ab5b0d13bcac8766bb65ee11f4fc746581
+
+file_id: fixup_posts_without_-20170726104906-f8gqfj849scdt5m5-70
+hash: 69a24b2ce343941c1c37ca1bc6340436b03a69d7
+
+file_id: pmh_ke_migrate.csv-20170726104906-f8gqfj849scdt5m5-202
+hash: 31794621d34bb52faa1eb6b890deb5c6889d4e6f
+
+file_id: file_names_districts-20170726104906-f8gqfj849scdt5m5-153
+hash: c5b77f73d75a19ac3fa24b5aabdbff40d971653d
+
+file_id: update_persons_from_-20170726104906-f8gqfj849scdt5m5-137
+hash: 6583f6ea7d62e96609fc922eb69f13bee0a1a555
+
+file_id: import_ktcu_match_ex-20170726104906-f8gqfj849scdt5m5-81
+hash: 76d84e537aca897a9baa0d9d4ff53a14610c7e07
+
+file_id: delete_all_facilitie-20170726104906-f8gqfj849scdt5m5-31
+hash: 0aca9c131d609a5483a9c753b6a18936cb55dd62
+
+file_id: mixedcharsnameslists-20170726104906-f8gqfj849scdt5m5-119
+hash: e8b250791046eec5c7dd5a9b5194e3e7ad3e9d10
+
+file_id: import_routine_hiv_t-20170726104906-f8gqfj849scdt5m5-108
+hash: 57d9bd8eca0c272af20c04cbec15ce33a2ed5aff
+
+file_id: departments.test_bad-20170726104906-f8gqfj849scdt5m5-50
+hash: 3b0c068f266f0cf2a7fd42e21e02bbba83fbef02
+
+file_id: delete_specific_pers-20170726104906-f8gqfj849scdt5m5-46
+hash: 1190554d56f5dc810d6a52f92a9b974e5395e2ac
+
+file_id: hriscsv.test_bad_030-20170726104906-f8gqfj849scdt5m5-4
+hash: 2099b3ba6051f585730ac7a8c8ca7b703280b8ea
+
+file_id: hriscsv.test_bad_030-20170726104906-f8gqfj849scdt5m5-5
+hash: 887cef700f15dfd4aea124d995c0bb3d41f73082
+
+file_id: update_deploy_facili-20170726104906-f8gqfj849scdt5m5-130
+hash: f50ec9b67f0a667d37f30a8463fbfd8c9174eb29
+
+file_id: jobs.test_bad_200420-20170726104906-f8gqfj849scdt5m5-111
+hash: a3be9decd5dc1904d3503774e51923b0e74d6773
+
+file_id: hriscsv.test_bad_030-20170726104906-f8gqfj849scdt5m5-3
+hash: 2099b3ba6051f585730ac7a8c8ca7b703280b8ea
+
+file_id: lookupnewlists2.php-20170726104906-f8gqfj849scdt5m5-163
+hash: c3f9b51a11650ce6b97edc7befc14e38b8ac28ea
+
+file_id: import_jobs.php-20170726104906-f8gqfj849scdt5m5-105
+hash: d21fca31cc6901bfbc9e4352bf3253cc2a47db62
+
+file_id: delete_duplicates_wi-20170726104906-f8gqfj849scdt5m5-40
+hash: 294542e6efc9dc3772aeb6f26f2b983aa2fbdec9
+
+file_id: import_countries.csv-20170726104906-f8gqfj849scdt5m5-93
+hash: 397ea2f4644096cc8423447ce41b3f3b7bd6d9b8
+
+file_id: fix_gender_from_infi-20170726104906-f8gqfj849scdt5m5-60
+hash: f78f82f9db4cf2a235a97d1ddf874da2c5681cc4
+
+file_id: pc1.csv-20170726104906-f8gqfj849scdt5m5-180
+hash: 1416cc15333f2615d4498f8cc81313a49833de37
+
+file_id: facility_location.cs-20170726104906-f8gqfj849scdt5m5-152
+hash: fb16d1030ca2d61b19350befff987de01acd1c74
+
+file_id: delete_stagnant_kits-20170726104906-f8gqfj849scdt5m5-47
+hash: c4146be88b0c428fe5f3ade3ec5d0d3b6a264767
+
+file_id: update_divisions_in_-20170726104906-f8gqfj849scdt5m5-131
+hash: 215f6de072d223237571ab985c3cf9cbe17ce8fa
+
+file_id: fixpassportsizes.php-20170726104906-f8gqfj849scdt5m5-56
+hash: b36b62220cf4605f062d3b35239e032acadb0f0b
+
+file_id: import_all.php-20170726104906-f8gqfj849scdt5m5-88
+hash: c62502b05994989342f17af76edfbd8d7b983ab1
+
+file_id: ft_2.csv-20170726104906-f8gqfj849scdt5m5-188
+hash: f75256a249e87cb4f313922fd622c3e641ff9736
+
+file_id: import_ktcu_alldata.-20170726104906-f8gqfj849scdt5m5-76
+hash: bc1975fa9f551bf2e2042fe1a08af8dbcfc0cb6f
+
+file_id: delete_stagnant_kits-20170726104906-f8gqfj849scdt5m5-48
+hash: adbd21fdb08e2e3fee2affb7fc482d597613abd8
+
+file_id: gaborone_1.csv-20170726104906-f8gqfj849scdt5m5-170
+hash: 8f9ced8d460f00564414d8826b1889a3882fc386
+
+file_id: update_qualification-20170726104906-f8gqfj849scdt5m5-141
+hash: b8879faa01848f5a72eec8f39ea26b142af5662a
+
+file_id: jobs.csv-20170726104906-f8gqfj849scdt5m5-110
+hash: bec2755400b5a81cdcb9ca07ab1d2180c1a20454
+
+file_id: import_employees_by_-20170726104906-f8gqfj849scdt5m5-99
+hash: 2f7bf3901a9c52733d90cc50ae697ed6c559ea2c
+
+file_id: francistown_1.csv-20170726104906-f8gqfj849scdt5m5-168
+hash: 0e5b82b23a25928d129d92d65ff966bd653b800c
+
+file_id: gaborone_2.csv-20170726104906-f8gqfj849scdt5m5-171
+hash: 071331700982f69134779da333f9742afc232722
+
+file_id: delete_all_currencie-20170726104906-f8gqfj849scdt5m5-28
+hash: 59495cb01d5a0a4cd2441bb96bfbce98f44f6e88
+
+file_id: gb_main.csv-20170726104906-f8gqfj849scdt5m5-193
+hash: 84e5b6b4e60028769000ce88dfd517ad3a0fe03c
+
+file_id: kitso_import.php-20170726104906-f8gqfj849scdt5m5-10
+hash: a8729dbcd7f18af1b4c6fcd84b8ab7b3700de6f7
+
+file_id: update_from_infinium-20170726104906-f8gqfj849scdt5m5-134
+hash: 8171f37353fc766ab74d5e3c9a47be06b1f1e238
+
+file_id: mixedcharsnames.csv-20170726104906-f8gqfj849scdt5m5-118
+hash: 687f54e0f81869d0e6afd2ddf5a4bb80c5f3e956
+
+file_id: record_details-20170726104906-f8gqfj849scdt5m5-165
+hash: 86eb0f782f98de72b24629c4477e62f21c1faea7
+
+file_id: ihs_francistown.csv-20170726104906-f8gqfj849scdt5m5-173
+hash: 1a84cb3c9d04c23ba8424ff9f15e41007622c1f6
+
+file_id: salary_grades.test_b-20170726104906-f8gqfj849scdt5m5-126
+hash: 7e6af015c6e3e8cd1375894df740dcba70aafa8b
+
+file_id: extract_missing_oman-20170726104906-f8gqfj849scdt5m5-54
+hash: 9620f196deed1bcef7652860d5ffade47576ae79
+
+file_id: fixup_person_postion-20170726104906-f8gqfj849scdt5m5-66
+hash: efea9cde66313b94912353d9dc03aa94c382b55e
+
+file_id: fixup_person_postion-20170726104906-f8gqfj849scdt5m5-65
+hash: 781900284d5a8d2447e47a05f9ddfa9e7e999a4f
+
+file_id: combine_dbs_ihs-20170726104906-f8gqfj849scdt5m5-159
+hash: 16111b7885482dec7be9e5c4c73d3036916a57f0
+
+file_id: delete_all_jobs.php-20170726104906-f8gqfj849scdt5m5-32
+hash: 6be3efa65ac39c13d7acfc67146059ac0692e42d
+
+file_id: delete_all_districts-20170726104906-f8gqfj849scdt5m5-30
+hash: ee3159ae000fd55e5754a22718b5ad8596d6d231
+
+file_id: dropdown_details-20170726104906-f8gqfj849scdt5m5-161
+hash: b5b29939d1336bd5ebbc4e6023eccd7d2a2261de
+
+file_id: all.csv-20170726104906-f8gqfj849scdt5m5-186
+hash: 64cfe5d7b49dfedc51d5e5d8fa9544b4057dea87
+
+file_id: fixup_scheduled_trai-20170726104906-f8gqfj849scdt5m5-71
+hash: b1a2ac0ce7f07a7e25b623b49bb4340271bb3968
+
+file_id: delete_all_classific-20170726104906-f8gqfj849scdt5m5-27
+hash: 7e79d2cfa3f099d28e91779b9783b3461bf19246
+
+file_id: hriscsv.csv-20170726104906-f8gqfj849scdt5m5-2
+hash: d3b4d4933ae0ff0c460666abacc1cb02c21b1361
+
+file_id: delete_all_people.ph-20170726104906-f8gqfj849scdt5m5-33
+hash: fb1666d066c98e6de05a92691983c0641d0db274
+
+file_id: ke_scot.csv-20170726104906-f8gqfj849scdt5m5-198
+hash: f81f0417d94b411f3fbd33ba5539250e466329c0
+
+file_id: pmh_migrate.csv-20170726104906-f8gqfj849scdt5m5-203
+hash: 17629417d6d371175f91025a0b82e719e290e1bb
+
+file_id: import_classificatio-20170726104906-f8gqfj849scdt5m5-92
+hash: e31649a1e5959c24e631bcde63c70bf2f9986ff5
+
+file_id: create_jobs_for_posi-20170726104906-f8gqfj849scdt5m5-24
+hash: 2dc34f0f5095a092ead70252ae86b4a366d0edec
+
+file_id: fixup_district_refer-20170726104906-f8gqfj849scdt5m5-62
+hash: f425f23f74b927c059070e06208b322b39918940
+
+file_id: scot.csv-20170726104906-f8gqfj849scdt5m5-183
+hash: 5c89025b79763282c3ca0ce5a4539819e4bc6ca8
+
+file_id: extract_positions_fr-20170726104906-f8gqfj849scdt5m5-55
+hash: 78af2acea1170a90a535fbaba73d9cde79cc343e
+
+file_id: delete_invalid_perso-20170726104906-f8gqfj849scdt5m5-42
+hash: de30b708d5c2996a9c91c5b8d0d4190c93c472cc
+
+file_id: ke_tham.csv-20170726104906-f8gqfj849scdt5m5-199
+hash: eb933e2f6f7faa9d083bf9086a08c1f93e6a8f23
+
+file_id: import_ktcu_match_fn-20170726104906-f8gqfj849scdt5m5-82
+hash: f645ef710d5efc4fdef6ffc2af54150625133d3c
+
+file_id: import_ktcu_match_re-20170726104906-f8gqfj849scdt5m5-85
+hash: 90f2d1d1bd7c30195c14e55bffa9ec7fa39d56aa
+
+file_id: delete_all_cadres.ph-20170726104906-f8gqfj849scdt5m5-26
+hash: c5d8efa0fbedf9018f34d875726abff493875fd9
+
+file_id: kitso_read.php-20170726104906-f8gqfj849scdt5m5-12
+hash: 5ad9a21e80c97f8dc5fde13081cfed177d71d55f
+
+file_id: pmh_prod.csv-20170726104906-f8gqfj849scdt5m5-182
+hash: 268f107a3c330b940033ffebf8c1ebc50d2c01df
+
+file_id: gb_all.csv-20170726104906-f8gqfj849scdt5m5-192
+hash: 195449648037d012d5f3d0e2efe3b6365b0e17be
+
+file_id: remap_job_titles.php-20170726104906-f8gqfj849scdt5m5-124
+hash: 48848faa4eae94637df2d46a5e09562b45432836
+
+file_id: upcase_and_set_incom-20170726104906-f8gqfj849scdt5m5-128
+hash: a373289e8067c92ad0acfd2205d4fd0692a78d7b
+
+file_id: names.csv-20170726104906-f8gqfj849scdt5m5-120
+hash: 2b177631cd3eebf45a9856f2773ffa0006f99561
+
+file_id: import_regions.php-20170726104906-f8gqfj849scdt5m5-107
+hash: 5319b6a1ac8fdbe82ffbd753fca8e035cf1ceefe
+
+file_id: pc2.csv-20170726104906-f8gqfj849scdt5m5-181
+hash: 84bdf0bf69af007cd714a03c651dce43069f5eae
+
+file_id: import_districts.php-20170726104906-f8gqfj849scdt5m5-96
+hash: 3a52d91904b3e0d63af2ea8150f6cb32f9910b25
+
+file_id: export_by_id.php-20170726104906-f8gqfj849scdt5m5-52
+hash: 283c7368397c5a824d0804e3909b2e25fcbc3a9d
+
+file_id: bw_prod.csv-20170726104906-f8gqfj849scdt5m5-167
+hash: 5c33e5122ff4978f220ae064af4e10c203cedffa
+
+file_id: combine_dbs-20170726104906-f8gqfj849scdt5m5-158
+hash: aa307a1d73bc1adc7e38499444a38c1f04be5c97
+
+file_id: extract_establishmen-20170726104906-f8gqfj849scdt5m5-53
+hash: 67e063d84e535cdf4e02b9e119890dfe68962978
+
+file_id: import_cadres.php-20170726104906-f8gqfj849scdt5m5-91
+hash: 2a72c606485dee74664def532aab17de61e39935
+
+file_id: import_infinium.php-20170726104906-f8gqfj849scdt5m5-104
+hash: 046401806d699b6f242897468ead4393a8e0c679
+
+file_id: nyang.csv-20170726104906-f8gqfj849scdt5m5-200
+hash: 0bb97483681b7fee28999aa7bea2278097f8a0ba
+
+file_id: verify_establishment-20170726104906-f8gqfj849scdt5m5-144
+hash: 8123aefa38ab520990b88a4b846be2cc93197097
+
+file_id: hriscsv.test_bad_260-20170726104906-f8gqfj849scdt5m5-7
+hash: d57c7145d4b23d03a2adf81d25b076b7ff9dc39c
+
+file_id: hriscsv.test_bad_260-20170726104906-f8gqfj849scdt5m5-6
+hash: d57c7145d4b23d03a2adf81d25b076b7ff9dc39c
+
+file_id: fixup_post_reference-20170726104906-f8gqfj849scdt5m5-67
+hash: 35ab71b566f68ed502965927cbad753a0ca7d517
+
+file_id: ft_1.csv-20170726104906-f8gqfj849scdt5m5-187
+hash: 33f761de5b44478009cd562882c7deb51185cc86
+
+file_id: merge_ktcu_courses.p-20170726104906-f8gqfj849scdt5m5-115
+hash: 204c8fd57b0ab79307c8ca4f58eb3d5e7c4d57a5
+
+file_id: fix_capitalization.p-20170726104906-f8gqfj849scdt5m5-57
+hash: a5785179ed5e4ce559532c2549556244ecf37dc5
+
+file_id: update_facility_name-20170726104906-f8gqfj849scdt5m5-132
+hash: f30bdc46cc26d8ee84faf5c95edbd37bacec2652
+
+file_id: upcase_countries.php-20170726104906-f8gqfj849scdt5m5-129
+hash: a301c9964da2402fa52ca04dce25fbe3cfb8cf2f
+
+file_id: change_moh_departmen-20170726104906-f8gqfj849scdt5m5-145
+hash: 024cdd11ab258db6c024384043d5c1151a84fd1a
+
+file_id: classifications.csv-20170726104906-f8gqfj849scdt5m5-15
+hash: 7b926c72d2d6a133f1197c4b80b445407288b078
+
+file_id: salary_grades.csv-20170726104906-f8gqfj849scdt5m5-125
+hash: 402b2d797e31752cbf27f835e9dcf81ae619eda1
+
+file_id: position_missing_job-20170726104906-f8gqfj849scdt5m5-154
+hash: 990b7f47a65a56d3396f1ddcbfc04e57601849c3
+
+file_id: cs_dept_mispellings.-20170726104906-f8gqfj849scdt5m5-148
+hash: ccfa555a60991030ecf352884921b750801c1a03
+
+file_id: cs_dept_mispellings.-20170726104906-f8gqfj849scdt5m5-147
+hash: c402e116d4ebd04916ae9397738ea14f04edad07
+
+file_id: import_salary_grades-20170726104906-f8gqfj849scdt5m5-109
+hash: 9ce2d043c24272534ac17cc2e97422af320acb88
+
+file_id: fixup_contact_forms.-20170726104906-f8gqfj849scdt5m5-61
+hash: aa58fa69f3359868f04d3683eade79b285f8ff2b
+
+file_id: ihs_mlp.csv-20170726104906-f8gqfj849scdt5m5-175
+hash: bfd5ba03091629b5a7ecd0f201ef81969ee73bca
+
+file_id: clean_up_database.ph-20170726104906-f8gqfj849scdt5m5-16
+hash: 19c4d40c12736804f9a155cc60e09f3713c59953
+
+file_id: delete_persons_witho-20170726104906-f8gqfj849scdt5m5-45
+hash: e2b8f465f442c3e35465d17e0d4bf998430405fd
+
+file_id: nyangagwe.csv-20170726104906-f8gqfj849scdt5m5-178
+hash: d45eb317dee739efa7cebd011d3db0413482e7f7
+
+file_id: delete_open_position-20170726104906-f8gqfj849scdt5m5-44
+hash: e3762004e1462287d817ad6d15cf8727689b2950
+
+file_id: change_moh_departmen-20170726104906-f8gqfj849scdt5m5-14
+hash: e652ae9842cc3e5a2021941cf1afa0154b643ba7
+
+file_id: update_from_establis-20170726104906-f8gqfj849scdt5m5-133
+hash: 4b6e3ed39e173bb0b2ab8aaf0f2686a919f46bd6
+
+file_id: current_infinium_pos-20170726104906-f8gqfj849scdt5m5-150
+hash: 1a19df890072b9f37bf80c22c065ae00344541a2
+
+file_id: update_professions_f-20170726104906-f8gqfj849scdt5m5-140
+hash: f28e341cf20a4f99aeac675b6f229dfeb8d029a8
+
+file_id: delete_bad_person_id-20170726104906-f8gqfj849scdt5m5-37
+hash: 0842cf901be8c956a4146ef8bac0924f64edfa72
+
+file_id: ihris_data_liswaniso-20170726104906-f8gqfj849scdt5m5-73
+hash: a51d21be858e393f8103b6fe4128c6855d10bc69
+
+file_id: update_training_venu-20170726104906-f8gqfj849scdt5m5-142
+hash: 5c25b2473d912fa14b739925254291f96efc390b
+
+file_id: update_training_venu-20170726104906-f8gqfj849scdt5m5-143
+hash: c864189228248ed2334c17701a4582e1e8dd5b37
+
+file_id: ihris_data_liswaniso-20170726104906-f8gqfj849scdt5m5-74
+hash: 516b10be4d994c19657fca8f00e101e7d9c6dfb2
+
+file_id: delete_duplicate_per-20170726104906-f8gqfj849scdt5m5-39
+hash: af50b113da620649eb95fc57c5284aeeec7083f2
+
+file_id: database_details-20170726104906-f8gqfj849scdt5m5-160
+hash: 0f50e73e3b3f4e3a9120e579ea0f45d803506ea6
+
+file_id: names.test_bad_19042-20170726104906-f8gqfj849scdt5m5-121
+hash: 1374a36d7f40e2a3819b57ea214ae32e68ae831d
+
+file_id: gb_1.csv-20170726104906-f8gqfj849scdt5m5-190
+hash: 8a8d5b2840852b9246c434206a07892ad89b08bd
+
+file_id: link_infinium_positi-20170726104906-f8gqfj849scdt5m5-112
+hash: c0ca88924a442ca931a2f519e72a128b22085606
+
+file_id: ft_all.csv-20170726104906-f8gqfj849scdt5m5-189
+hash: a75bbf8ab00cd4e3f23ba5b3bd79d4f186c9b38b
+
+file_id: gb_2.csv-20170726104906-f8gqfj849scdt5m5-191
+hash: 55ac358a8edc97afbd4a94f221372dcfcd61c04f
+
+file_id: delete_all_departmen-20170726104906-f8gqfj849scdt5m5-29
+hash: 7637caf209a6dbd9dacbdff968d9e08d4b3f4d63
+
+file_id: increment_merged_dat-20170726104906-f8gqfj849scdt5m5-176
+hash: 54bd1675560988c78617653b86ecc318b1346081
+
+file_id: fixup_person_positio-20170726104906-f8gqfj849scdt5m5-64
+hash: 9f4c8f9c27bbcd14daf2f94f5931f7851ab3d7d0
+
+file_id: lookupnewlists3.php-20170726104906-f8gqfj849scdt5m5-164
+hash: e4ef51c63aa49d0d8fc630945596655f1a5fe300
+
+file_id: scotbase_mar09.csv-20170726104906-f8gqfj849scdt5m5-184
+hash: f47002c555d6fe80a3e65c88ef89ff7849a580e1
+
+file_id: import_departments.p-20170726104906-f8gqfj849scdt5m5-95
+hash: 1dcb98450454392093c8eff4bc77b765ede8d0c2
+
+file_id: country_codes.csv-20170726104906-f8gqfj849scdt5m5-146
+hash: 286a57efac7989b59394f8eab4ef38a6508dcbf2
+
+file_id: import_file_numbers.-20170726104906-f8gqfj849scdt5m5-101
+hash: 9048b3626aa302748a3e6d5712894d69549b0101
+
+file_id: fixup_ktcu_training_-20170726104906-f8gqfj849scdt5m5-63
+hash: 671e8ff40bf6e00f3a0a9c9aeeb7d240144b1ee8
+
+file_id: backport_infinium.ph-20170726104906-f8gqfj849scdt5m5-13
+hash: 0f717801938b9333d47538acefe72d0d70a6c0e0
+
+file_id: current_infinium_pos-20170726104906-f8gqfj849scdt5m5-149
+hash: 68bca6e856710023cfaa8912c35656506bb79f96
+
+file_id: region.csv-20170726104906-f8gqfj849scdt5m5-122
+hash: 2105c21c4c23ebb79758033a8a5d1042bb1f23d9
+
+file_id: departments.csv-20170726104906-f8gqfj849scdt5m5-49
+hash: e4e6721596c2a2bb5e30e006f0b5c68f1e250108
+
+file_id: import_ktcu_match_om-20170726104906-f8gqfj849scdt5m5-84
+hash: 0e43baefa2fadb30c08918c576027d7726f82a03
+
+file_id: addinjobdetails.php-20170726104906-f8gqfj849scdt5m5-157
+hash: 2599f25f8e377612aa11808ef46184d1162a7903
+
+file_id: updated_cs_dept.csv-20170726104906-f8gqfj849scdt5m5-155
+hash: 69b6e686983878f9854c97302796789444747377
+
+file_id: kitso_match_people.p-20170726104906-f8gqfj849scdt5m5-11
+hash: 7a212cb7b07f37bf18c0978801b0aef15a86400b
+
+file_id: fix_from_establishme-20170726104906-f8gqfj849scdt5m5-58
+hash: d4f2cb0499cdf468f2923d47e52930759affb0a6
+
+file_id: fix_from_establishme-20170726104906-f8gqfj849scdt5m5-59
+hash: 221f726c1edb89067870cff10ba0464f182ee873
+
+file_id: ke_migrate.csv-20170726104906-f8gqfj849scdt5m5-196
+hash: 2a8d05259e4beb62f8e80683397ccac19b6ea1a3
+
+file_id: remaining_migrate.cs-20170726104906-f8gqfj849scdt5m5-204
+hash: 3dff0f3539d38f6b5b81f1c277de7177f9dcbb1c
+
+file_id: delete_marked_duplic-20170726104906-f8gqfj849scdt5m5-43
+hash: 5fcbc70605334df84a00d7f4a1b1d1348b890c8d
+
+file_id: bzrignore-20170726105135-u0w5dk8znoehwal5-1
+hash: a4ef1a680591d3b95a9f44948d690395cacb59f3
+
+file_id: update_from_infinium-20170726104906-f8gqfj849scdt5m5-135
+hash: 7a411cd3d1101c2d0826b5ad5c31589a7d278160
+
+file_id: delete_bad_person_po-20170726104906-f8gqfj849scdt5m5-38
+hash: f42ba55ee1597c7066610f98e1f085cccfb68eeb
+
+file_id: import_ktcu_match_ma-20170726104906-f8gqfj849scdt5m5-83
+hash: 7319d293e819ea0b492cd3f234a6e63295a4a86a
+
+file_id: ihs_gaborone.csv-20170726104906-f8gqfj849scdt5m5-174
+hash: de4241a550ec7e30c5e7d5457968b8dcd516af06
+
+file_id: import_dpsm_posts.ph-20170726104906-f8gqfj849scdt5m5-97
+hash: 3827b979ca6801dd73ade47d42d835edbdb827f7
+
+file_id: gaborone_main.csv-20170726104906-f8gqfj849scdt5m5-172
+hash: 6001088289d251fc59e529d395ccc3400fae3d23
+
+file_id: cleanup_import_job_t-20170726104906-f8gqfj849scdt5m5-19
+hash: 5c190b30923d88c609396a7b118d15b4b4669838
+
+file_id: cleanup_import_job_t-20170726104906-f8gqfj849scdt5m5-18
+hash: 1f0a767e562a967e24c0ce143366202f80082012
+
+file_id: import_tb_match_name-20170726104906-f8gqfj849scdt5m5-87
+hash: ba5af379b46b5a34202f62ea94224b8d64cd5ff1
+
+file_id: cleanup_import_job_t-20170726104906-f8gqfj849scdt5m5-17
+hash: 8c69fb0eaf7bc299f880d504d8562594285c2575
+
+file_id: lookup_null_job_titl-20170726104906-f8gqfj849scdt5m5-113
+hash: e93ed19a2f341fb63a34d023de55346075f53368
+
+file_id: district.csv-20170726104906-f8gqfj849scdt5m5-51
+hash: f98c464ab96a4030cfb612f6b5d03357b66fb264
+
+file_id: import_facilities.ph-20170726104906-f8gqfj849scdt5m5-100
+hash: 3a52d91904b3e0d63af2ea8150f6cb32f9910b25
+
+file_id: update_individual_re-20170726104906-f8gqfj849scdt5m5-136
+hash: 2ef79fb97d8ede2268f61ccebbdd414448c5e51b
+
+file_id: delete_all_regions.p-20170726104906-f8gqfj849scdt5m5-35
+hash: db52cbfaf0a0d320d5aa94e8b751f13e36c16e43
+
+file_id: ke_merged.csv-20170726104906-f8gqfj849scdt5m5-195
+hash: 547af33a61804e9d6b6ad69b1eec39b46fd8fa8a
+
+file_id: import_ktcu_coursepa-20170726104906-f8gqfj849scdt5m5-78
+hash: 59988a13d37db7da23896929c78f3cd2433da166
+
+file_id: import_ktcu_coursepa-20170726104906-f8gqfj849scdt5m5-79
+hash: 1a869681cd99623588f74b018961f85a16a72954
+
+file_id: delete_empty_kitso_s-20170726104906-f8gqfj849scdt5m5-41
+hash: 21bfb8f5f4cb3ff75ab37d6c01b91b9ca1eb8bcd
+
+file_id: import_currencies.ph-20170726104906-f8gqfj849scdt5m5-94
+hash: 00cd97251e8fd2ab1820f25f4d1ef5d1d7a13606
+
+file_id: update_position_from-20170726104906-f8gqfj849scdt5m5-138
+hash: 16db527e55532cb93b406f631067b8674cc8fd91
+
+file_id: update_position_from-20170726104906-f8gqfj849scdt5m5-139
+hash: fed51306d660c297d9e15ae76faa3dc7973f0e74
+
+file_id: cleanup_salgrades.ph-20170726104906-f8gqfj849scdt5m5-20
+hash: 4e565b54732cf41506c1b70e4b9f3b9118f58277
+
+file_id: import_form_cache.ph-20170726104906-f8gqfj849scdt5m5-102
+hash: 4b4a5472adf1613a770a9f9e7850ef59ebdbd4ce
+
+file_id: import_ktcu_coursepa-20170726104906-f8gqfj849scdt5m5-77
+hash: b69c733e79ff9ebffbd1937586ae879ad1736939
+
+file_id: delete_all_salary_gr-20170726104906-f8gqfj849scdt5m5-36
+hash: 8730b2e857b77584c2c00ff831044b6f36e40652
+
+file_id: set_person_professio-20170726104906-f8gqfj849scdt5m5-127
+hash: 0c8dfd51f3456d08eb0d477d4ec39746de773885
+
+file_id: delete_all_positions-20170726104906-f8gqfj849scdt5m5-34
+hash: 19bb840d890fe7357e7200b7007c027e77f418da
+
+file_id: import_persons.php-20170726104906-f8gqfj849scdt5m5-106
+hash: 87d0be072dd9990b210ca30fa6f0839275d57e41
+
+file_id: updated_cs_dept.newl-20170726104906-f8gqfj849scdt5m5-156
+hash: 83e686c5ad9dbaa258e378c5b76f40e927faeddd
+
+file_id: region.test_bad_2004-20170726104906-f8gqfj849scdt5m5-123
+hash: 04e70a018c86be7984729e32d549d8de074e591b
+
+file_id: import_ktcu_newdata_-20170726104906-f8gqfj849scdt5m5-86
+hash: b3fa5880784e0c20bb73d1a19a0abb7640df158e
+
+file_id: fixup_posts_without_-20170726104906-f8gqfj849scdt5m5-69
+hash: 53c95f445a17373ce0e2e5204bdd1e312e3b13ca
+
+file_id: fixup_posts_without_-20170726104906-f8gqfj849scdt5m5-68
+hash: b0784ca26f770583428e1fe8624d952ef0a9abe9
+
+file_id: import_all_v0.1.php-20170726104906-f8gqfj849scdt5m5-89
+hash: f334977fb9955dde765d71c85772f2b69aa3d713
+
+file_id: migratestandarddata.-20170726104906-f8gqfj849scdt5m5-177
+hash: 01c711951437422e01b924b7d7b645234bec88ee
+
+file_id: close_old_public_sec-20170726104906-f8gqfj849scdt5m5-22
+hash: a11c0e353b25348fdda875380dc200e7ab0d1d56
+
+file_id: hriscsv.test_bad_300-20170726104906-f8gqfj849scdt5m5-9
+hash: d4a1256dabadeaecf4711778b7c5d39e1360b5ec
+
+file_id: import_employeenumbe-20170726104906-f8gqfj849scdt5m5-98
+hash: 209de16b1f1897bec0a3134b307d532f557fa739
+
+file_id: lookupnewlists.php-20170726104906-f8gqfj849scdt5m5-162
+hash: c5e12557c92be9297cebbd6f795dba8344d34c24
+
+file_id: create_dummy_person.-20170726104906-f8gqfj849scdt5m5-23
+hash: 3a0d4ee93ed5dc1933829db48db5bb08f74cbc60
+
+file_id: close_infinium_posit-20170726104906-f8gqfj849scdt5m5-21
+hash: 92a724f59ebd57a5c7d4cfe88af0dc639964b492
+
+file_id: francistown_2.csv-20170726104906-f8gqfj849scdt5m5-169
+hash: bf4dcf3b9c84af6462aa57fd504058e869cbcb7e
+
+file_id: tham.csv-20170726104906-f8gqfj849scdt5m5-185
+hash: 9ece5bbe8e91ae7dbf8bbf9938e0a5395d6f4ab4
+
+file_id: import_kitso_alldata-20170726104906-f8gqfj849scdt5m5-75
+hash: f93026b0fb81b8d40841676b6066d7ae68dfc44d
+
+file_id: hriscsv.test_bad_300-20170726104906-f8gqfj849scdt5m5-8
+hash: d4a1256dabadeaecf4711778b7c5d39e1360b5ec
+
+file_id: hide_scheduled_train-20170726104906-f8gqfj849scdt5m5-72
+hash: 2fb272e3aebe27b9dcb38beff57b90e47b3dd5f2
+
+file_id: finalmigrate.csv-20170726104906-f8gqfj849scdt5m5-166
+hash: a04732e93e45ce2897cc3adb3eb587f3f4607a24

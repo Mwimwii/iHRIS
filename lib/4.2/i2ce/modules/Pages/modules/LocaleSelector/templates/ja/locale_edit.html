@@ -1,0 +1,17 @@
+<span>
+  <span name="displayName"></span> --  <span name="description"></span>
+  <span name="locale_container">   
+    <h3>ロケール解像度:</h3>  
+    <div>
+      ロケール翻訳の検索のためのロケール一覧 <span name="displayName"></span>設定されていない場合、選択されたロケールをチェックし、その基本言語を設定、 <span name="locale_default"></span>.
+    </div>
+    <div>
+      既定の解像度 <span name="displayName"></span>,  <span name="locale_language"></span>, <span name="locale_default"></span>.
+    </div>
+    <div>
+      代替ロケールの解像度を指定したい場合は、カンマで区切り・優先順位降順のリストで入力できます。  
+      <span printf="'例えば、fr-RW,fr-FR,%s はfr-RWロケールの適切な解像度になります。',$locale_default"></span>
+      <span printf="'%s がリスト上で指定されていない場合、自動的に優先順位の最も低いロケールとして設定されます。',$locale_default"></span>
+    </div>
+    <input name="resolution" type="textbox"></span>
+</span>

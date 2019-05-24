@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE I2CEConfiguration SYSTEM "I2CE_Configuration.dtd">
+<I2CEConfiguration name="form-builder" path="/">
+  <metadata>
+    <version>4.2.1.0.1</version>
+  </metadata>
+  <configurationGroup name="form-builder" path="/" locale="sco">
+    <version>4.2.0.17.1</version>
+    <configurationGroup name="messages" path="/modules/form-builder/messages">
+      <configuration name="cannot_delete" locale="sco" values="single" type="string">
+        <value>Ye dinna hae access tae delyte the form data</value>
+      </configuration>
+      <configuration name="bad_delete_path" locale="sco" values="single" type="string">
+        <value>Aen onvalid path fer delytion</value>
+      </configuration>
+      <configuration name="delete_header" locale="sco" values="single" type="string">
+        <value>Delyte the Heider</value>
+      </configuration>
+    </configurationGroup>
+    <configuration name="tasks" path="/I2CE/tasks/task_description" locale="sco" value="many" type="delimited" values="single">
+      <value>form_builder_delete_forms:Can delyte the form meta-data bi uisin the form bigger</value>
+    </configuration>
+    <configurationGroup name="tasks" path="/I2CE/tasks/task_description" locale="sco">
+      <configuration name="can_build_form_classes" locale="sco" values="single" type="string">
+        <value>Can big or confeegur the form claiss</value>
+      </configuration>
+    </configurationGroup>
+  </configurationGroup>
+</I2CEConfiguration>

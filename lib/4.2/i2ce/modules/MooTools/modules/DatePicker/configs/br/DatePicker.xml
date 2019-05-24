@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE I2CEConfiguration SYSTEM "I2CE_Configuration.dtd">
+<I2CEConfiguration name="DatePicker" path="/modules/DatePicker">
+  <metadata>
+    <version>1.17.5.1</version>
+  </metadata>
+  <configurationGroup name="DatePicker" path="/modules/DatePicker" locale="br">
+    <version>1.17.5.1</version>
+    <configurationGroup name="options_datetime">
+      <configuration name="format" locale="br"></configuration>
+    </configurationGroup>
+    <configurationGroup name="options">
+      <configuration name="format" locale="br"></configuration>
+      <configuration name="days" type="delimited" locale="br">
+        <value>0:Sul</value>
+        <value>1:Lun</value>
+        <value>2:Meurzh</value>
+        <value>3:Merc'her</value>
+        <value>4:Yaou</value>
+        <value>5:Gwener</value>
+        <value>6:Sadorn</value>
+      </configuration>
+      <configuration name="months" type="delimited" locale="br">
+        <value>0:Genver</value>
+        <value>1:C'hwevrer</value>
+        <value>2:Meurzh</value>
+        <value>3:Ebrel</value>
+        <value>4:Mae</value>
+        <value>5:Mezheven</value>
+        <value>6:Gouere</value>
+        <value>7:Eost</value>
+        <value>8:Gwengolo</value>
+        <value>9:Here</value>
+        <value>10:Du</value>
+        <value>11:Kerzu</value>
+      </configuration>
+    </configurationGroup>
+  </configurationGroup>
+</I2CEConfiguration>

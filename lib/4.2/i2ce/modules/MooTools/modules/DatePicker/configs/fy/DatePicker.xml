@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE I2CEConfiguration SYSTEM "I2CE_Configuration.dtd">
+<I2CEConfiguration name="DatePicker" path="/modules/DatePicker">
+  <metadata>
+    <version>1.17.5.1</version>
+  </metadata>
+  <configurationGroup name="DatePicker" path="/modules/DatePicker" locale="fy">
+    <version>1.17.5.1</version>
+    <configurationGroup name="options_datetime">
+      <configuration name="format" locale="fy"></configuration>
+    </configurationGroup>
+    <configurationGroup name="options">
+      <configuration name="format" locale="fy"></configuration>
+      <configuration name="days" type="delimited" locale="fy">
+        <value>0:snein</value>
+        <value>1:moandei</value>
+        <value>2:tiisdei</value>
+        <value>3:woansdei</value>
+        <value>4:tongersdei</value>
+        <value>5:freed</value>
+        <value>6:sneon</value>
+      </configuration>
+      <configuration name="months" type="delimited" locale="fy">
+        <value>0:jannewaris</value>
+        <value>1:febrewaris</value>
+        <value>2:maart</value>
+        <value>3:april</value>
+        <value>4:maaie</value>
+        <value>5:juny</value>
+        <value>6:july</value>
+        <value>7:augustus</value>
+        <value>8:septimber</value>
+        <value>9:oktober</value>
+        <value>10:novimber</value>
+        <value>11:desimber</value>
+      </configuration>
+    </configurationGroup>
+  </configurationGroup>
+</I2CEConfiguration>

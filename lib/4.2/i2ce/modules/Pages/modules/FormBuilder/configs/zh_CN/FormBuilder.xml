@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE I2CEConfiguration SYSTEM "I2CE_Configuration.dtd">
+<I2CEConfiguration name="form-builder" path="/">
+  <metadata>
+    <version>4.2.1.0.1</version>
+  </metadata>
+  <configurationGroup name="form-builder" path="/" locale="zh_CN">
+    <version>4.2.0.17.1</version>
+    <configurationGroup name="messages" path="/modules/form-builder/messages">
+      <configuration name="cannot_delete" locale="zh_CN" values="single" type="string">
+        <value>您并无权限删除表单数据</value>
+      </configuration>
+      <configuration name="bad_delete_path" locale="zh_CN" values="single" type="string">
+        <value>无效的删除路径</value>
+      </configuration>
+      <configuration name="delete_header" locale="zh_CN" values="single" type="string">
+        <value>删除页眉</value>
+      </configuration>
+    </configurationGroup>
+    <configuration name="tasks" path="/I2CE/tasks/task_description" locale="zh_CN" value="many" type="delimited" values="single">
+      <value>form_builder_delete_forms:可以删除使用窗体构造器的窗体元数据</value>
+    </configuration>
+    <configurationGroup name="tasks" path="/I2CE/tasks/task_description" locale="zh_CN">
+      <configuration name="can_build_form_classes" locale="zh_CN" values="single" type="string"></configuration>
+    </configurationGroup>
+  </configurationGroup>
+</I2CEConfiguration>

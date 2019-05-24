@@ -1,0 +1,24 @@
+<tr><td>
+    <span name="field_name"></span>
+  </td>
+  <td>
+    <span name="field_type" ifset="true">
+      <span name="field_class" ifset="true">
+	字段 <span name="field_name"></span> 注册为类型 <span name="field_type"></span> 它提供自 <span name="field_class"></span>.
+      </span>
+      <span name="field_class" ifset="!true">
+	字段 <span name="field_name"></span> 注册为类型 <span name="field_type"></span>.
+	<span class="error">警告：字段“<span name="field_name"></span>”不与任何类相关。</span>
+      </span>
+    </span>
+    <span name="field_type" ifset="!true">
+      <span class="error">警告：字段“<span name="field_name"></span>”没有注册的类型。</span>
+    </span>
+    <span name="field_id" ifset="true">
+      字段有id <span name="field_id"></span>.
+    </span>
+    <span name="linked_form_name" ifset="true">
+      此字段连接至表格 <a href="" name="linked_form_link" id="linked_form_link"><span name="linked_form_name"></span></a>
+    </span> 
+  </td>
+</tr>

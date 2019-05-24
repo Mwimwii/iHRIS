@@ -1,6 +1,6 @@
 version: "3.7"
 services:
-  db:
+  ihris_db:
     image: mysql:8.0.15
     container_name: ihris_mysql
     restart: always
@@ -10,6 +10,10 @@ services:
       MYSQL_DATABASE: ihris_manage
       MYSQL_USER: ihris
       MYSQL_PASSWORD: m0h1ct11
+    ports:
+      - 3306:3306
+    security_opt:
+      - seccomp:unconfined
 
 #  memcached:
 #    image: memcached:latest
@@ -28,7 +32,7 @@ services:
       MYSQL_PASSWORD: m0h1ct11
       MYSQL_ROOT_PASSWORD: m0h1ct11
     depends_on:
-      - db
+      - ihris_db
 
   adminer:
     image: adminer
@@ -39,7 +43,7 @@ services:
     environment:
       MYSQL_ROOT_PASSWORD: m0h1ct11
     depends_on:
-      - db
+      - ihris_db
 
   ihris:
     image: ihris:4.3.3
@@ -47,16 +51,16 @@ services:
       context: .
       dockerfile: .docker/iHRIS.development.dockerfile
     container_name: ihris
-    restart: 'always'
+    restart: always
     ports:
-      - "8080:80"
+      - 8080:80
     volumes:
       - .:/var/lib/iHRIS
     environment:
       IHRIS_MEMCACHED_SERVER: ihris_memcached
       MYSQL_HOST: ihris
     depends_on:
-      - db
+      - ihris_db
 
 networks:
   default:

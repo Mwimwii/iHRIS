@@ -1,0 +1,31 @@
+<div>
+  
+
+
+  <h2>Kuzhat ar feurmskridoù</h2>
+  <span name="has_profiles" ifset="true">
+    Kuzhat an holl furmskridoù er profil dibabet
+    <form action="CachedForms/cache" style="margin-left:2em" method="POST">
+      Diuzañ ur profil:  <select name="profile"></select><br><input type="submit" value="Cache"></form>
+  </span>
+  <br><div>
+    <a href="CachedForms/cacheAll">Krubuilh</a> an holl furmskridoù
+    <br><a href="CachedForms/cacheAllForce">Kuzhañ rediet</a> diwar an holl furmskridoù ma ne vezont ket didalvoudekaet
+    <br><a href="CachedForms/dropAll">Lemel</a> Krubuilhoù eus an holl furmskridoù
+  </div>
+  <br><span name="has_profiles" ifset="true">
+    <h2>Ezporzhiañ ar furmskridoù kuzhet</h2>
+    Ezporzhiañ an holl furmskridoù kuzhet er profil dibabet. Ma tibabit un deiziad kemmañ ne vo ezporzhiet neuze nemet an enrolladennoù zo bet kemmet d'an deiz-se pe goude an deiz-se. Anez e vo ezporzhiet an holl enrolladennoù zo bet kemmet er profil dibabet.
+    <form action="CachedForms/export" style="margin-left:2em" method="POST">
+      Diuzañ ur profil:  <select name="profile"></select><br>
+      Deiziad kemm: <input class="datepicker_ymd" name="mod_date" type="text"><br><input type="checkbox" value="1" name="compress" checked>a c'haller gwaskañ gant bzip2
+      <br><input type="submit" value="Export"></form>
+    
+    <br></span>
+
+  <h2>Krouiñ/aozañ ar profil</h2>
+  Krouiñ ur profil pe kemmañ ur profil evit ar furmskridoù zo anezho
+  <form action="CachedForms/exportProfile" style="margin-left:2em">
+      Diuzañ ur profil:  <select name="profile"><option value="">Krouiñ ur profil nevez</option></select><br><input type="submit" value="Edit"></form>
+  <br><h2>Kuzhat krubuilh ar furmskridoù hiniennel</h2>
+  <ul id="cached_forms_list"></ul></div>

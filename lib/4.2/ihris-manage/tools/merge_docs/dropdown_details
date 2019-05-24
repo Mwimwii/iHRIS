@@ -1,0 +1,6 @@
+SELECT * 
+FROM  `config_alt` 
+WHERE parent LIKE  '/I2CE/formsData/forms/%/%'
+AND name =  'last_modified'
+AND STR_TO_DATE( value,  '%Y-%m-%d %H:%i:%s' ) > STR_TO_DATE(  '2015-04-29 00:00:00',  '%Y-%m-%d %H:%i:%s' )
+

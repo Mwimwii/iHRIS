@@ -1,0 +1,47 @@
+<div>
+  
+
+  <h2>字段</h2>
+  <div id="field_contents">
+    <table class="multiFormTable" cellpadding="0" cellspacing="0" border="0"><tr><td>
+	  <h3>表格字段类</h3>The data type for this field.
+	</td>
+	<td>
+	  <select name="formfield"></select></td>
+      </tr><tr><td>
+	  <h3>必要</h3>此字段需要在保存前设置
+	</td>
+	<td>
+	  <select name="required"><option value="1">是</option><option value="0">否</option></select></td>
+      </tr><tr><td>
+	  <h3>数据库中</h3>This field is saved in the databsae
+	</td>
+	<td>
+	  <select name="in_db"><option value="1">是</option><option value="0">否</option></select></td>
+      </tr><tr><td>
+	  <h3>独特</h3>This field is requried to be a unique value
+	</td>
+	<td>
+	  <select name="unique"><option value="1">是</option><option value="0">否</option></select></td>
+      </tr><tr><td>
+	  <h3>独特字段</h3>If this is a unique field, these are fields it is requried to be unique relative to
+	</td>
+	<td>
+	  <input type="hidden" name="do_unique_field" value="1"><ul name="unique_field"></ul></td>
+      </tr></table><span id="headers">
+      <h2><a id="headers_link" href="">首段</a></h2>
+      Edit headers for this field
+      <div class="indented" id="headers_ajax"></div>
+    </span>
+
+    
+    <span name="has_meta" ifset="1">
+      <span id="meta">
+	<h2><a id="meta_link" href="">元</a></h2>
+	Edit meta data for this field
+	<div class="indented" id="meta_ajax"></div>
+      </span>
+    </span>
+
+  </div>
+</div>

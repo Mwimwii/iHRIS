@@ -1,0 +1,52 @@
+<div>
+  
+
+  <h2>页面论点</h2>
+  <div id="args_container">
+    <table class="multiFormTable" cellpadding="0" cellspacing="0" border="0"><tr><td>
+	  <h3>标题:</h3>The display name for the primary form
+	</td>
+	<td>
+	  <input name="title"></td>
+      </tr><tr><td>
+	  <h3>任务:</h3>Optional task for limiting access to this page.
+	</td>
+	<td>
+	  <select name="task"><option value="">没有选择的任务</option></select></td>
+      </tr></table><h2>关系选项</h2>
+    <table class="multiFormTable" cellpadding="0" cellspacing="0" border="0"><tr><td>
+	  <h3>关系:</h3>Relationship this page is based on
+	</td>
+	<td>
+	  <select name="relationship"><option value="">没有选择关系</option></select><br><span name="has_relationship" ifset="true"><a name="relationship_link">编辑关系</a></span>
+	</td>
+      </tr><tr><td>
+	  <h3>导出所有字段:</h3>Export all fields in the relationship
+	</td>
+	<td>
+	  <select name="get_all_fields"><option value="1">是</option><option value="0">否</option></select></td>
+      </tr><tr><td>
+	  <h3>使用高速缓存:</h3>Use caches in hippo tables when exporting data in the relationship
+	</td>
+	<td>
+	  <select name="use_cache"><option value="1">是</option><option value="0">否</option></select></td>
+      </tr></table><h2>XSL转换选项</h2>
+    <table class="multiFormTable" cellpadding="0" cellspacing="0" border="0"><tr><td>
+	  <h3>XSL转换:</h3>Select a XSL transform or upload an transform to further process the export.
+	</td>
+	<td>
+	  <input name="do_upload" value="1" type="checkbox">上传文件 <input name="upload" type="file"><span name="has_download" ifset="true"><a name="download_link">下载</a></span>
+	  <hr><input name="do_select" value="1" type="checkbox">选择现有转换 <select name="select"></select><br><span name="has_transform" ifset="true"><a name="transform_link">下载转换</a></span>
+	  <hr><input name="do_erase" value="1" type="checkbox">不转换
+	</td>
+      </tr></table><span id="fields">
+      <h2><a id="fields_link" href="">已选字段</a></h2>
+      Select individual fields in the relationship to export
+      <div class="indented" id="fields_ajax">
+      </div>
+    </span>
+    
+  </div>
+
+
+</div>

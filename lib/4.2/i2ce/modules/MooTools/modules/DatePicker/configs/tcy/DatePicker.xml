@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE I2CEConfiguration SYSTEM "I2CE_Configuration.dtd">
+<I2CEConfiguration name="DatePicker" path="/modules/DatePicker">
+  <metadata>
+    <version>1.17.5.1</version>
+  </metadata>
+  <configurationGroup name="DatePicker" path="/modules/DatePicker" locale="tcy">
+    <version>1.17.5.1</version>
+    <configurationGroup name="options_datetime">
+      <configuration name="format" locale="tcy"></configuration>
+    </configurationGroup>
+    <configurationGroup name="options">
+      <configuration name="format" locale="tcy"></configuration>
+      <configuration name="days" type="delimited" locale="tcy">
+        <value>0:ಐತಾರೊ</value>
+        <value>1:ಸೋಮಾರೊ</value>
+        <value>2:ಅಂಗಾರೆ</value>
+        <value>3:ಬುದಾರೊ</value>
+        <value>4:ಗುರ್ವಾರೊ</value>
+        <value>5:ಶುಕ್ರಾರೊ</value>
+        <value>6:ಸನಿಯಾರೊ</value>
+      </configuration>
+      <configuration name="months" type="delimited" locale="tcy">
+        <value>0:ಜನವರಿ</value>
+        <value>1:ಪೆಬ್ರವರಿ</value>
+        <value>2:ಮಾರ್ಚಿ</value>
+        <value>3:ಎಪ್ರಿಲ್</value>
+        <value>4:ಮೇ</value>
+        <value>5:ಜೂನ್</value>
+        <value>6:ಜುಲಾಯಿ</value>
+        <value>7:ಆಗೋಸ್ಟು</value>
+        <value>8:ಸಪ್ಟಂಬರೊ</value>
+        <value>9:ಅಕ್ಟೋಬರ</value>
+        <value>10:ನವಂಬರೊ</value>
+        <value>11:ದಸಂಬರೊ</value>
+      </configuration>
+    </configurationGroup>
+  </configurationGroup>
+</I2CEConfiguration>

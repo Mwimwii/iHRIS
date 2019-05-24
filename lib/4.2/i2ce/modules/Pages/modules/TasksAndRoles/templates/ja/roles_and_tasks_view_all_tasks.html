@@ -1,0 +1,21 @@
+<div id="siteContent">
+  <h1>タスクを管理します。</h1>
+  <h2>既存のタスク</h2>
+  <ul id="task_list"></ul><form method="post" action="tasks-roles/tasks" id="add_user_task">
+    <table class="multiFormTable" border="0" cellpadding="0" cellspacing="0"><tr><th colspan="2">
+	  新しいタスクを追加します。
+	</th>
+      </tr><tr><td>
+	  <label>タスクのショートネーム:</label> "-"、"."、"_" を含む文字と数字から成るショートネームは、ページとテンプレート上のタスクを参照するために使用します。
+	</td>
+	<td>
+	  <input type="text" id="task_short_name" name="task_short_name" class="validate=[notinlist,nonempty,magicdatakey]"></td>
+      </tr><tr><td>
+	  <label>タスクの説明:</label> このタスクの簡略な説明。
+	</td>
+	<td>
+	  <input type="text" name="task_description" class="validate=[nonempty]"></td>
+      </tr><tr><td colspan="2">
+	  <input class="button" type="submit" value="Create"></td>
+      </tr></table></form>
+</div>

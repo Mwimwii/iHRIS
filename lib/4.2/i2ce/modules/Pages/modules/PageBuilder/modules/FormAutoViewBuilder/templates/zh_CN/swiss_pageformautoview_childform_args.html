@@ -1,0 +1,39 @@
+<div>
+  <h2>Child Form Arguments</h2>
+  
+  <div id="child_form_container">
+    <table class="multiFormTable" cellpadding="0" cellspacing="0" border="0"><tr><td>
+		  <h3>标题:</h3>The display name for <span name="form_name"></span>
+		</td>
+		<td>
+		  <input name="title"></td>
+	  </tr><tr><td>
+		  <h3>链接:</h3>The link to child form - <span name="form_name"></span>
+		</td>
+		<td>
+		  <input name="link"></td>
+	  </tr><tr><td>
+		  <h3>链接过滤器:</h3>Filter used to select the content loaded for <span name="form_name"></span>
+		</td>
+		<td>
+		  <input name="link_filter"></td>
+      </tr><tr><td>
+		  <h3>权限:</h3>用户需要为此访问所需的单一权限 <span name="form_name"></span>
+		</td>
+		<td>
+			<select name="task"><option value="">没有选择任务</option></select></td>
+	  </tr></table><span id="action_links">
+	  <h2><a id="action_links_link" href="">操作链接</a></h2>
+	    Edit the fields of the action link
+	  <div class="indented" id="action_links_ajax">
+	  </div>
+	</span>
+	
+	<span id="printf_args">
+	  <h2><a id="printf_args_link" href="">显示格式</a></h2>
+	    Edit the way the child form will be displayed
+	  <div class="indented" id="printf_args_ajax">
+	  </div>
+	</span>
+  </div>
+</div>

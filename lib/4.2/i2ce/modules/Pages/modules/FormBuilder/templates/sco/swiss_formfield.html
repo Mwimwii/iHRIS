@@ -1,0 +1,47 @@
+<div>
+  
+
+  <h2>Field</h2>
+  <div id="field_contents">
+    <table class="multiFormTable" cellpadding="0" cellspacing="0" border="0"><tr><td>
+	  <h3>Form Field Claiss</h3>The data type fer this field.
+	</td>
+	<td>
+	  <select name="formfield"></select></td>
+      </tr><tr><td>
+	  <h3>Needit</h3>This field needs tae be set afore it can be hained
+	</td>
+	<td>
+	  <select name="required"><option value="1">Ay</option><option value="0">Nae</option></select></td>
+      </tr><tr><td>
+	  <h3>In The Database</h3>This field is hained in the databsae
+	</td>
+	<td>
+	  <select name="in_db"><option value="1">Ay</option><option value="0">Nae</option></select></td>
+      </tr><tr><td>
+	  <h3>Unique</h3>This field needs tae be ae unique value
+	</td>
+	<td>
+	  <select name="unique"><option value="1">Ay</option><option value="0">Nae</option></select></td>
+      </tr><tr><td>
+	  <h3>Unique Fields</h3>Gif this is ae unique field, than thir ar fields that it's needit tae be unique relateeve til
+	</td>
+	<td>
+	  <input type="hidden" name="do_unique_field" value="1"><ul name="unique_field"></ul></td>
+      </tr></table><span id="headers">
+      <h2><a id="headers_link" href="">Heiders</a></h2>
+      Eedit the heiders fer this field
+      <div class="indented" id="headers_ajax"></div>
+    </span>
+
+    
+    <span name="has_meta" ifset="1">
+      <span id="meta">
+	<h2><a id="meta_link" href="">Meta</a></h2>
+	Eedit the meta data fer this field
+	<div class="indented" id="meta_ajax"></div>
+      </span>
+    </span>
+
+  </div>
+</div>

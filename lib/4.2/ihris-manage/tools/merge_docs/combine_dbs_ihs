@@ -1,0 +1,11 @@
+CREATE TABLE record LIKE ihs_gaborone.record;
+INSERT IGNORE INTO record 
+SELECT * FROM ihs_gaborone.record WHERE id > 500000;
+INSERT IGNORE INTO record 
+SELECT * FROM ihs_francistown.record WHERE id > 600000;
+CREATE TABLE entry LIKE ihs_gaborone.entry;
+INSERT INTO entry SELECT * FROM ihs_gaborone.entry WHERE record > 500000;
+INSERT INTO entry SELECT * FROM ihs_francistown.entry WHERE record > 600000;
+
+CREATE TABLE last_entry LIKE ihs_gaborone.last_entry;
+INSERT IGNORE INTO last_entry SELECT * FROM entry ORDER BY date DESC;

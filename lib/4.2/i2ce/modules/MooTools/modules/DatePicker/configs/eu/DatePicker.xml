@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE I2CEConfiguration SYSTEM "I2CE_Configuration.dtd">
+<I2CEConfiguration name="DatePicker" path="/modules/DatePicker">
+  <metadata>
+    <version>1.17.5.1</version>
+  </metadata>
+  <configurationGroup name="DatePicker" path="/modules/DatePicker" locale="eu">
+    <version>1.17.5.1</version>
+    <configurationGroup name="options_datetime">
+      <configuration name="format" locale="eu"></configuration>
+    </configurationGroup>
+    <configurationGroup name="options">
+      <configuration name="format" locale="eu"></configuration>
+      <configuration name="days" type="delimited" locale="eu">
+        <value>0:Igandea</value>
+        <value>1:Astelehena</value>
+        <value>2:Asteartea</value>
+        <value>3:Asteazkena</value>
+        <value>4:Osteguna</value>
+        <value>5:Ostirala</value>
+        <value>6:Larunbata</value>
+      </configuration>
+      <configuration name="months" type="delimited" locale="eu">
+        <value>0:Urtarrila</value>
+        <value>1:Otsaila</value>
+        <value>2:Martxoa</value>
+        <value>3:Apirila</value>
+        <value>4:Maiatza</value>
+        <value>5:Ekaina</value>
+        <value>6:Uztaila</value>
+        <value>7:Abuztua</value>
+        <value>8:Iraila</value>
+        <value>9:Urria</value>
+        <value>10:Azaroa</value>
+        <value>11:Abendua</value>
+      </configuration>
+    </configurationGroup>
+  </configurationGroup>
+</I2CEConfiguration>

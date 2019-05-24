@@ -1,0 +1,28 @@
+<div>
+  
+  <div id="container">
+
+    <h2>创建新表单</h2>
+    <table class="multiFormTable" cellpadding="0" cellspacing="0" border="0"><tr><td>
+	  <h3>窗体名称</h3>用于识别词类的一个内部密钥。它不能与任何现有窗体的密钥相同。
+	</td>
+	<td>
+	  <input name="name" type="text" value="" class="validate=[nonempty,magicdatakey,notinlist]"></td>
+      </tr><tr><td>
+	  <h3>显示名称</h3>The displayed name of this form.  This is what is presented to the end user.
+	</td>
+	<td>
+	  <input name="display" type="text" value="" class="validate=[nonempty]"></td>
+      </tr><tr><td>
+	  <h3>类:</h3>执行此表格的表格等级。
+	</td>
+	<td>
+	  <select name="class"><option value="">选择一个类别</option></select></td>
+      </tr><tr><td>
+	  <h3>存储:</h3>The storage mechanism for this form
+	</td>
+	<td>
+	  <select name="storage"></select></td>
+      </tr></table><h2>编辑现有窗体</h2>
+    <ul id="forms"></ul></div>
+</div>

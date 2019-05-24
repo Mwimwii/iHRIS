@@ -1,0 +1,53 @@
+<div>
+  <h2>レポート ビュー</h2>
+  <h3><a name="show_link">ビュー <span name="displayName"></span></a></h3>
+    <p>レポートビューはレポートに基づいています <a name="report_link"><span name="reportName"></span></a></p>
+  <span name="has_default_display" ifset="true">
+    <h3><a name="clear_default_display_link">既定の表示をクリア</a></h3>
+  </span>
+  <p>フィールド、およびこのレポートビューで必要な集計データを選択します。フィールドをドラッグして表示順序を変更できます。</p>
+  <table class="multiFormTable reportviews" cellpadding="0" cellspacing="0" border="0" id="container"><tr><th colspan="2">
+	  レポートされた表示情報
+	</th>
+    </tr><tr><td>
+	<h3>表示名:</h3>
+	このレポートの略称
+      </td>
+      <td>
+	<input name="displayName" type="text" value="" class="validate=[nonempty]"></td>
+    </tr><tr><td>
+	<h3>説明:</h3>
+	このレポートの詳細
+      </td>
+      <td>
+	<textarea name="description" rows="4" cols="53" value=""></textarea></td>
+    </tr><tr task="custom_reports_admin"><td>
+	<h3>レポートビューのアクセス許可:</h3>
+	このレポート表示を絞り込むタスクを選択します。 
+      </td>
+      <td>
+	<select name="limit_view_to_task"><option value="">このレポートの表示を制限しません。</option></select></td>      
+    </tr><tr permission="role(admin) or task(custom_reports_admin)"><td colspan="2">
+	<input name="disable_hide" type="hidden" value="1"><input name="disable" id="disable" type="checkbox" value="1"><h3>無効にします。:</h3>
+	管理者ではないユーザーからレポートを無効にします。
+      </td>
+    </tr><tr><td colspan="2">
+	<input name="total_hide" type="hidden" value="1"><input name="total" id="total" type="checkbox" value="1"><h3>合計に含む:</h3>
+	このビューの全行数が含まれます。
+      </td>
+    </tr><tr><td>
+	<h3>関連ビュー</h3>
+      </td>
+      <td>
+	<select name="related_views[]" multiple size="10"></select></td>
+    </tr><tr><th colspan="2">
+	レポートフィールド
+      </th>
+      </tr></table><div id="fields_fill"></div>
+
+  <br><br><span task="custom_reports_admin" name="has_display_editors" ifset="true" id="display_editors">
+    <h2> <a id="displays_link">表示オプションの編集</a></h2>
+    <div id="displays_ajax" class="indented"></div>
+  </span>
+
+</div>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE I2CEConfiguration SYSTEM "I2CE_Configuration.dtd">
+<I2CEConfiguration name="web-services" path="/modules/web-services">
+  <metadata>
+    <version>4.2.1.0.1</version>
+  </metadata>
+  <configurationGroup name="web-services" path="/modules/web-services" locale="zh_CN">
+    <version>4.2.0.3.1</version>
+    <configurationGroup name="messages" locale="zh_CN">
+      <configuration name="unknown_error" values="single" type="string">
+        <value>发生未知错误。</value>
+      </configuration>
+      <configuration name="noaccess" values="single" type="string">
+        <value>您没有权限访问此服务。请先登录或与管理员联系。</value>
+      </configuration>
+      <configuration name="noaccess_page" values="single" type="string">
+        <value>您没有权限访问服务“%s”。</value>
+      </configuration>
+    </configurationGroup>
+  </configurationGroup>
+</I2CEConfiguration>
