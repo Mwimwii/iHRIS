@@ -1,0 +1,162 @@
+#scotbase_mar09
+#Max ID: 48804;
+#Max Modified: 2015-03-09 10:34:11
+#
+#ihs_mlp
+#Modified pre 48804: 1295
+#Modified post 48804: 2324
+
+
+CREATE TABLE BW_Merge.record_checks AS 
+SELECT *,'ihs_mlp' AS db FROM ihs_mlp.record
+WHERE last_modified > '2015-03-09 10:34:11' AND id <= 48804
+UNION SELECT *,'pc1' AS db FROM pc1.record
+WHERE last_modified > '2015-03-09 10:34:11' AND id <= 48804
+UNION SELECT *,'pc2' AS db FROM pc2.record
+WHERE last_modified > '2015-03-09 10:34:11' AND id <= 48804
+UNION SELECT *,'scot' AS db FROM scot.record
+WHERE last_modified > '2015-03-09 10:34:11' AND id <= 48804
+UNION SELECT *,'tham' AS db FROM tham.record
+WHERE last_modified > '2015-03-09 10:34:11' AND id <= 48804;
+
+SELECT * FROM BW_Merge.record_checks WHERE id IN (
+        SELECT id FROM record_checks GROUP BY id HAVING count(*) > 1 
+        ) 
+    ORDER BY id;
+
+CREATE TABLE BW_Merge.new_records AS
+SELECT COUNT(*) as total,MAX(id) as max,'ihs_mlp' AS db FROM ihs_mlp.record
+WHERE id > 48804
+UNION SELECT COUNT(*),MAX(id) as total,'pc1' AS db FROM pc1.record
+WHERE id > 48804
+UNION SELECT COUNT(*),MAX(id) as total,'pc2' AS db FROM pc2.record
+WHERE id > 48804
+UNION SELECT COUNT(*),MAX(id) as total,'scot' AS db FROM scot.record
+WHERE id > 48804
+UNION SELECT COUNT(*),MAX(id) as total,'tham' AS db FROM tham.record
+WHERE id > 48804;
+
+CREATE TABLE BW_Merge.parent_checks AS
+SELECT *,'ihs_mlp' AS db FROM ihs_mlp.record WHERE id > 48804 AND parent_id <= 48804
+UNION
+SELECT *,'pc1' AS db FROM pc1.record WHERE id > 48804 AND parent_id <= 48804
+UNION
+SELECT *,'pc2' AS db FROM pc2.record WHERE id > 48804 AND parent_id <= 48804
+UNION
+SELECT *,'scot' AS db FROM scot.record WHERE id > 48804 AND parent_id <= 48804
+UNION
+SELECT *,'tham' AS db FROM tham.record WHERE id > 48804 AND parent_id <= 48804;
+
+
+CREATE TABLE BW_Merge.form_check AS
+SELECT *,'ihs_mlp' AS db FROM ihs_mlp.form
+UNION
+SELECT *,'pc1' AS db FROM pc1.form
+UNION
+SELECT *,'pc2' AS db FROM pc2.form
+UNION
+SELECT *,'scot' AS db FROM scot.form
+UNION
+SELECT *,'tham' AS db FROM tham.form
+
+CREATE TABLE BW_Merge.field_check AS
+SELECT *,'ihs_mlp' AS db FROM ihs_mlp.field
+UNION
+SELECT *,'pc1' AS db FROM pc1.field
+UNION
+SELECT *,'pc2' AS db FROM pc2.field
+UNION
+SELECT *,'scot' AS db FROM scot.field
+UNION
+SELECT *,'tham' AS db FROM tham.field
+
+CREATE TABLE BW_Merge.formfield_check AS
+SELECT *,'ihs_mlp' AS db FROM ihs_mlp.form_field
+UNION
+SELECT *,'pc1' AS db FROM pc1.form_field
+UNION
+SELECT *,'pc2' AS db FROM pc2.form_field
+UNION
+SELECT *,'scot' AS db FROM scot.form_field
+UNION
+SELECT *,'tham' AS db FROM tham.form_field
+
+
+##position id is 57
+##select id from record where id > 48804 and form = 57
+##select (select name FROM form WHERE id = r.form),id FROM record r WHERE id > 48804;
+
+#TO CHECK FOR MAPPED VALUES, RUN ON EACH DATABASE:
+CREATE TABLE BW_Merge.mapcheck AS
+SELECT r.id,name,CONCAT(name,'|',r.id) AS ihrisid,'ihs_mlp' AS db FROM ihs_mlp.record r JOIN ihs_mlp.form ON r.form = form.id WHERE r.id > 48804
+UNION
+SELECT r.id,name,CONCAT(name,'|',r.id) AS ihrisid,'pc1' AS db FROM pc1.record r JOIN pc1.form ON r.form = form.id WHERE r.id > 48804
+UNION
+SELECT r.id,name,CONCAT(name,'|',r.id) AS ihrisid,'pc2' AS db FROM pc2.record r JOIN pc2.form ON r.form = form.id WHERE r.id > 48804
+UNION
+SELECT r.id,name,CONCAT(name,'|',r.id) AS ihrisid,'scot' AS db FROM scot.record r JOIN scot.form ON r.form = form.id WHERE r.id > 48804
+UNION
+SELECT r.id,name,CONCAT(name,'|',r.id) AS ihrisid,'tham' AS db FROM tham.record r JOIN tham.form ON r.form = form.id WHERE r.id > 48804;
+
+
+CREATE TABLE BW_Merge.entry_mapchecks AS
+SELECT e.*, m.*
+FROM ihs_mlp.entry e JOIN BW_Merge.mapcheck m ON m.db = 'ihs_mlp' AND e.string_value = m.ihrisid 
+UNION
+SELECT e.*, m.*
+FROM pc1.entry e JOIN BW_Merge.mapcheck m ON m.db = 'pc1' AND e.string_value = m.ihrisid 
+UNION
+SELECT e.*, m.*
+FROM pc2.entry e JOIN BW_Merge.mapcheck m ON m.db = 'pc2' AND e.string_value = m.ihrisid 
+UNION
+SELECT e.*, m.*
+FROM scot.entry e JOIN BW_Merge.mapcheck m ON m.db = 'scot' AND e.string_value = m.ihrisid 
+UNION
+SELECT e.*, m.*
+FROM tham.entry e JOIN BW_Merge.mapcheck m ON m.db = 'tham' AND e.string_value = m.ihrisid 
+
+CREATE TABLE BW_Merge.config_mapchecks AS
+SELECT c.*, m.name AS form,m.ihrisid,m.db
+FROM ihs_mlp.config_alt c JOIN BW_Merge.mapcheck m ON m.db = 'ihs_mlp' AND c.value = m.ihrisid 
+UNION
+SELECT c.*, m.name AS form,m.ihrisid,m.db
+FROM pc1.config_alt c JOIN BW_Merge.mapcheck m ON m.db = 'pc1' AND c.value = m.ihrisid 
+UNION
+SELECT c.*, m.name AS form,m.ihrisid,m.db
+FROM pc2.config_alt c JOIN BW_Merge.mapcheck m ON m.db = 'pc2' AND c.value = m.ihrisid 
+UNION
+SELECT c.*, m.name AS form,m.ihrisid,m.db
+FROM scot.config_alt c JOIN BW_Merge.mapcheck m ON m.db = 'scot' AND c.value = m.ihrisid 
+UNION
+SELECT c.*, m.name AS form,m.ihrisid,m.db
+FROM tham.config_alt c JOIN BW_Merge.mapcheck m ON m.db = 'tham' AND c.value = m.ihrisid 
+
+
+###above two shows that only the position table is being mapped.
+
+SELECT e.*,rc.*
+FROM ihs_mlp.entry e JOIN BW_Merge.record_checks rc ON rc.id = e.record AND rc.form = 57 AND rc.db = 'ihs_mlp';
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

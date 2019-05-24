@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE I2CEConfiguration SYSTEM "I2CE_Configuration.dtd">
+<I2CEConfiguration name="page" path="/I2CE/page">
+  <metadata>
+    <version>4.2.1.0.1</version>
+  </metadata>
+  <configurationGroup name="page" path="/I2CE/page" locale="tcy">
+    <version>4.2.0.1</version>
+    <configurationGroup name="login">
+      <configurationGroup name="args">
+        <configuration name="title" values="single" locale="tcy" type="string">
+          <value>ಲಾಗಿನ್ ಆಲೆ</value>
+        </configuration>
+      </configurationGroup>
+    </configurationGroup>
+    <configurationGroup name="logout">
+      <configurationGroup name="args">
+        <configuration name="title" values="single" locale="tcy" type="string">
+          <value>ನಿರ್ಗಮಿಸಾಲೆ</value>
+        </configuration>
+      </configurationGroup>
+    </configurationGroup>
+    <configurationGroup name="forgot">
+      <configurationGroup name="args">
+        <configuration name="title" values="single" locale="tcy" type="string">
+          <value>ಈರೆನೆ ಪ್ರವೇಸೊ ಪದೊ ಮರತ್ತ್‌ಂಡಾ?</value>
+        </configuration>
+      </configurationGroup>
+    </configurationGroup>
+    <configurationGroup name="password">
+      <configurationGroup name="args">
+        <configuration name="title" values="single" locale="tcy" type="string">
+          <value>ಪ್ರವೇಶಪದೊನ್ ಬದಲಾವಣೆ ಮಲ್ಪುಲೆ</value>
+        </configuration>
+      </configurationGroup>
+    </configurationGroup>
+  </configurationGroup>
+</I2CEConfiguration>

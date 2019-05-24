@@ -1,0 +1,111 @@
+francistown1 - started on 5-18
+francistown2 - split on 6/1
+
+nyangagwe - started on 5/18 - still there as of 6/25
+
+
+kweneng east - started on 2/23
+
+gaborone - 3/24
+server 1/2 - split on 4/20
+
+ihs_gaborone - started on 5/12/2015?
+ihs_francistown - started on 5/15/2015?
+
+SELECT min(id),max(id),count(*) FROM scot.`record` where last_modified > '2015-02-23 00:00:00'
+
+#scotbase_mar09 - (after 2/23)
+#created start 38972
+#records - 38972 - 48804
+#count - 9833
+#incremented >= 38972 by 400000
+
+scot - (after 3/09)
+    created start 48713
+    records - 38976 - 57531
+    count - 12814 for modified, but new only is 8727
+    incremented >= 38972 by 400000
+
+ihs_mlp - (after 3/09)
+    created start 48713
+    records - 38973 - 51128
+    count - 3768 for modified, but new only is 2324
+    incremented >= 38972 by 400000
+    incremented >= 448713 by 20000
+
+tham - (after 3/09)
+    created start 48713
+    records - 38976 - 54167
+    count - 5687 for modified, but new only is 5363
+    incremented >= 38972 by 400000
+    incremented >= 448713 by 30000
+
+pc1 - (after 3/09)
+    created start 48713
+    records - 38976 - 49581
+    count - 1229 for modified, but new only is 777
+    incremented >= 38972 by 400000
+    incremented >= 448713 by 40000
+
+pc2 - (after 3/09)
+    created start 48713
+    records - 38976 - 49456
+    count - 1065 for modified, but new only is 652
+    incremented >= 38972 by 400000
+    incremented >= 448713 by 50000
+
+
+francistown_1 - (after 5/18)
+    created start 61497
+    records - 61497 - 71943
+    count - 10447
+    incremented >= 61497 by 100000
+
+
+francistown_2 - (after 6/01)
+    created start 67983
+    records - 61497 - 72284
+    count - 5989
+    incremented >= 61497 by 100000
+    incremented >= 167983 by 10000
+
+
+gaborone_main - (after 3/24) 
+    create start 49523
+    records - 49523 - 61440
+    count - 11918
+    incremented >= 49523 by 200000
+
+gaborone_1 - (after 4/20)
+    created start 56340
+    records - 49551 - 60444
+    count - 5375
+    incremented >= 49523 by 200000
+    incremented >= 256340 by 10000
+
+
+gaborone_2 - (after 4/20)
+    created start 56340
+    records - 49524 - 61497
+    count - 6506
+    incremented >= 49523 by 200000
+    incremented >= 256340 by 20000
+
+nyangagwe - (after 5/18)
+    created start 60441
+    records - 60441 - 82224
+    count - 21786
+    incremented >= 60441 by 300000
+
+
+ihs_gaborone - (arfer 5/12)
+    created start 51103
+    records - 51103 - 56459
+    count - 5357
+    incremented >= 51103 by 500000
+
+ihs_francistown - (arfer 5/15)
+    created start 52630
+    records - 52630 - 56064
+    count - 3316
+    incremented >= 52630 by 600000

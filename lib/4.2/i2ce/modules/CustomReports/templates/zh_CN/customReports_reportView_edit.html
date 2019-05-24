@@ -1,0 +1,53 @@
+<div>
+  <h2>报告视图</h2>
+  <h3><a name="show_link">查看 <span name="displayName"></span></a></h3>
+    <p>此报告预览基于报告 <a name="report_link"><span name="reportName"></span></a></p>
+  <span name="has_default_display" ifset="true">
+    <h3><a name="clear_default_display_link">清除默认显示</a></h3>
+  </span>
+  <p>Select the fields and any aggregate data you want in this report view.  You may drag and drop fields to change their displayed order</p>
+  <table class="multiFormTable reportviews" cellpadding="0" cellspacing="0" border="0" id="container"><tr><th colspan="2">
+	  报告视图信息
+	</th>
+    </tr><tr><td>
+	<h3>显示名称:</h3>
+	描述此报告的短名称
+      </td>
+      <td>
+	<input name="displayName" type="text" value="" class="validate=[nonempty]"></td>
+    </tr><tr><td>
+	<h3>描述:</h3>
+	描述此报告的较长说明
+      </td>
+      <td>
+	<textarea name="description" rows="4" cols="53" value=""></textarea></td>
+    </tr><tr task="custom_reports_admin"><td>
+	<h3>报告查看权限:</h3>
+	Select a task to limit the viewing of this report to the selected task. 
+      </td>
+      <td>
+	<select name="limit_view_to_task"><option value="">不要限制查看此报告</option></select></td>      
+    </tr><tr permission="role(admin) or task(custom_reports_admin)"><td colspan="2">
+	<input name="disable_hide" type="hidden" value="1"><input name="disable" id="disable" type="checkbox" value="1"><h3>禁用:</h3>
+	从非管理员用户禁用此报告。
+      </td>
+    </tr><tr><td colspan="2">
+	<input name="total_hide" type="hidden" value="1"><input name="total" id="total" type="checkbox" value="1"><h3>包括合计:</h3>
+	包括此视图的行的总数。
+      </td>
+    </tr><tr><td>
+	<h3>相关的视图</h3>
+      </td>
+      <td>
+	<select name="related_views[]" multiple size="10"></select></td>
+    </tr><tr><th colspan="2">
+	已报告字段
+      </th>
+      </tr></table><div id="fields_fill"></div>
+
+  <br><br><span task="custom_reports_admin" name="has_display_editors" ifset="true" id="display_editors">
+    <h2> <a id="displays_link">编辑显示选项</a></h2>
+    <div id="displays_ajax" class="indented"></div>
+  </span>
+
+</div>

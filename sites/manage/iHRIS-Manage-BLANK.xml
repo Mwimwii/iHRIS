@@ -30,8 +30,6 @@
     <enable name="ManageSelfService" />
     <enable name="ManageSelfServiceApplication" />
     <enable name="ManageConfirmation" />
-    <enable name="ManageAccessFacility" />
-    <enable name="ManageAccessDepartment" />
     <enable name="ManageDashboard" />
     <enable name="formDocumentor" />
     <enable name="PersonArchivedScan" />

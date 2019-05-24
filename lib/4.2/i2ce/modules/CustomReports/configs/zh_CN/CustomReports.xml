@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE I2CEConfiguration SYSTEM "I2CE_Configuration.dtd">
+<I2CEConfiguration name="CustomReports">
+  <metadata>
+    <version>4.2.1.0.1</version>
+  </metadata>
+  <configurationGroup name="CustomReports" locale="zh_CN">
+    <version>4.2.0.1</version>
+    <configurationGroup name="tasks" path="/modules/CustomReports/text/" locale="zh_CN">
+      <configuration name="Increasing" values="single" type="string">
+        <value>增加中</value>
+      </configuration>
+      <configuration name="Decreasing" values="single" type="string">
+        <value>减少中</value>
+      </configuration>
+      <configurationGroup name="user_messages">
+        <configuration name="no_report_view" values="single" type="string">
+          <value>您需要指定要查看的报告</value>
+        </configuration>
+        <configuration name="invalid_report_view" values="single" type="string">
+          <value>您指定了无效的报告</value>
+        </configuration>
+        <configuration name="no_permission_report_view" values="single" type="string">
+          <value>您没有权限查看此报告</value>
+        </configuration>
+        <configuration name="no_display_report_view" values="single" type="string">
+          <value>找不到此报告视图的任何有效的显示</value>
+        </configuration>
+        <configuration name="reportView_merged_field_display" values="single" type="string">
+          <value>%s来自%s</value>
+        </configuration>
+        <configuration name="merge_display" values="single" type="string">
+          <value>%s已连入%s</value>
+        </configuration>
+        <configurationGroup name="merge_descriptions">
+          <configuration name="parent" values="single" type="string">
+            <value>%s已作为父表单连入%s</value>
+          </configuration>
+          <configuration name="child" values="single" type="string">
+            <value>%s已作为子表单连入%s</value>
+          </configuration>
+          <configuration name="default" values="single" type="string">
+            <value>%s已连入%s</value>
+          </configuration>
+        </configurationGroup>
+        <configuration name="report_no_name" values="single" type="string">
+          <value>未指定报告简称</value>
+        </configuration>
+        <configuration name="report_bad_name" values="single" type="string">
+          <value>指定的报告简称无效</value>
+        </configuration>
+        <configuration name="report_bad_used" values="single" type="string"></configuration>
+        <configuration name="report_no_relationship" values="single" type="string"></configuration>
+        <configuration name="report_bad_relationship" values="single" type="string"></configuration>
+        <configuration name="cannot_delete" values="single" type="string">
+          <value>您没有权限删除报告数据</value>
+        </configuration>
+        <configuration name="bad_delete_path" values="single" type="string">
+          <value>删除的无效路径</value>
+        </configuration>
+        <configuration name="not_cached" values="single" type="string">
+          <value>无法安装缓存表单</value>
+        </configuration>
+        <configuration name="not_saved" values="single" type="string">
+          <value>无法保存显示选项</value>
+        </configuration>
+        <configuration name="saved" values="single" type="string">
+          <value>已保存显示选项</value>
+        </configuration>
+        <configuration name="not_generated" values="single" type="string">
+          <value>无法生成报告</value>
+        </configuration>
+        <configuration name="not_updated" values="single" type="string">
+          <value>无法更新值</value>
+        </configuration>
+        <configuration name="updated" values="single" type="string">
+          <value>已更新值</value>
+        </configuration>
+      </configurationGroup>
+      <configurationGroup name="report_status">
+        <configuration name="does_not_exist" values="single" type="string">
+          <value>不存在</value>
+        </configuration>
+        <configuration name="not_generated" values="single" type="string">
+          <value>未生成</value>
+        </configuration>
+        <configuration name="stale" values="single" type="string">
+          <value>陈旧</value>
+        </configuration>
+        <configuration name="failed" values="single" type="string">
+          <value>失败</value>
+        </configuration>
+        <configuration name="in_progress" values="single" type="string">
+          <value>进行中</value>
+        </configuration>
+        <configuration name="generated" values="single" type="string">
+          <value>已生成</value>
+        </configuration>
+      </configurationGroup>
+      <configurationGroup name="headers">
+        <configuration name="sum" values="single" type="string">
+          <value>总和</value>
+        </configuration>
+        <configuration name="maximum" values="single" type="string">
+          <value>最多</value>
+        </configuration>
+        <configuration name="minimum" values="single" type="string">
+          <value>最少</value>
+        </configuration>
+        <configuration name="average" values="single" type="string">
+          <value>平均</value>
+        </configuration>
+        <configuration name="count" values="single" type="string">
+          <value>总共</value>
+        </configuration>
+        <configuration name="count_distinct" values="single" type="string">
+          <value>总体不同</value>
+        </configuration>
+      </configurationGroup>
+    </configurationGroup>
+    <configurationGroup name="tasks" path="/I2CE/tasks/task_description" locale="zh_CN">
+      <configuration name="custom_reports_can_access" locale="zh_CN" values="single" type="string">
+        <value>允许自定义报告系统的最小存取权</value>
+      </configuration>
+      <configuration name="custom_reports_delete" locale="zh_CN" values="single" type="string">
+        <value>允许删除关于自定义报告的数据</value>
+      </configuration>
+      <configuration name="custom_reports_can_access_relationships" locale="zh_CN" values="single" type="string">
+        <value>允许顾客报告关系的访问</value>
+      </configuration>
+      <configuration name="custom_reports_can_edit_relationships" locale="zh_CN" values="single" type="string"></configuration>
+      <configuration name="custom_reports_can_access_reports" locale="zh_CN" values="single" type="string">
+        <value>允许访问自定义报告</value>
+      </configuration>
+      <configuration name="custom_reports_can_edit_reports" locale="zh_CN" values="single" type="string">
+        <value>允许编辑自定义报告</value>
+      </configuration>
+      <configuration name="custom_reports_can_view_reportViews" locale="zh_CN" values="single" type="string">
+        <value>允许浏览自定义报告视图</value>
+      </configuration>
+      <configuration name="custom_reports_can_edit_reportViews" locale="zh_CN" values="single" type="string">
+        <value>允许编辑自定义报告视图</value>
+      </configuration>
+      <configuration name="custom_reports_admin" locale="zh_CN" values="single" type="string"></configuration>
+    </configurationGroup>
+    <configurationGroup name="command_line">
+      <configurationGroup name="show">
+        <configurationGroup name="args">
+          <configuration name="title" locale="zh_CN" values="single" type="string">
+            <value>查看报告</value>
+          </configuration>
+        </configurationGroup>
+      </configurationGroup>
+    </configurationGroup>
+    <configurationGroup name="page">
+      <configurationGroup name="page_styles" path="/I2CE/template/page_styles">
+        <configurationGroup name="customreport_config">
+          <configurationGroup name="args">
+            <configuration name="title" locale="zh_CN" values="single" type="string">
+              <value>创建报告</value>
+            </configuration>
+          </configurationGroup>
+        </configurationGroup>
+      </configurationGroup>
+      <configurationGroup name="show">
+        <configurationGroup name="args">
+          <configuration name="title" locale="zh_CN" values="single" type="string">
+            <value>查看报告</value>
+          </configuration>
+        </configurationGroup>
+      </configurationGroup>
+      <configurationGroup name="saveOptions">
+        <configurationGroup name="args">
+          <configuration name="title" locale="zh_CN" values="single" type="string">
+            <value>查看报告</value>
+          </configuration>
+        </configurationGroup>
+      </configurationGroup>
+      <configurationGroup name="nodisplay">
+        <configurationGroup name="args">
+          <configuration name="title" locale="zh_CN" values="single" type="string">
+            <value>没有有效的显示</value>
+          </configuration>
+        </configurationGroup>
+      </configurationGroup>
+    </configurationGroup>
+  </configurationGroup>
+</I2CEConfiguration>

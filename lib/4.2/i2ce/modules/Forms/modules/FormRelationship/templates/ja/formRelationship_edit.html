@@ -1,0 +1,43 @@
+<div>
+  <span name="has_existing_relationships" ifset="true">
+    既存のフォームの関係性の変更、または新しい関係性の作成のいずれかができます。
+  </span>
+  <span name="has_existing_relationships" ifset="!true">
+    このページを使って既存のフォーム関係性を構築できます。  
+  </span>
+  <span name="has_existing_relationships" ifset="true">
+    <h2>既存の関係性を編集します。</h2>
+    <ul id="relationships" class="formRelationship_relationship_list"></ul></span>
+  <h2>新規の関係性を構築します。</h2>
+  <span name="has_existing_relationships" ifset="true">
+    このフォーム関係性のための主フォームとして使うフォームを選択する、または下部の適切なオプションリンクをクリックして既存のフォーム関係性からコピーする、のいずれかを選択してください。
+  </span>
+  <span name="has_existing_relationships" ifset="!true">
+    以下のオプション リンクをクリックしてこのフォーム関係性のための主フォームとして使うフォームを選択してください。
+  </span>
+  <table class="multiFormTable" cellpadding="0" cellspacing="0" border="0"><tr><td>
+	<h3>関係性のショートネーム:</h3>フォーム関係性を識別するために使用する内部キーです。既存のフォーム関係性のキーと同じではない場合があります。
+      </td>
+      <td>
+	<input id="relationship" name="relationship" type="text" value="" class="validate=[nonempty,magicdatakey,notinlist]"></td>
+    </tr><tr><td>
+	<h3>表示名:</h3>エンドユーザーに表示されるフォーム関係性の名前
+      </td>
+      <td>
+	<input name="display_name" type="text" value="" class="validate=[nonempty]"></td>
+    </tr><tr><td>
+	<h3>説明:</h3>エンドユーザーにわかりやすいフォーム関係性の説明
+      </td>
+      <td>
+	<textarea name="description" rows="4" cols="53" value=""></textarea></td>
+    </tr><tr><td>
+	新規のフォーム関係性を構築するには、まず主フォームを選択する必要があります。
+	<select name="form_name" id="form_name"></select></td>
+      <td id="formRelationship_relationship_new_menu_list">
+      </td>
+    </tr><tr name="has_existing_relationships" ifset="true"><td>
+	コピーする既存の関係性を選択します。
+	<select name="existing_relationship" id="existing_relationship"><option value="">コピーしないでください。</option></select></td>
+      <td id="formRelationship_relationship_copy_menu_list">
+      </td>
+    </tr></table></div>

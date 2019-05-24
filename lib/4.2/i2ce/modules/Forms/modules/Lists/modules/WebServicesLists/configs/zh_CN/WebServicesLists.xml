@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE I2CEConfiguration SYSTEM "I2CE_Configuration.dtd">
+<I2CEConfiguration name="web-services-lists" path="/modules/web-services">
+  <metadata>
+    <version>4.2.1.0.1</version>
+  </metadata>
+  <configurationGroup name="web-services-lists" path="/modules/web-services" locale="zh_CN">
+    <version>4.2.0.0.4.1</version>
+    <configurationGroup name="messages" locale="zh_CN">
+      <configuration name="invalid_list" values="single" type="string">
+        <value>这不是有效列表：“%s”</value>
+      </configuration>
+      <configuration name="invalid_form" values="single" type="string">
+        <value>这不是有效表单“%s”</value>
+      </configuration>
+      <configuration name="invalid_field" values="single" type="string">
+        <value>这在表单“%s”中不是有效字段“%s”</value>
+      </configuration>
+    </configurationGroup>
+  </configurationGroup>
+</I2CEConfiguration>

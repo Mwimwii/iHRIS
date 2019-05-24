@@ -1,0 +1,36 @@
+<div id="magicdata_export_control">  
+  <span type="module" ifenable="true" name="magicDataExport">
+    <form id="magicdata_export_form" method="GET">
+      <!--<input id="magicdata_export" class="button action=index.php/magicDataExport/export" type="submit"   value="Export" /> -->
+      <div class="clickableText magicdata_export_options_toggle centered button">Ezporzhiañ</div>
+      <div class="optionsMenu toggable windowFloats=true windowDraggable=true" id="magicdata_export_options_menu">
+	<input type="hidden" name="config_path"><div class="optionsMenuTitle window_drag"> Dibaboù ezporzhiañ </div>
+	<hr><p>
+	  <span class="field_head"><label>Anv modulenn</label></span>
+	  <br><span class="form_field"><input name="name" type="text" value="" class="validate=[nonempty,magicdatakey]"></span>
+	  <br><span class="field_description">	Un anv modulenn evit ar roadennoù ezporzhiet (rekiz).</span>
+	</p>
+	<p>
+	  <span class="field_head"><label>Anv diskwelet</label></span>
+	  <br><span class="form_field"><input name="displayName" type="text" value="" class="validate=[nonempty]"></span>
+	  <br><span class="field_description">	Ur anv diskwelet evit ar roadennoù ezporzhiet (rekiz)</span>
+	</p>
+	<p>
+	  <span class="field_head"><label>Stumm</label></span>
+	  <br><span class="form_field"><input name="version" type="text" value="1.0.0" class="validate=[nonempty,version]"></span>
+	  <br><span class="field_description">	Un niverenn doar evit ar roadennoù (rekiz)</span>
+	</p>
+	<p>
+	  <span class="field_head"><label>Deskrivadur</label></span>
+	  <br><span class="form_field"><textarea name="description" id="description" rows="5" cols="25"></textarea></span>
+	  <br><span class="field_description">Un deskrivadur berr-ha-berr eus roadennoù esporzhiet (firet)</span>
+	</p>
+	<table><tr><td>
+	      <div class="button optionsMenuButton window_hide"> Serriñ </div>
+	    </td>
+	    <td>
+	      <input id="magicdata_export" class="button action=index.php/magicDataExport/export" type="submit" value="Export"></td>
+	  </tr></table></div>
+    </form>
+  </span>
+</div>

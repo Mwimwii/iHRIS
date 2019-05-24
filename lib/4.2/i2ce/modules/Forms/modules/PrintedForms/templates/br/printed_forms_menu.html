@@ -1,0 +1,27 @@
+<div id="siteContent">
+  <h2>Furmskridoù skoueriekaet</h2>
+
+  <h3>Genel furmskridoù skoueriekeat</h3>
+
+  <span ifset="!true" name="has_valid_forms">
+    Furmskrid skoueriekaet ebet evit an enrolladenn-mañ
+  </span>
+  <span ifset="true" name="has_valid_forms">
+    <ul id="printed_forms_list"></ul></span>
+
+
+  <span type="module" ifenabled="true" name="BinField">
+    <span ifset="true" name="show_archive">
+      <h3>Furmskridoù skoueriekaet diellaouet</h3>
+
+      <span ifset="!true" name="has_archives">
+	N''eus bet skoueriekaet furmskrid ebet evit an enrolladenn-mañ.
+      </span>
+      <span ifset="true" name="has_archives">
+	<span task="printed_forms_view_all_archives">
+	  <ul id="printed_forms_archive"></ul></span>
+      </span>
+    </span>
+  </span>
+
+</div>

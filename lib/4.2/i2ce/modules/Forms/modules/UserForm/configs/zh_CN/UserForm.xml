@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE I2CEConfiguration SYSTEM "I2CE_Configuration.dtd">
+<I2CEConfiguration name="UserForm" path="/">
+  <metadata>
+    <version>4.2.1.0.1</version>
+  </metadata>
+  <configurationGroup name="UserForm" path="/" locale="zh_CN">
+    <version>4.2.0.1.1</version>
+    <configurationGroup name="invalid_formfield_message" path="/modules/forms/formfield_messages" locale="zh_CN">
+      <configuration name="username" path="user/username/unique" values="single" type="string"></configuration>
+      <configuration name="pass_match" path="user/password/mismatch" values="single" type="string"></configuration>
+      <configuration name="pass_match" path="user/password/required" values="single" type="string"></configuration>
+      <configuration name="role_notallowed" path="user/role/notallowed" values="single" type="string"></configuration>
+    </configurationGroup>
+    <configurationGroup name="tasks" path="/I2CE/tasks/task_description" locale="zh_CN">
+      <configuration name="users_can_edit" locale="zh_CN" values="single" type="string">
+        <value>可以在系统创建用户</value>
+      </configuration>
+      <configuration name="users_can_edit_all" locale="zh_CN" values="single" type="string">
+        <value>可以在系统编辑所有用户</value>
+      </configuration>
+      <configuration name="can_create_or_edit_users" locale="zh_CN" values="single" type="string"></configuration>
+    </configurationGroup>
+    <configurationGroup name="pages" path="/I2CE/page">
+      <configurationGroup name="user">
+        <configurationGroup name="args">
+          <configuration name="title" values="single" locale="zh_CN" type="string">
+            <value>管理用户/权限</value>
+          </configuration>
+        </configurationGroup>
+      </configurationGroup>
+      <configurationGroup name="view_user">
+        <configurationGroup name="args">
+          <configuration name="title" values="single" locale="zh_CN" type="string">
+            <value>管理用户/权限</value>
+          </configuration>
+        </configurationGroup>
+      </configurationGroup>
+    </configurationGroup>
+    <configurationGroup name="forms" path="/modules/forms">
+      <configurationGroup name="roleForm" path="/modules/forms/forms/role">
+        <configuration name="display" values="single" locale="zh_CN" type="string">
+          <value>角色</value>
+        </configuration>
+      </configurationGroup>
+      <configurationGroup name="formClasses" path="/modules/forms/formClasses">
+        <configurationGroup name="I2CE_Role">
+          <configurationGroup name="fields">
+            <configurationGroup name="name">
+              <configuration name="headers" type="delimited" locale="zh_CN" values="single">
+                <value>default:角色</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="assignable">
+              <configuration name="headers" type="delimited" locale="zh_CN" values="single"></configuration>
+            </configurationGroup>
+            <configurationGroup name="homepage">
+              <configuration name="headers" type="delimited" locale="zh_CN" values="single"></configuration>
+            </configurationGroup>
+            <configurationGroup name="trickle_up">
+              <configuration name="headers" type="delimited" locale="zh_CN" values="single">
+                <value>default:涓流</value>
+              </configuration>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+        <configurationGroup name="I2CE_User_Form">
+          <configurationGroup name="fields">
+            <configurationGroup name="username">
+              <configuration name="headers" type="delimited" locale="zh_CN" values="single">
+                <value>default:用户名</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="password">
+              <configuration name="headers" type="delimited" values="many" locale="zh_CN">
+                <value>generate:生成新密码</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="role">
+              <configuration name="headers" type="delimited" locale="zh_CN" values="single">
+                <value>default:角色</value>
+              </configuration>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+      </configurationGroup>
+    </configurationGroup>
+  </configurationGroup>
+</I2CEConfiguration>

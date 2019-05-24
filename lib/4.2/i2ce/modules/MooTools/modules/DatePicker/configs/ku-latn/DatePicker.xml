@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE I2CEConfiguration SYSTEM "I2CE_Configuration.dtd">
+<I2CEConfiguration name="DatePicker" path="/modules/DatePicker">
+  <metadata>
+    <version>1.17.5.1</version>
+  </metadata>
+  <configurationGroup name="DatePicker" path="/modules/DatePicker" locale="ku-latn">
+    <version>1.17.5.1</version>
+    <configurationGroup name="options_datetime">
+      <configuration name="format" locale="ku-latn"></configuration>
+    </configurationGroup>
+    <configurationGroup name="options">
+      <configuration name="format" locale="ku-latn"></configuration>
+      <configuration name="days" type="delimited" locale="ku-latn">
+        <value>0:Yekşem</value>
+        <value>1:Duşem</value>
+        <value>2:Sêşem</value>
+        <value>3:Çarşem</value>
+        <value>4:Pêncşem</value>
+        <value>5:În</value>
+        <value>6:Şemî</value>
+      </configuration>
+      <configuration name="months" type="delimited" locale="ku-latn">
+        <value>0:Rêbendan</value>
+        <value>1:Reşemî</value>
+        <value>2:Adar</value>
+        <value>3:Avrêl</value>
+        <value>4:Gulan</value>
+        <value>5:Pûşper</value>
+        <value>6:Tîrmeh</value>
+        <value>7:Gelawêj</value>
+        <value>8:Rezber</value>
+        <value>9:Kewçêr</value>
+        <value>10:Sermawez</value>
+        <value>11:Berfanbar</value>
+      </configuration>
+    </configurationGroup>
+  </configurationGroup>
+</I2CEConfiguration>

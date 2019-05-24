@@ -1,0 +1,45 @@
+CREATE TABLE record LIKE francistown_1.record;
+INSERT IGNORE INTO record 
+SELECT * FROM francistown_1.record WHERE id > 100000 
+UNION 
+SELECT * FROM francistown_2.record WHERE id > 100000 
+ORDER BY last_modified DESC;
+CREATE TABLE entry LIKE francistown_1.entry;
+INSERT INTO entry SELECT * FROM francistown_1.entry WHERE record > 100000;
+INSERT INTO entry SELECT * FROM francistown_2.entry WHERE record > 100000;
+
+INSERT IGNORE INTO record 
+SELECT * FROM gaborone_main.record WHERE id > 200000 
+UNION 
+SELECT * FROM gaborone_1.record WHERE id > 200000 
+UNION 
+SELECT * FROM gaborone_2.record WHERE id > 200000 
+ORDER BY last_modified DESC;
+INSERT INTO entry SELECT * FROM gaborone_main.entry WHERE record > 200000;
+INSERT INTO entry SELECT * FROM gaborone_1.entry WHERE record > 200000;
+INSERT INTO entry SELECT * FROM gaborone_2.entry WHERE record > 200000;
+
+
+INSERT IGNORE INTO record 
+SELECT * FROM nyangagwe.record WHERE id > 300000;
+INSERT INTO entry SELECT * FROM nyangagwe.entry WHERE record > 300000;
+
+INSERT IGNORE INTO record 
+SELECT * FROM scot.record WHERE id > 400000 
+UNION 
+SELECT * FROM ihs_mlp.record WHERE id > 400000 
+UNION 
+SELECT * FROM tham.record WHERE id > 400000 
+UNION 
+SELECT * FROM pc1.record WHERE id > 400000 
+UNION 
+SELECT * FROM pc2.record WHERE id > 400000 
+ORDER BY last_modified DESC;
+INSERT INTO entry SELECT * FROM scot.entry WHERE record > 400000;
+INSERT INTO entry SELECT * FROM ihs_mlp.entry WHERE record > 400000;
+INSERT INTO entry SELECT * FROM tham.entry WHERE record > 400000;
+INSERT INTO entry SELECT * FROM pc1.entry WHERE record > 400000;
+INSERT INTO entry SELECT * FROM pc2.entry WHERE record > 400000;
+
+CREATE TABLE last_entry LIKE francistown_1.last_entry;
+INSERT IGNORE INTO last_entry SELECT * FROM entry ORDER BY date DESC;

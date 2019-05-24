@@ -1,0 +1,47 @@
+<div>
+  
+
+  <h2>Maezienn</h2>
+  <div id="field_contents">
+    <table class="multiFormTable" cellpadding="0" cellspacing="0" border="0"><tr><td>
+	  <h3>Form Field Class</h3>Ar seurt roadennoù evit ar vaezienn-mañ.
+	</td>
+	<td>
+	  <select name="formfield"></select></td>
+      </tr><tr><td>
+	  <h3>Rekis</h3>This field needs to be set before it can be saved
+	</td>
+	<td>
+	  <select name="required"><option value="1">Ya</option><option value="0">Ket</option></select></td>
+      </tr><tr><td>
+	  <h3>En diaz roadennoù</h3>Enrollet eo ar vaezienn en diaz roadennoù
+	</td>
+	<td>
+	  <select name="in_db"><option value="1">Ya</option><option value="0">Ket</option></select></td>
+      </tr><tr><td>
+	  <h3>Unique</h3>This field is requried to be a unique value
+	</td>
+	<td>
+	  <select name="unique"><option value="1">Ya</option><option value="0">Ket</option></select></td>
+      </tr><tr><td>
+	  <h3>Unique Fields</h3>If this is a unique field, these are fields it is requried to be unique relative to
+	</td>
+	<td>
+	  <input type="hidden" name="do_unique_field" value="1"><ul name="unique_field"></ul></td>
+      </tr></table><span id="headers">
+      <h2><a id="headers_link" href="">Talbennoù</a></h2>
+      Aozañ an talbennoù evit ar vaezienn-mañ
+      <div class="indented" id="headers_ajax"></div>
+    </span>
+
+    
+    <span name="has_meta" ifset="1">
+      <span id="meta">
+	<h2><a id="meta_link" href="">Meta</a></h2>
+	Aozañ ar meta roadennoù evit ar vaezienn-mañ
+	<div class="indented" id="meta_ajax"></div>
+      </span>
+    </span>
+
+  </div>
+</div>

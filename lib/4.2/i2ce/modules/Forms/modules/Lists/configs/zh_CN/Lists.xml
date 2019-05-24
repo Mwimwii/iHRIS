@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE I2CEConfiguration SYSTEM "I2CE_Configuration.dtd">
+<I2CEConfiguration name="Lists" path="/I2CE/">
+  <metadata>
+    <version>4.2.1.0.1</version>
+  </metadata>
+  <configurationGroup name="Lists" path="/I2CE/" locale="zh_CN">
+    <version>4.2.0.9.1</version>
+    <configurationGroup name="auto_list" path="/I2CE/page/auto_list">
+      <configuration name="title" locale="zh_CN" values="single" type="string">
+        <value>管理数据表</value>
+      </configuration>
+    </configurationGroup>
+    <configurationGroup name="Lists" path="/modules/Lists">
+      <configuration name="messages" type="delimited" values="many" locale="zh_CN">
+        <value>other_lists:其他列表</value>
+        <value>title:查看%s</value>
+        <value>edit_title:加入/更新%s</value>
+        <value>edit_text:更新此信息</value>
+        <value>add_text:加入新的%s</value>
+        <value>add_new:添加新的</value>
+        <value>select_text:选择其他%s</value>
+        <value>menu_title:管理数据表</value>
+        <value>remap_field_text:重映射字段%1$s在%2$s（%3$s匹配）</value>
+        <value>remap_text:设置重映射数据</value>
+        <value>view_remap_text:查看重映射数据</value>
+      </configuration>
+    </configurationGroup>
+    <configurationGroup name="invalid_messages" path="/modules/forms/invalid_field_messages" locale="zh_CN">
+      <configuration name="unique_fields" values="single" type="string">
+        <value>这必须唯一，并且其他记录有此值用于提供字段的值:</value>
+      </configuration>
+      <configuration name="unique_field" values="single" type="string">
+        <value>这必须唯一，并且其他记录有此值用于提供字段的值:</value>
+      </configuration>
+      <configuration name="unique" values="single" type="string">
+        <value>这必须唯一，并且其他记录有此值。</value>
+      </configuration>
+    </configurationGroup>
+    <configurationGroup name="template_text" path="/modules/forms/template_text">
+      <configuration name="blank" values="single" locale="zh_CN" type="string">
+        <value>选择一个</value>
+      </configuration>
+      <configuration name="loading" values="single" locale="zh_CN" type="string">
+        <value>载入中</value>
+      </configuration>
+      <configuration name="no_results" values="single" locale="zh_CN" type="string">
+        <value>没有结果</value>
+      </configuration>
+      <configuration name="default_display" values="single" locale="zh_CN" type="string">
+        <value>请从下面选择</value>
+      </configuration>
+      <configuration name="clear_display" values="single" locale="zh_CN" type="string">
+        <value>重置</value>
+      </configuration>
+    </configurationGroup>
+    <configurationGroup name="formClasses" path="/modules/forms/formClasses">
+      <configurationGroup name="I2CE_List">
+        <configurationGroup name="fields">
+          <configurationGroup name="remap">
+            <configuration name="headers" type="delimited" locale="zh_CN" values="single">
+              <value>default:重映射的值</value>
+            </configuration>
+          </configurationGroup>
+          <configurationGroup name="i2ce_hidden">
+            <configuration name="headers" type="delimited" locale="zh_CN" values="single">
+              <value>default:隐藏</value>
+            </configuration>
+          </configurationGroup>
+        </configurationGroup>
+      </configurationGroup>
+      <configurationGroup name="I2CE_SimpleList">
+        <configurationGroup name="fields">
+          <configurationGroup name="name">
+            <configuration name="headers" type="delimited" locale="zh_CN" values="single">
+              <value>default:名</value>
+            </configuration>
+          </configurationGroup>
+        </configurationGroup>
+      </configurationGroup>
+      <configurationGroup name="I2CE_SimpleCodedList">
+        <configurationGroup name="fields">
+          <configurationGroup name="code">
+            <configuration name="headers" type="delimited" locale="zh_CN" values="single">
+              <value>default:代码</value>
+            </configuration>
+          </configurationGroup>
+        </configurationGroup>
+      </configurationGroup>
+    </configurationGroup>
+    <configurationGroup name="tasks" path="/I2CE/tasks/task_description" locale="zh_CN">
+      <configuration name="can_hide_list_members" values="single" type="string">
+        <value>能够隐藏列表成员</value>
+      </configuration>
+      <configuration name="can_edit_database_lists" values="single" type="string">
+        <value>可以编辑存储于数据库的一些列表</value>
+      </configuration>
+      <configuration name="can_edit_all_database_lists" values="single" type="string">
+        <value>可以编辑存储于数据库的全部列表</value>
+      </configuration>
+      <configuration name="can_view_database_lists" values="single" type="string">
+        <value>可以查看存储于数据库的一些列表</value>
+      </configuration>
+      <configuration name="can_view_all_database_lists" values="single" type="string">
+        <value>可以查看存储于数据库的全部列表</value>
+      </configuration>
+    </configurationGroup>
+    <configurationGroup name="pages" path="/I2CE/page">
+      <configurationGroup name="view_list">
+        <configurationGroup name="args">
+          <configuration name="title" values="single" locale="zh_CN" type="string">
+            <value>预览列表</value>
+          </configuration>
+        </configurationGroup>
+      </configurationGroup>
+    </configurationGroup>
+  </configurationGroup>
+</I2CEConfiguration>

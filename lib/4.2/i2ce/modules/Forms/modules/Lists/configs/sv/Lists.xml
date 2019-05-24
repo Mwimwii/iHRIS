@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE I2CEConfiguration SYSTEM "I2CE_Configuration.dtd">
+<I2CEConfiguration name="Lists" path="/I2CE/">
+  <metadata>
+    <version>4.2.1.0.1</version>
+  </metadata>
+  <configurationGroup name="Lists" path="/I2CE/" locale="sv">
+    <version>4.2.0.9.1</version>
+    <configurationGroup name="auto_list" path="/I2CE/page/auto_list">
+      <configuration name="title" locale="sv" values="single" type="string">
+        <value>Administrera databas</value>
+      </configuration>
+    </configurationGroup>
+    <configurationGroup name="Lists" path="/modules/Lists">
+      <configuration name="messages" type="delimited" values="many" locale="sv">
+        <value>other_lists:Andra listor</value>
+        <value>edit_text:Uppdatera denna information</value>
+        <value>add_new:Lägg till ny</value>
+        <value>menu_title:Administrera databas</value>
+      </configuration>
+    </configurationGroup>
+    <configurationGroup name="invalid_messages" path="/modules/forms/invalid_field_messages" locale="sv">
+      <configuration name="unique_fields" values="single" type="string"></configuration>
+      <configuration name="unique_field" values="single" type="string"></configuration>
+      <configuration name="unique" values="single" type="string"></configuration>
+    </configurationGroup>
+    <configurationGroup name="template_text" path="/modules/forms/template_text">
+      <configuration name="blank" values="single" locale="sv" type="string">
+        <value>Välj en</value>
+      </configuration>
+      <configuration name="loading" values="single" locale="sv" type="string"></configuration>
+      <configuration name="no_results" values="single" locale="sv" type="string">
+        <value>Inga resultat</value>
+      </configuration>
+      <configuration name="default_display" values="single" locale="sv" type="string">
+        <value>Välj nedan</value>
+      </configuration>
+      <configuration name="clear_display" values="single" locale="sv" type="string">
+        <value>Återställ</value>
+      </configuration>
+    </configurationGroup>
+    <configurationGroup name="formClasses" path="/modules/forms/formClasses">
+      <configurationGroup name="I2CE_List">
+        <configurationGroup name="fields">
+          <configurationGroup name="remap">
+            <configuration name="headers" type="delimited" locale="sv" values="single"></configuration>
+          </configurationGroup>
+          <configurationGroup name="i2ce_hidden">
+            <configuration name="headers" type="delimited" locale="sv" values="single">
+              <value>default:Dölj</value>
+            </configuration>
+          </configurationGroup>
+        </configurationGroup>
+      </configurationGroup>
+      <configurationGroup name="I2CE_SimpleList">
+        <configurationGroup name="fields">
+          <configurationGroup name="name">
+            <configuration name="headers" type="delimited" locale="sv" values="single">
+              <value>default:Namn</value>
+            </configuration>
+          </configurationGroup>
+        </configurationGroup>
+      </configurationGroup>
+      <configurationGroup name="I2CE_SimpleCodedList">
+        <configurationGroup name="fields">
+          <configurationGroup name="code">
+            <configuration name="headers" type="delimited" locale="sv" values="single"></configuration>
+          </configurationGroup>
+        </configurationGroup>
+      </configurationGroup>
+    </configurationGroup>
+    <configurationGroup name="tasks" path="/I2CE/tasks/task_description" locale="sv">
+      <configuration name="can_hide_list_members" values="single" type="string"></configuration>
+      <configuration name="can_edit_database_lists" values="single" type="string"></configuration>
+      <configuration name="can_edit_all_database_lists" values="single" type="string"></configuration>
+      <configuration name="can_view_database_lists" values="single" type="string"></configuration>
+      <configuration name="can_view_all_database_lists" values="single" type="string"></configuration>
+    </configurationGroup>
+    <configurationGroup name="pages" path="/I2CE/page">
+      <configurationGroup name="view_list">
+        <configurationGroup name="args">
+          <configuration name="title" values="single" locale="sv" type="string"></configuration>
+        </configurationGroup>
+      </configurationGroup>
+    </configurationGroup>
+  </configurationGroup>
+</I2CEConfiguration>

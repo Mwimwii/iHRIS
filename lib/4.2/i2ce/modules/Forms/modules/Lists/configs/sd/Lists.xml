@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE I2CEConfiguration SYSTEM "I2CE_Configuration.dtd">
+<I2CEConfiguration name="Lists" path="/I2CE/">
+  <metadata>
+    <version>4.2.1.0.1</version>
+  </metadata>
+  <configurationGroup name="Lists" path="/I2CE/" locale="sd">
+    <version>4.2.0.9.1</version>
+    <configurationGroup name="auto_list" path="/I2CE/page/auto_list">
+      <configuration name="title" locale="sd" values="single" type="string"></configuration>
+    </configurationGroup>
+    <configurationGroup name="Lists" path="/modules/Lists">
+      <configuration name="messages" type="delimited" values="many" locale="sd">
+        <value>other_lists:ٻيون فهرستون</value>
+        <value>title:ڏسو %s</value>
+        <value>add_text:نئون %s شامل ڪريو</value>
+        <value>add_new:نئون شامل ڪريو</value>
+        <value>select_text:هڪ ٻيو %s چونڊيو</value>
+      </configuration>
+    </configurationGroup>
+    <configurationGroup name="invalid_messages" path="/modules/forms/invalid_field_messages" locale="sd">
+      <configuration name="unique_fields" values="single" type="string"></configuration>
+      <configuration name="unique_field" values="single" type="string"></configuration>
+      <configuration name="unique" values="single" type="string"></configuration>
+    </configurationGroup>
+    <configurationGroup name="template_text" path="/modules/forms/template_text">
+      <configuration name="blank" values="single" locale="sd" type="string">
+        <value>ڪو هڪ چونڊيو</value>
+      </configuration>
+      <configuration name="loading" values="single" locale="sd" type="string">
+        <value>لاهيندي</value>
+      </configuration>
+      <configuration name="no_results" values="single" locale="sd" type="string">
+        <value>نتيجا نه آهن</value>
+      </configuration>
+      <configuration name="default_display" values="single" locale="sd" type="string">
+        <value>هيٺين مان چونڊيو</value>
+      </configuration>
+      <configuration name="clear_display" values="single" locale="sd" type="string">
+        <value>ٻيهر ترتيب ڪريو</value>
+      </configuration>
+    </configurationGroup>
+    <configurationGroup name="formClasses" path="/modules/forms/formClasses">
+      <configurationGroup name="I2CE_List">
+        <configurationGroup name="fields">
+          <configurationGroup name="remap">
+            <configuration name="headers" type="delimited" locale="sd" values="single"></configuration>
+          </configurationGroup>
+          <configurationGroup name="i2ce_hidden">
+            <configuration name="headers" type="delimited" locale="sd" values="single">
+              <value>default:لڪايو</value>
+            </configuration>
+          </configurationGroup>
+        </configurationGroup>
+      </configurationGroup>
+      <configurationGroup name="I2CE_SimpleList">
+        <configurationGroup name="fields">
+          <configurationGroup name="name">
+            <configuration name="headers" type="delimited" locale="sd" values="single">
+              <value>default:نالو</value>
+            </configuration>
+          </configurationGroup>
+        </configurationGroup>
+      </configurationGroup>
+      <configurationGroup name="I2CE_SimpleCodedList">
+        <configurationGroup name="fields">
+          <configurationGroup name="code">
+            <configuration name="headers" type="delimited" locale="sd" values="single">
+              <value>default:ڪوڊ</value>
+            </configuration>
+          </configurationGroup>
+        </configurationGroup>
+      </configurationGroup>
+    </configurationGroup>
+    <configurationGroup name="tasks" path="/I2CE/tasks/task_description" locale="sd">
+      <configuration name="can_hide_list_members" values="single" type="string">
+        <value>رڪنن جي فهرست کي لڪائي سگھي ٿو</value>
+      </configuration>
+      <configuration name="can_edit_database_lists" values="single" type="string"></configuration>
+      <configuration name="can_edit_all_database_lists" values="single" type="string"></configuration>
+      <configuration name="can_view_database_lists" values="single" type="string"></configuration>
+      <configuration name="can_view_all_database_lists" values="single" type="string"></configuration>
+    </configurationGroup>
+    <configurationGroup name="pages" path="/I2CE/page">
+      <configurationGroup name="view_list">
+        <configurationGroup name="args">
+          <configuration name="title" values="single" locale="sd" type="string">
+            <value>فهرست ڏسو</value>
+          </configuration>
+        </configurationGroup>
+      </configurationGroup>
+    </configurationGroup>
+  </configurationGroup>
+</I2CEConfiguration>

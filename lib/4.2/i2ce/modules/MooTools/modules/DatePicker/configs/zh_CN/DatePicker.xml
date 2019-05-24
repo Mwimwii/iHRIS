@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE I2CEConfiguration SYSTEM "I2CE_Configuration.dtd">
+<I2CEConfiguration name="DatePicker" path="/modules/DatePicker">
+  <metadata>
+    <version>1.17.5.1</version>
+  </metadata>
+  <configurationGroup name="DatePicker" path="/modules/DatePicker" locale="zh_CN">
+    <version>1.17.5.1</version>
+    <configurationGroup name="options_datetime">
+      <configuration name="format" locale="zh_CN"></configuration>
+    </configurationGroup>
+    <configurationGroup name="options">
+      <configuration name="format" locale="zh_CN"></configuration>
+      <configuration name="days" type="delimited" locale="zh_CN">
+        <value>0:星期日</value>
+        <value>1:星期一</value>
+        <value>2:星期二</value>
+        <value>3:星期三</value>
+        <value>4:星期四</value>
+        <value>5:星期五</value>
+        <value>6:星期六</value>
+      </configuration>
+      <configuration name="months" type="delimited" locale="zh_CN">
+        <value>0:一月</value>
+        <value>1:二月</value>
+        <value>2:三月</value>
+        <value>3:四月</value>
+        <value>4:五月</value>
+        <value>5:六月</value>
+        <value>6:七月</value>
+        <value>7:八月</value>
+        <value>8:九月</value>
+        <value>9:十月</value>
+        <value>10:十一月</value>
+        <value>11:十二月</value>
+      </configuration>
+    </configurationGroup>
+  </configurationGroup>
+</I2CEConfiguration>

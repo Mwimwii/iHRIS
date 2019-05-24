@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE I2CEConfiguration SYSTEM "I2CE_Configuration.dtd">
+<I2CEConfiguration name="DatePicker" path="/modules/DatePicker">
+  <metadata>
+    <version>1.17.5.1</version>
+  </metadata>
+  <configurationGroup name="DatePicker" path="/modules/DatePicker" locale="shy-latn">
+    <version>1.17.5.1</version>
+    <configurationGroup name="options_datetime">
+      <configuration name="format" locale="shy-latn"></configuration>
+    </configurationGroup>
+    <configurationGroup name="options">
+      <configuration name="format" locale="shy-latn"></configuration>
+      <configuration name="days" type="delimited" locale="shy-latn">
+        <value>0:Acer</value>
+        <value>1:Arim</value>
+        <value>2:Aram</value>
+        <value>3:Ahad</value>
+        <value>4:Amhad</value>
+        <value>5:Sem</value>
+        <value>6:Sed</value>
+      </configuration>
+      <configuration name="months" type="delimited" locale="shy-latn"></configuration>
+    </configurationGroup>
+  </configurationGroup>
+</I2CEConfiguration>

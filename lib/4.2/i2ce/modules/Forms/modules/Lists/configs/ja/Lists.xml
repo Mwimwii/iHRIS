@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE I2CEConfiguration SYSTEM "I2CE_Configuration.dtd">
+<I2CEConfiguration name="Lists" path="/I2CE/">
+  <metadata>
+    <version>4.2.1.0.1</version>
+  </metadata>
+  <configurationGroup name="Lists" path="/I2CE/" locale="ja">
+    <version>4.2.0.9.1</version>
+    <configurationGroup name="auto_list" path="/I2CE/page/auto_list">
+      <configuration name="title" locale="ja" values="single" type="string">
+        <value>データベース一覧を管理</value>
+      </configuration>
+    </configurationGroup>
+    <configurationGroup name="Lists" path="/modules/Lists">
+      <configuration name="messages" type="delimited" values="many" locale="ja">
+        <value>other_lists:その他の一覧</value>
+        <value>edit_title:%sの追加/更新</value>
+        <value>edit_text:この情報を更新</value>
+        <value>add_text:新規%sを追加</value>
+        <value>add_new:新規追加</value>
+        <value>menu_title:データベース一覧を管理</value>
+      </configuration>
+    </configurationGroup>
+    <configurationGroup name="invalid_messages" path="/modules/forms/invalid_field_messages" locale="ja">
+      <configuration name="unique_fields" values="single" type="string">
+        <value>一意であり、他のレコードにフィールドの任意の値にこの値を持っている必要があります。:</value>
+      </configuration>
+      <configuration name="unique_field" values="single" type="string">
+        <value>一意であり、他のレコードにフィールドの任意の値にこの値を持っている必要があります。:</value>
+      </configuration>
+      <configuration name="unique" values="single" type="string">
+        <value>一意であり、他のレコードにこの値を持っている必要があります。</value>
+      </configuration>
+    </configurationGroup>
+    <configurationGroup name="template_text" path="/modules/forms/template_text">
+      <configuration name="blank" values="single" locale="ja" type="string">
+        <value>1 つを選択</value>
+      </configuration>
+      <configuration name="loading" values="single" locale="ja" type="string"></configuration>
+      <configuration name="no_results" values="single" locale="ja" type="string"></configuration>
+      <configuration name="default_display" values="single" locale="ja" type="string"></configuration>
+      <configuration name="clear_display" values="single" locale="ja" type="string"></configuration>
+    </configurationGroup>
+    <configurationGroup name="formClasses" path="/modules/forms/formClasses">
+      <configurationGroup name="I2CE_List">
+        <configurationGroup name="fields">
+          <configurationGroup name="remap">
+            <configuration name="headers" type="delimited" locale="ja" values="single"></configuration>
+          </configurationGroup>
+          <configurationGroup name="i2ce_hidden">
+            <configuration name="headers" type="delimited" locale="ja" values="single">
+              <value>default:非表示</value>
+            </configuration>
+          </configurationGroup>
+        </configurationGroup>
+      </configurationGroup>
+      <configurationGroup name="I2CE_SimpleList">
+        <configurationGroup name="fields">
+          <configurationGroup name="name">
+            <configuration name="headers" type="delimited" locale="ja" values="single">
+              <value>default:名前</value>
+            </configuration>
+          </configurationGroup>
+        </configurationGroup>
+      </configurationGroup>
+      <configurationGroup name="I2CE_SimpleCodedList">
+        <configurationGroup name="fields">
+          <configurationGroup name="code">
+            <configuration name="headers" type="delimited" locale="ja" values="single">
+              <value>default:コード</value>
+            </configuration>
+          </configurationGroup>
+        </configurationGroup>
+      </configurationGroup>
+    </configurationGroup>
+    <configurationGroup name="tasks" path="/I2CE/tasks/task_description" locale="ja">
+      <configuration name="can_hide_list_members" values="single" type="string">
+        <value>リストメンバーを非表示にすることができます。</value>
+      </configuration>
+      <configuration name="can_edit_database_lists" values="single" type="string">
+        <value>データベースに格納されているリストの一部を編集することができます。</value>
+      </configuration>
+      <configuration name="can_edit_all_database_lists" values="single" type="string">
+        <value>データベース内のすべてのリストを編集することができます。</value>
+      </configuration>
+      <configuration name="can_view_database_lists" values="single" type="string">
+        <value>データベースに格納されているリストの一部を表示することができます。</value>
+      </configuration>
+      <configuration name="can_view_all_database_lists" values="single" type="string">
+        <value>データベース内のすべてのリストを表示することができます。</value>
+      </configuration>
+    </configurationGroup>
+    <configurationGroup name="pages" path="/I2CE/page">
+      <configurationGroup name="view_list">
+        <configurationGroup name="args">
+          <configuration name="title" values="single" locale="ja" type="string">
+            <value>ビューの一覧</value>
+          </configuration>
+        </configurationGroup>
+      </configurationGroup>
+    </configurationGroup>
+  </configurationGroup>
+</I2CEConfiguration>

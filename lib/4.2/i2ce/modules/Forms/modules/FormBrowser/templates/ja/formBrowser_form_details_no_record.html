@@ -1,0 +1,24 @@
+<tr><td>
+    <span name="field_name"></span>
+  </td>
+  <td>
+    <span name="field_type" ifset="true">
+      <span name="field_class" ifset="true">
+	フィールド <span name="field_name"></span> 型として登録されています。 <span name="field_type"></span> によって提供されます。 <span name="field_class"></span>.
+      </span>
+      <span name="field_class" ifset="!true">
+	フィールド <span name="field_name"></span> 型として登録されています。 <span name="field_type"></span>.
+	<span class="error">警告: フィールド '<span name="field_name"></span>' 任意のクラスに関連付けられていません。</span>
+      </span>
+    </span>
+    <span name="field_type" ifset="!true">
+      <span class="error">警告: フィールド '<span name="field_name"></span>' に登録済みの型を持ちません。</span>
+    </span>
+    <span name="field_id" ifset="true">
+      フィールドにIDが入ります。 <span name="field_id"></span>.
+    </span>
+    <span name="linked_form_name" ifset="true">
+      このフィールドからフォームへリンクします。 <a href="" name="linked_form_link" id="linked_form_link"><span name="linked_form_name"></span></a>
+    </span> 
+  </td>
+</tr>

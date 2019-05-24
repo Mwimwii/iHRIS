@@ -1,0 +1,41 @@
+<div id="sql_function">
+  <span id="function_contents">
+    <h2>SQL 関数を編集します。 <span name="name"></span></h2>
+    <table class="multiFormTable" cellpadding="0" cellspacing="0" border="0" id="reporting_function"><tr><td width="30%">
+	  <h3>SQL クエリ:</h3> この関数を定義する SQL。レポートフィールドは ”レポートフォーム + フィールド” で参照してください。
+	</td>
+	<td width="auto">
+	  <textarea style="width:auto" cols="83" rows="4" name="qry" class="validate=[nonempty]"></textarea></td>
+      </tr><tr><td>
+	  <h3>説明:</h3> エンドユーザーに表示される、この関数の説明
+	</td>
+	<td>
+	  <textarea type="text" name="description" rows="4" cols="53"></textarea></td>
+      </tr><tr><td>
+	  <h3>フォーム フィールド:</h3> この関数が値を返すフォーム フィールドを選択します。
+	</td>
+	<td>
+	  <select name="formfield"></select></td>
+      </tr><tr><td>
+	  <h3>集計:</h3> 集計したいフィールドがフォーム関係性上にあるフォームのカンマで区切られたリスト。(すなわち文節グループではなく、関数で表示されるフォーム)
+	</td>
+	<td>
+	  <input type="text" name="aggregate"></td>
+      </tr><tr><td>
+	  <h3>選択可能なフォーム</h3>このフィールドに選択可能なフォーム。フォーム フィールドが I2CE_FormField_MAPPED のサブクラスの場合のみ適用されます。その場合、コンマ区切りの一覧にする必要があります。設定が無い場合、関数の名前がデフォルトとして設定されます。
+	</td>
+	<td>
+	  <input name="select_forms"></td>
+      </tr><tr><td>
+	  <h3>リンク フィールド</h3>オプションリストにリンクされているフィールド。フォーム フィールドが I2CE_FormField_MAPPED のサブクラスの場合のみ適用されます。'フォーム' または'フォーム + リンクフィールド'はコロンで区切られた一覧である必要があります。例:"郡: 地区 + 地域: [地域]: 国"。設定が無い場合、関数の名前がデフォルトとして設定されます。
+	</td>
+	<td>
+	  <input name="link_fields"></td>
+      </tr></table><span id="dependent_functions">
+	<h2><a name="dependent_functions_link" href="" id="dependent_functions_link_replace"> 関数従属</a></h2>
+	<div class="indented" id="dependent_functions_ajax">
+	</div>
+      </span>
+
+  </span>
+</div>

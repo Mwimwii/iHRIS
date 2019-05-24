@@ -86,5 +86,6 @@ fabric.properties
 
 #iHRIS
 sites/manage/pages/config.values.php
+lib/4.2/ihris-manage/tools/data
 
 # End of https://www.gitignore.io/api/phpstorm

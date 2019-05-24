@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE I2CEConfiguration SYSTEM "I2CE_Configuration.dtd">
+<I2CEConfiguration name="DatePicker" path="/modules/DatePicker">
+  <metadata>
+    <version>1.17.5.1</version>
+  </metadata>
+  <configurationGroup name="DatePicker" path="/modules/DatePicker" locale="sv">
+    <version>1.17.5.1</version>
+    <configurationGroup name="options_datetime">
+      <configuration name="format" locale="sv"></configuration>
+    </configurationGroup>
+    <configurationGroup name="options">
+      <configuration name="format" locale="sv"></configuration>
+      <configuration name="days" type="delimited" locale="sv">
+        <value>0:Söndag</value>
+        <value>1:Måndag</value>
+        <value>2:Tisdag</value>
+        <value>3:Onsdag</value>
+        <value>4:Torsdag</value>
+        <value>5:Fredag</value>
+        <value>6:Lördag</value>
+      </configuration>
+      <configuration name="months" type="delimited" locale="sv">
+        <value>0:Januari</value>
+        <value>1:Februari</value>
+        <value>2:Mars</value>
+        <value>4:Maj</value>
+        <value>5:Juni</value>
+        <value>6:Juli</value>
+        <value>7:augusti</value>
+        <value>9:Oktober</value>
+      </configuration>
+    </configurationGroup>
+  </configurationGroup>
+</I2CEConfiguration>

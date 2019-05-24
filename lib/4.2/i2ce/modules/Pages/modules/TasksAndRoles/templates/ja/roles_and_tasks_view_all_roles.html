@@ -1,0 +1,21 @@
+<div id="siteContent">
+  <h1>ロールを管理します。</h1>
+  <h2>既存のロール</h2>
+  <ul id="role_list"></ul><form method="post" action="tasks-roles/roles" id="add_user_role">
+    <table class="multiFormTable" border="0" cellpadding="0" cellspacing="0"><tr><th colspan="2">
+	  新しいロールを追加します。
+	</th>
+      </tr><tr><td>
+	  <label>ロールのショートネーム:</label> "-"、"."、"_" を含む文字と数字から成るショートネームは、ページとテンプレート上のロールを参照するために使用します。
+	</td>
+	<td>
+	  <input type="text" id="role_short_name" name="role_short_name" class="validate=[notinlist,nonempty,magicdatakey]"></td>
+      </tr><tr><td>
+	  <label>ロールの表示名:</label> エンドユーザーに表示されるこのロールの表示名。
+	</td>
+	<td>
+	  <input type="text" name="role_name" class="validate=[nonempty]"></td>
+      </tr><tr><td colspan="2">
+	  <input class="button" type="submit" value="Create"></td>
+      </tr></table></form>
+</div>

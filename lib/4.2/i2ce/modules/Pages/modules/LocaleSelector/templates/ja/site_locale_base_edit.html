@@ -1,0 +1,25 @@
+<div>
+  サイトを選択するユーザーに使用させたいロケールを選択できます。サイトで既定のフォールバックロケール <span name="locale_default_name"></span> (<span name="locale_default"></span>).
+  <span id="locales_container">
+    <ul id="locale_list"></ul><span name="has_def_locale" ifset="true">
+
+      <h2 id="add_def_locale_link" class="add_def_locale_options_toggle"><a>利用できるロケールを選択</a></h2>
+      <div id="add_def_locale_options_menu" class="optionsMenu optionsMenuWide toggable">
+	<div class="optionsMenuTitle">利用できるロケールを選択 </div>
+
+	<h3>利用できるロケール:</h3>
+	システムに使用するロケールを選択します。
+	<select name="def_locale" id="def_locale"><option>ロケールを選択</option></select><br><span class="add_def_locale_options_hide window_hide button optionsMenuButton">閉じる</span>
+	<input type="submit" class="button only_options_menu" value="Select" id="add_def_locale"></div>
+    </span>
+    
+    <h2 id="add_locale_link" class="add_locale_options_toggle"><a>新規ロケールを追加</a></h2>
+    <div id="add_locale_options_menu" class="optionsMenu optionsMenuWide toggable">
+      <div class="optionsMenuTitle">新規ロケールを追加 </div>
+
+      <h3>カスタム ロケール:</h3>
+      システムに利用可能なカスタムロケールを入力できます。
+      <input id="new_locale" name="new_locale" type="text" value="" class="validate=[magicdatakey,notinlist,simple_locale]"><br><span class="add_locale_options_hide window_hide button optionsMenuButton">閉じる</span>
+      <input type="submit" class="button only_options_menu" value="Add" id="add_locale"></div>
+  </span>
+</div>

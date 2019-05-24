@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE I2CEConfiguration SYSTEM "I2CE_Configuration.dtd">
+<I2CEConfiguration name="UserForm" path="/">
+  <metadata>
+    <version>4.2.1.0.1</version>
+  </metadata>
+  <configurationGroup name="UserForm" path="/" locale="ja">
+    <version>4.2.0.1.1</version>
+    <configurationGroup name="invalid_formfield_message" path="/modules/forms/formfield_messages" locale="ja">
+      <configuration name="username" path="user/username/unique" values="single" type="string">
+        <value>そのユーザー名は既に使用されています。</value>
+      </configuration>
+      <configuration name="pass_match" path="user/password/mismatch" values="single" type="string">
+        <value>パスワードと確認用パスワードが一致しませんでした。</value>
+      </configuration>
+      <configuration name="pass_match" path="user/password/required" values="single" type="string">
+        <value>新しいユーザーの場合は初期パスワードを入力する必要があります。</value>
+      </configuration>
+      <configuration name="role_notallowed" path="user/role/notallowed" values="single" type="string">
+        <value>あなたは他の利用者にこの役割を割り当てることが許可されていません。</value>
+      </configuration>
+    </configurationGroup>
+    <configurationGroup name="tasks" path="/I2CE/tasks/task_description" locale="ja">
+      <configuration name="users_can_edit" locale="ja" values="single" type="string">
+        <value>システムユーザーを作成することができます。</value>
+      </configuration>
+      <configuration name="users_can_edit_all" locale="ja" values="single" type="string">
+        <value>すべてのシステムユーザーの編集ができます。</value>
+      </configuration>
+      <configuration name="can_create_or_edit_users" locale="ja" values="single" type="string">
+        <value>システムユーザーの作成/編集ができます。</value>
+      </configuration>
+    </configurationGroup>
+    <configurationGroup name="pages" path="/I2CE/page">
+      <configurationGroup name="user">
+        <configurationGroup name="args">
+          <configuration name="title" values="single" locale="ja" type="string">
+            <value>ユーザー/アクセスを管理します。</value>
+          </configuration>
+        </configurationGroup>
+      </configurationGroup>
+      <configurationGroup name="view_user">
+        <configurationGroup name="args">
+          <configuration name="title" values="single" locale="ja" type="string">
+            <value>ユーザー/アクセスを管理します。</value>
+          </configuration>
+        </configurationGroup>
+      </configurationGroup>
+    </configurationGroup>
+    <configurationGroup name="forms" path="/modules/forms">
+      <configurationGroup name="roleForm" path="/modules/forms/forms/role">
+        <configuration name="display" values="single" locale="ja" type="string">
+          <value>ロール</value>
+        </configuration>
+      </configurationGroup>
+      <configurationGroup name="formClasses" path="/modules/forms/formClasses">
+        <configurationGroup name="I2CE_Role">
+          <configurationGroup name="fields">
+            <configurationGroup name="name">
+              <configuration name="headers" type="delimited" locale="ja" values="single">
+                <value>default:ロール</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="assignable">
+              <configuration name="headers" type="delimited" locale="ja" values="single">
+                <value>default:ユーザーに割り当てることができます。</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="homepage">
+              <configuration name="headers" type="delimited" locale="ja" values="single">
+                <value>default:優先ホームページ</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="trickle_up">
+              <configuration name="headers" type="delimited" locale="ja" values="single">
+                <value>default:吸い上げ</value>
+              </configuration>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+        <configurationGroup name="I2CE_User_Form">
+          <configurationGroup name="fields">
+            <configurationGroup name="username">
+              <configuration name="headers" type="delimited" locale="ja" values="single">
+                <value>default:ユーザー名</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="password">
+              <configuration name="headers" type="delimited" values="many" locale="ja">
+                <value>default:パスワード (同じパスワードを保持するには空白のまま)</value>
+                <value>generate:新しいパスワードを生成します。</value>
+              </configuration>
+            </configurationGroup>
+            <configurationGroup name="role">
+              <configuration name="headers" type="delimited" locale="ja" values="single">
+                <value>default:ロール</value>
+              </configuration>
+            </configurationGroup>
+          </configurationGroup>
+        </configurationGroup>
+      </configurationGroup>
+    </configurationGroup>
+  </configurationGroup>
+</I2CEConfiguration>
