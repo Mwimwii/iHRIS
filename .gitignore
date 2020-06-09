@@ -85,6 +85,7 @@ fabric.properties
 .idea/sonarlint
 
 #iHRIS
+config.values.php
 sites/manage/pages/config.values.php
 lib/4.2/ihris-manage/tools/data
 
