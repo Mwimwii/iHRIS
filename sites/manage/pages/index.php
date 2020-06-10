@@ -49,6 +49,7 @@ require_once ($i2ce_site_i2ce_path . DIRECTORY_SEPARATOR . 'I2CE_config.inc.php'
 @I2CE::initializeDSN($i2ce_site_dsn,   $i2ce_site_user_access_init,    $i2ce_site_module_config);         
 
 
+
 unset($i2ce_site_user_access_init);
 unset($i2ce_site_dsn);
 unset($i2ce_site_i2ce_path);

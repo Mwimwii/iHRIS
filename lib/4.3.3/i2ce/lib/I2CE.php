@@ -27,7 +27,7 @@
  * 
  * This class mainly handles throwing errors from withing I2CE
  */
-
+session_start();
 
 require_once 'I2CE_Error.php';
 require_once 'I2CE_Dumper.php';
@@ -42,6 +42,7 @@ require_once 'I2CE_PDO.php';
 /**
  * @package I2CE
  */
+
 class I2CE   {    
 
     /**
@@ -260,7 +261,7 @@ class I2CE   {
         }
         session_name( $cookie_name );
         session_set_cookie_params( 0,  $session_dir );
-        session_start();
+
         if ( array_key_exists( "appdir", $_SESSION ) && $_SESSION['appdir'] != $session_dir  ) {
             session_destroy();
             session_start();

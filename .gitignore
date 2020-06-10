@@ -85,8 +85,8 @@ fabric.properties
 .idea/sonarlint
 
 #iHRIS
-config.values.php
-sites/manage/pages/config.values.php
+lib/4.3.3/ihris-manage/sites/blank/pages/config.values.php
 lib/4.2/ihris-manage/tools/data
+lib/4.3.3/ihris-manage/tools/data
 
 # End of https://www.gitignore.io/api/phpstorm
