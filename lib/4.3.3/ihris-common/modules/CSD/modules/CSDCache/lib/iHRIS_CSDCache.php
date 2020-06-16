@@ -29,9 +29,7 @@
  * @access public
  */
 
-
 class iHRIS_CSDCache extends I2CE_Fuzzy{
-
 
     protected $pageObj;
     protected $relationship;
