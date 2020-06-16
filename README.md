@@ -251,7 +251,7 @@ Now find the configuration variables in the file that opens and change to the ap
   ------------------------- | ------------------------------------------------------------------------
   $i2ce_site_i2ce_path      | /var/lib/iHRIS/lib/4.3.3/I2CE                                           
   $i2ce_site_dsn    	    | mysql://ihris:PASWORD@localhost/DATABASE                                
-  $i2ce_site_module_config  | var/lib/iHRIS/lib/4.3-dev/ihris-manage/sites/Demo/iHRIS-Manage-Demo.xml 
+  $i2ce_site_module_config  | var/lib/iHRIS/lib/4.3.3/ihris-manage/sites/Demo/iHRIS-Manage-Demo.xml 
 
 Now edit the .htaccess file to set the RewriteBase: 
 ```shell script
