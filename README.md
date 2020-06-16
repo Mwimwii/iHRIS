@@ -246,10 +246,12 @@ $ sudo nano local/config.values.php
 ```
  
 Now find the configuration variables in the file that opens and change to the appropriate values. Again for this example using iHRIS Manage, but replace with appropriate values for the application and site you're using.
-| Variable Name	            | Value                                                                   |
-| $i2ce_site_i2ce_path      | /var/lib/iHRIS/lib/4.3.3/I2CE                                         |
-| $i2ce_site_dsn    	    | mysql://ihris:PASWORD@localhost/DATABASE                                |
-| $i2ce_site_module_config  | var/lib/iHRIS/lib/4.3-dev/ihris-manage/sites/Demo/iHRIS-Manage-Demo.xml |
+
+  Variable Name	            | Value                                                                   
+  ------------------------- | ------------------------------------------------------------------------
+  $i2ce_site_i2ce_path      | /var/lib/iHRIS/lib/4.3.3/I2CE                                           
+  $i2ce_site_dsn    	    | mysql://ihris:PASWORD@localhost/DATABASE                                
+  $i2ce_site_module_config  | var/lib/iHRIS/lib/4.3-dev/ihris-manage/sites/Demo/iHRIS-Manage-Demo.xml 
 
 Now edit the .htaccess file to set the RewriteBase: 
 ```shell script
