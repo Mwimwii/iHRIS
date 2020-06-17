@@ -27,7 +27,6 @@
  * 
  * This class mainly handles throwing errors from withing I2CE
  */
-session_start();
 
 require_once 'I2CE_Error.php';
 require_once 'I2CE_Dumper.php';
