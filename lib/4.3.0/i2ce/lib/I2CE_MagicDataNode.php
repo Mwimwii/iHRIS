@@ -224,15 +224,17 @@ if (!class_exists('I2CE_MagicDataNode',false)) {
             if (!$this->top instanceof I2CE_MagicData) {
                 return;
             }
+
 //            if (count($this->top->storage) == 0) {
 //                //no storage mechanisms, so let us not unpopulate
 //                return;
 //            }
 
-            if (!is_array($this->top->storage)) {
+            if (!is_array($this->top->storage) == 0) {
                 //no storage mechanisms, so let us not unpopulate
                 return;
             }
+
             if ($deep) {
                 foreach ($this->children as $key => $child) {
                     $child->unpopulate($deep, $cleanup);
