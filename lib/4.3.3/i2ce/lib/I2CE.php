@@ -260,6 +260,7 @@ class I2CE   {
         }
         session_name( $cookie_name );
         session_set_cookie_params( 0,  $session_dir );
+        session_start();
 
         if ( array_key_exists( "appdir", $_SESSION ) && $_SESSION['appdir'] != $session_dir  ) {
             session_destroy();
@@ -608,6 +609,7 @@ class I2CE   {
         }
 
         self::setupSession();
+
         $clear = false;
         if (!array_key_exists('HTTP_HOST',$_SERVER)) { //command line
             $clear = self::getRuntimeVariable('clear_cache','0' );            
