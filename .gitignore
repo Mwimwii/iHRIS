@@ -94,4 +94,7 @@ lib/4.3.0/ihris-manage/sites/blank/pages/config.values.php
 lib/4.2/ihris-manage/sites/blank/pages/config.values.php
 go-pear.phar
 
+MacOS
+.DS_Store
+
 # End of https://www.gitignore.io/api/phpstorm
