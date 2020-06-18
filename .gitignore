@@ -90,6 +90,8 @@ lib/4.2/ihris-manage/tools/data
 lib/4.3.0/ihris-manage/tools/data
 lib/4.3.3/ihris-manage/tools/data
 lib/4.3.3/ihris-manage/sites/blank/pages/config.values.php
+lib/4.3.0/ihris-manage/sites/blank/pages/config.values.php
+lib/4.2/ihris-manage/sites/blank/pages/config.values.php
 go-pear.phar
 
 # End of https://www.gitignore.io/api/phpstorm
