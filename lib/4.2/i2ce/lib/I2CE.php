@@ -307,6 +307,7 @@ class I2CE   {
         session_name( $cookie_name );
         session_set_cookie_params( 0,  $session_dir );
         session_start();
+
         if ( array_key_exists( "appdir", $_SESSION ) && $_SESSION['appdir'] != $session_dir  ) {
             session_destroy();
             session_start();
