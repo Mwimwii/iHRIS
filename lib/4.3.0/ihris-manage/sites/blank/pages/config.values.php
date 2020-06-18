@@ -48,13 +48,14 @@
  * You might need to set this depending on your installation
  *    Default value is  ../../../../I2CE
  */
-$i2ce_site_i2ce_path = "../../../../i2ce";
+$i2ce_site_i2ce_path = "../../../../I2CE";
 
 
 /**
  * the dsn to connect to your databse
  */
-$i2ce_site_dsn = "mysql://ihris:m0h1ct11@localhost/ihris_manage";
+//$i2ce_site_dsn = 'mysql://john:pass@localhost/database' ;
+
 
 /**
  * Initialization string for user access.  See http://open.intrahealth.org/mediawiki/Pluggable_Authentication
@@ -63,10 +64,12 @@ $i2ce_site_dsn = "mysql://ihris:m0h1ct11@localhost/ihris_manage";
 $i2ce_site_user_access_init = null;
 
 
+
 /**
  * the configuration xml file for the site module.  You need to set this.
  */
-$i2ce_site_module_config = "/Users/chisanga/PhpstormProjects/iHRIS/lib/4.3.0/ihris-manage/sites/blank/iHRIS-Manage-BLANK.xml";
+//$i2ce_site_module_config = "MY_SITE_MODULE.xml";
+
 
 /*****************************************************************
  *                                                               *
@@ -74,6 +77,10 @@ $i2ce_site_module_config = "/Users/chisanga/PhpstormProjects/iHRIS/lib/4.3.0/ihr
  *              Do not edit anything below this line             *
  *                                                               *
  *****************************************************************/
+
+
+
+
 
 
 # Local Variables:
